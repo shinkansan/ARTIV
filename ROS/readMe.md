@@ -1,5 +1,5 @@
-# ROS Reops A to Z
-Author : Gwanjun Shin
+# ROS Repos A to Z
+Author : Gwanjun Shin <br/>
 date : 2020.02.04.
 
 ## How to install
@@ -17,5 +17,10 @@ export source /opt/ros/dashing/setup.bash
 ## What's in Repos
 ### rclpy-images.py
 Connect ROS2 with Python
+
+
+
+## TODO
+ 1. check ros1 and ros2 bridge and run example of them ==> Important!!!
 
 
