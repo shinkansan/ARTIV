@@ -1,4 +1,4 @@
-# Tensorflow Installation
+# Installation
 
 ## Install Cuda
 1. Check driver version and select cuda version. (our driver version is 430, select cuda 10.1) <br/>
@@ -19,8 +19,10 @@ source .bashrc
 ~~~
 
 ## Install Cudnn
-1. GOTO [Link](https://developer.nvidia.com/rdp/cudnn-download), and download 
---> Minimum system requirement!!
+1. GOTO [Link](https://developer.nvidia.com/rdp/cudnn-download), and download cuDNN Runtime Library for Ubuntu18.04 (Deb)
+2. Execute the file!
+
+## Install Tensorflow
 
 
 --> 
