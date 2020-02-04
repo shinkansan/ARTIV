@@ -20,7 +20,22 @@ Simulation software to accelerate safe autonomous vehicle development
  
 ## How we use it
   1. Install it 
-  2. Download ros2-web-brdige [link](https://github.com/RobotWebTools/ros2-web-bridge)
-  3. Install ros2-web-brdige by NodeJS (you need to figure it out by yourself)
-  
+  2. Download ros2-web-bridge [link](https://github.com/RobotWebTools/ros2-web-bridge) <br/>
+    1. install nvm <br/>
+    ```bash
+    nvm install 10.18
+    ```
+    2. install rclnodejs 
+    ```bash
+    npm i rclnodejs
+    ```
+    3. download ros2-web-bridge and goto its folder directory
+    ```bash
+    npm install
+    ```
+    4. done
+   
+  3. Now you can use it by ```node bin/rosbridge.js``` in ros2-web-bridge folder <br/>
+   __you should not close that terminal while node js is running__ <br/>
+   it working as server, so it must be opened while using LGSVL
   
