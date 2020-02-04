@@ -19,22 +19,25 @@ Simulation software to accelerate safe autonomous vehicle development
   4. keras 
  
 ## How we use it
-  1. Install it 
+  1. Install it <br/>
   2. Download ros2-web-bridge [link](https://github.com/RobotWebTools/ros2-web-bridge) <br/>
     1. install nvm <br/>
     ```bash
     nvm install 10.18
     ```
-    2. install rclnodejs 
-    ```bash
+    <br/>
+    2. install rclnodejs  <br/>
+    ```
     npm i rclnodejs
     ```
-    3. download ros2-web-bridge and goto its folder directory
-    ```bash
+    <br/>
+    3. download ros2-web-bridge and goto its folder directory <br/>
+    ```
     npm install
     ```
-    4. done
-   
+    <br/>
+    4. done <br/>
+  
   3. Now you can use it by ```node bin/rosbridge.js``` in ros2-web-bridge folder <br/>
    __you should not close that terminal while node js is running__ <br/>
    it working as server, so it must be opened while using LGSVL
