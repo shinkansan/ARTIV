@@ -22,7 +22,26 @@ source .bashrc
 1. GOTO [Link](https://developer.nvidia.com/rdp/cudnn-download), and download cuDNN Runtime Library for Ubuntu18.04 (Deb)
 2. Execute the file!
 
+## Make Virtual Environment
+1. make virtual environment
+~~~ bash
+python3 -m venv ./(venv name)
+~~~
+we named virtual environment 'tensorflow'
+2. activate the virtual environment
+~~~ bash
+# source (virtual environment name)/bin/activate
+source tensorflow/bin/activate 
+~~~
+check always that the venv 
 ## Install Tensorflow
+~~~ bash
+pip install tensorflow
+~~~
+## Install Keras
+~~~ bash
+pip install keras
+~~~
 
-
---> 
+## Mask RCNN
+GOTO [Link](https://github.com/matterport/Mask_RCNN)
