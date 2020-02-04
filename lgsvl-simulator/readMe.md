@@ -18,7 +18,7 @@ Simulation software to accelerate safe autonomous vehicle development
   3. tensorflow
   4. keras 
  
-## How we use it
+## How we use it (How to connect ROS2)
   1. Install it <br/>
   2. Download ros2-web-bridge [link](https://github.com/RobotWebTools/ros2-web-bridge) <br/>
     1. install nvm <br/>
