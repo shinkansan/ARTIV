@@ -7,7 +7,7 @@
   
 ## Visualize it with ROS2 Function
 ### Color Camera
-   GOTO [Link](../ROS/)
+   GOTO [Link](../ROS/image_rclpy.py)
 ### Velodyne Lidar
 ```bash
 rviz2 -f velodyne
