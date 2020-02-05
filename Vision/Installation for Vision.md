@@ -42,6 +42,3 @@ pip install tensorflow
 ~~~ bash
 pip install keras
 ~~~
-
-## Mask RCNN
-GOTO [Link](https://github.com/matterport/Mask_RCNN)
