@@ -1,4 +1,4 @@
-# mask-rcnn develop log
+# Mask-rcnn develop log
 
 Author : Eunbin Seo <br/>
 Date : 2020.02.04.
@@ -9,4 +9,3 @@ Date : 2020.02.04.
 ## Usage
 
 ## what's in repo?
-
