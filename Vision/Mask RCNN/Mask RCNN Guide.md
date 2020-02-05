@@ -31,7 +31,6 @@ python3 setup.py install
 1. Download all files in this directory(ARTIV/Vision/Mask RCNN/Required files).
 2. Execute the test-mrcnn.py <br/>
 If you create the virtual environment, you execute the test-mrcnn.py in the virtual environment.<br/>
-If it works well, you can see the window like test result.jpg .
+If it works well, window(like test result.jpg) will be opened.
 3. Turn on the car simulation.(we use the lgvsl. If you don't know turning on lgvsl, you can follow the guide in directory(ARTIV/lgvsl-simulator)) 
-4. Execute mrcnn.py and <br/>
-enjoy mask-rcnn with simulator in real time!! :)
+4. Execute mrcnn.py and enjoy mask-rcnn with simulator in real time!! :)
