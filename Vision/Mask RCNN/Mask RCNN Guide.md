@@ -1,4 +1,6 @@
 # Mask RCNN Guide
+Author : Eunbin Seo<br/>
+Date : 2020.02.04.
 
 ## First thing that you have to do
 First, install the tensorflow and keras. <br/>
