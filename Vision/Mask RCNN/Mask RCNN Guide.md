@@ -1,6 +1,6 @@
 # Mask RCNN Guide
 Author : Eunbin Seo<br/>
-Date : 2020.02.04.
+Date : 2020.02.05.
 
 ## First thing that you have to do
 First, install the tensorflow and keras. <br/>
@@ -28,4 +28,9 @@ python3 setup.py install
 ~~~
 
 ## Execute example code
-1. File download
+1. Download all files in this directory(ARTIV/Vision/Mask RCNN/Required files).
+2. Execute the test-mrcnn.py <br/>
+If you create the virtual environment, you execute the test-mrcnn.py in the virtual environment.
+3. If it works, turn on the car simulation.(we use the lgvsl. If you don't know turning on lgvsl, you can follow the guide in directory(ARTIV/lgvsl-simulator)) 
+4. Execute mrcnn.py and <br/>
+enjoy mask-rcnn with simulator in real time!! :)
