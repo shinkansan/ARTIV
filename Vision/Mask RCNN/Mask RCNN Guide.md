@@ -15,7 +15,7 @@ It takes a long time to download because of its large capacity.
 3. Install dependencies.
 Go into requirements.txt file.<br/>
 Then, __you have to erase tensorflow>=1.3.0 and keras>=2.0.8.<br/>
-We already install them in First thing that you have to do part__
+We already install them in First thing that you have to do part__ <br/>
 After the modifying, type the command.
 ~~~ bash
 pip install -r requirements.txt
