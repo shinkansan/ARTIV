@@ -11,7 +11,7 @@ You have to follow the link. [Link](https://github.com/matterport/Mask_RCNN) <br
 And, Find the Installation part.<br/>
 
 I modifed the existing method.
-1. Download first pre-trained COCO weights (mask_rcnn_coco.h5) from the [releases page](https://github.com/matterport/Mask_RCNN/releases).
+1. Download first pre-trained COCO weights (mask_rcnn_coco.h5) from the [releases page](https://github.com/matterport/Mask_RCNN/releases). <br/>
 It takes a long time to download because of its large capacity.
 2. Clone that repository.
 3. Install dependencies.
