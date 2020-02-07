@@ -14,6 +14,6 @@
 > 우리는 결국 길을 찾았고, 열심히 차를 만들 준비를 하고 있습니다.   
 
 ## Devlog #1
-  1. [차에다가 막 구멍뚫어도되요? part1](./vehicle-exterior-tuning-part1.md)
+  1. [차에다가 막 구멍 뚫어도 돼요? part1](./vehicle-exterior-tuning-part1.md)
   2. [CAN으로 차량 제어하기 part1]()
   3. [센서 구성과 전원관리 part1]()
