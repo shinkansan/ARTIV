@@ -30,5 +30,5 @@
 Airsim은 사용이 편하기는한데 장기적으로는 안되는게 너무 많아서...    
 
 여튼 LGSVL은 엄청 좋다. 쉽게 센서를 도입할 수 있고 이미 ROS 친화적이라 다양한 센서 토픽을 신경쓰지 않고 받아와서 사용해 볼 수 있다.   
-|테스트 사진 |![maskrcnn](./media/maskrcnn1.png)|![lidar](./media/lidar.png)   
-|----------|--------|---------|
+
+> <img width="370" src="./media/maskrcnn1.png" alt="maskrcnn"> <img width="370" src="./media/lidar.png" alt="lidar">
