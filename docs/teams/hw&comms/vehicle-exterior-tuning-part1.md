@@ -10,8 +10,8 @@ __의외로 깨달았던 것은__
 ### Step 1. 차 위에 센서를 거치해야된다. 구멍을 뚫을까?
 보통 자율차를 생각하면 아래 같은 사진을 생각하는데, 요 위에 튀어나온 라이다와 아래 카메라를 보관하는 센서팩을 볼 수 있다.   
 심미성도 있고 센서를 보호할 수 있어서 일석이조이다.
-![통상적인_자율차](./media/typical_car.png)
+<center><img src="media/typical_car2.png" width="400"></center>
 기본적으로 스키 캐리어, 혹은 루프 캐리어, 스키 랙으로 유명한 Thule사의 장비를 찾아보기 시작하면 ~~사라는게 아니다~~   
 이를 설치하는 과정이 중요하다.
 
-![루프랙](./media/roofRack.png)
+<center><img src="media/roofRack.png" width="400"></center>
