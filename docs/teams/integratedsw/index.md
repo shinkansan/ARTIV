@@ -2,6 +2,7 @@
 모든 센서와 UI/UX를 개발하면 이를 한번에 멋있게 보여줄 SW가 필요하다. 동시에 각 센서의 값을 Real-time으로 분배해줄 방법도 찾아야한다.
 이 일을 우리 파트에서 진행한다.
 
+
 ## ROS와 ROS2
 이런 작업에서 대표적인 middleware라고 하면 당연히 ROS(Robot Operating System)이다. Linux기반에서 동작하는 우리 차에 ROS를 탑재하고 각 센서, 차량 액츄에이터, CAN을 PC와 연결 
 하는 Bridge를 설계해서 적절한 Topic으로 사용할 수 있게 만들어주면 끝이다. 이 과정에서 전처리나 배포 방식을 각 개발팀과 상의해야하는 유연성도 필요하다.
@@ -29,12 +30,14 @@
 이미 ROS2와 연계가 잘되는 [LGSVL](https://github.com/lgsvl/simulator)이나 DeepDrive는 HD Map도 지원하고 다양한 센서들을 지원하기 때문에 사용하기로 결정했다.
 Airsim은 사용이 편하기는한데 장기적으로는 안되는게 너무 많아서...    
 
-여튼 LGSVL은 엄청 좋다. 쉽게 센서를 도입할 수 있고 이미 ROS 친화적이라 다양한 센서 토픽을 신경쓰지 않고 받아와서 사용해 볼 수 있다.  
-막상 처음 좋은 것을 알겠는데, 실행하고 LGSVL에 입력칸을 보면 ros2 server의 주소를 입력하라는 칸이 있어서 ros master 주소를 입력하고 `roscore` 가 없다는 것을 본 나는 멘붕에 빠져서 _"ros2 roscore"_   라고 구글에 쳐보고 ROS2가 master-slave 방식을 탈피하여 roscore를 버렸다고 한 것을 알았다. 그리고 당연히 이미 멋있는 세계의 개발자들이 ros2-web-bridge를 만들어서 배포중에 있었다.
+여튼 LGSVL은 엄청 좋다. 쉽게 센서를 도입할 수 있고 이미 ROS 친화적이라 다양한 센서 토픽을 신경쓰지 않고 받아와서 사용해 볼 수 있다.      
+
+좋은 것은 알겠는데... 실행하고 LGSVL에 입력칸을 보면 ros2 server의 주소를 입력하라는 칸이 있어서 ros master 주소를 입력하였는데   
+`roscore` 가 없다는 것을 본 나는 멘붕에 빠졌다. _"ros2 roscore"_ 라고 구글에 쳐보고 ROS2가 master-slave 방식을 탈피하여 roscore를 버렸다고 한 것을 알았다.   그리고 당연히 이미 멋있는 세계의 개발자들이 ros2-web-bridge를 만들어서 배포중에 있었다.
 
 이 방식의 설치 방법도 기트허브에 올라가있다.   
 
-> <img width="370" src="./media/maskrcnn1.png" alt="maskrcnn"> <img width="370" src="./media/lidar.png" alt="lidar">   
+> <img width="340" src="./media/maskrcnn1.png" alt="maskrcnn"> <img width="340" src="./media/lidar.png" alt="lidar">   
 
 이 기능을 하면서 mrcnn github 코드의 visualize.py의 Matplotlib 출력 결과를 ndarray형으로 바꾸는 코드를 새로 작성하였다. 아마 비전팀에서 이 내용을 다룰 것이라 본다. 또 sensor 값을 설정한 json 코드도 기트허브에 올려두었다.
 
