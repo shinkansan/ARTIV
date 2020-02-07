@@ -1,10 +1,10 @@
 # DGIST ARTIV Tech Blog
 이 블로그는 DGIST UGRP 메가프로젝트로 수행된 ARTIV 랩의 자율주행차 처음부터 끝까지 빌드업에 관련한 기술 블로그입니다.
 
-### 팀별 글
-  1. [라이다/레이다팀](./teams/lidar/)
-  2. [통합SW팀(ROS)](./teams/integratedsw/)
-  3. [라이다/레이다팀](./teams/lidar/)
+### 파트별 글
+  1. [라이다/레이다 파트](./teams/lidar/)
+  2. [통합SW 파트](./teams/integratedsw/)
+  3. [차량HW/통신파트](./teams/hw&comms/)
   4. [라이다/레이다팀](./teams/lidar/)
 
 ## Introduction
