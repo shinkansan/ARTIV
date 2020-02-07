@@ -3,7 +3,7 @@
 
 ### 팀별 글
   1. [라이다/레이다팀](./teams/lidar/)
-  2. [라이다/레이다팀](./teams/lidar/)
+  2. [통합SW팀(ROS)](./teams/integratedsw/)
   3. [라이다/레이다팀](./teams/lidar/)
   4. [라이다/레이다팀](./teams/lidar/)
 
