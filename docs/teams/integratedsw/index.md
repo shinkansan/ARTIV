@@ -29,6 +29,13 @@
 이미 ROS2와 연계가 잘되는 [LGSVL](https://github.com/lgsvl/simulator)이나 DeepDrive는 HD Map도 지원하고 다양한 센서들을 지원하기 때문에 사용하기로 결정했다.
 Airsim은 사용이 편하기는한데 장기적으로는 안되는게 너무 많아서...    
 
-여튼 LGSVL은 엄청 좋다. 쉽게 센서를 도입할 수 있고 이미 ROS 친화적이라 다양한 센서 토픽을 신경쓰지 않고 받아와서 사용해 볼 수 있다.   
+여튼 LGSVL은 엄청 좋다. 쉽게 센서를 도입할 수 있고 이미 ROS 친화적이라 다양한 센서 토픽을 신경쓰지 않고 받아와서 사용해 볼 수 있다.  
+막상 처음 좋은 것을 알겠는데, 실행하고 LGSVL에 입력칸을 보면 ros2 server의 주소를 입력하라는 칸이 있어서 ros master 주소를 입력하고 `roscore` 가 없다는 것을 본 나는 멘붕에 빠져서 _"ros2 roscore"_   라고 구글에 쳐보고 ROS2가 master-slave 방식을 탈피하여 roscore를 버렸다고 한 것을 알았다. 그리고 당연히 이미 멋있는 세계의 개발자들이 ros2-web-bridge를 만들어서 배포중에 있었다.
 
-> <img width="370" src="./media/maskrcnn1.png" alt="maskrcnn"> <img width="370" src="./media/lidar.png" alt="lidar">
+이 방식의 설치 방법도 기트허브에 올라가있다.   
+
+> <img width="370" src="./media/maskrcnn1.png" alt="maskrcnn"> <img width="370" src="./media/lidar.png" alt="lidar">   
+
+이 기능을 하면서 mrcnn github 코드의 visualize.py의 Matplotlib 출력 결과를 ndarray형으로 바꾸는 코드를 새로 작성하였다. 아마 비전팀에서 이 내용을 다룰 것이라 본다. 또 sensor 값을 설정한 json 코드도 기트허브에 올려두었다.
+
+기타 이미지나 Velodyne 라이다의 입력을 받는 코드와 방법도 기트허브에 올려두었다.
