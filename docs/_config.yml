@@ -2,13 +2,3 @@ theme: jekyll-theme-architect
 title: DGIST ARTIV Tech Blog
 description: 디지스트 자율주행연구실 기술 블로그
 
-defaults:
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      sidebar:
-        nav: "docs"
-        
-        
