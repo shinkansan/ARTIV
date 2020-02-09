@@ -5,7 +5,7 @@
   1. [라이다/레이다 파트](./teams/lidar/)
   2. [통합SW 파트](./teams/integratedsw/)
   3. [차량HW/통신파트](./teams/hw&comms/)
-  4. [차세대교통시스템 파트](docs/teams/transport system/index.md)
+  4. [차세대교통시스템 파트](./teams/transport system/index.md)
 
 ## Introduction
 ### 1. 우리는 자율차를 들어는 봤지, 타보지도 않은 사람들이다.
