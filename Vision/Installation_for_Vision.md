@@ -1,5 +1,6 @@
-# Installation
-
+# Installation Guide
+Author : Eunbin Seo <br/>
+Date : 2020.02.04.
 ## Install Cuda
 1. Check driver version and select cuda version. (our driver version is 430, select cuda 10.1) <br/>
 ~~~bash
