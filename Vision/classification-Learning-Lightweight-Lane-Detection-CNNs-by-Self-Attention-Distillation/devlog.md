@@ -2,7 +2,7 @@
 [github](https://github.com/cardwing/Codes-for-Lane-Detection) <br/>
 [sota paper](https://arxiv.org/abs/1908.00821)
 
-Author : Eunbin Seo
+Author : Eunbin Seo <br/>
 Date : 2020.02.11.
 
 ##
