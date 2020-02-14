@@ -28,7 +28,7 @@ Date : 2020.02.14.
 1. FLIR Grasshopper3 USB3 [링크](https://www.flir.com/products/grasshopper3-usb3?model=GS3-U3-15S5C-C)
 2. FLIR Blackfly S USB3 [링크](https://www.flir.eu/products/blackfly-s-usb3/?model=BFS-U3-50S5C-C)
 
-**1번 카메라가 2번 카메라보다 좋지만, 2배 정도 비싸다. 나중에 예산이 많아지면 구경해보자.**
+**1번 카메라가 2번 카메라보다 좋지만, 2배 정도 비싸다. 나중에 예산이 많아지면 고려해보자.**
 #### 렌즈
 1. ACH0518M10M [링크](https://www.aico-lens.com/product/5mm-10mp-manual-iris-wide-angle-4k-c-mount-lens-ach0518m10m/)<br/>
 2. 수평 FOV 좁은 렌즈 찾기
