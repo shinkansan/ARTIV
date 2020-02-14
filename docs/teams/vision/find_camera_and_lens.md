@@ -21,7 +21,7 @@ Date : 2020.02.14.
 
 그렇게 찾은게 [이거](https://www.aico-lens.com/product/5mm-10mp-manual-iris-wide-angle-4k-c-mount-lens-ach0518m10m/)다. 수평 FOV 82.7도로, 카메라를 4개 달면 330도까지 볼 수 있다.
 
-**나중에 알았는데, FOV와 해상도에 trade-off가 있다고 한다... 다시 찾아보자.**
+**나중에 알았는데, FOV와 해상도에 trade-off가 있다고 한다..  다시 찾아보자.**
 
 ### 찾은 카메라, 렌즈 목록
 #### 카메라
