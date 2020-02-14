@@ -20,5 +20,7 @@ Date : 2020.02.14.
 [링크](https://www.baslerweb.com/ko/vision-campus/vision-systems-and-components/find-the-right-lens/)
 
 ### 렌즈 찾기
-카메라가 360도를 볼 수 있도록, 적당한 렌즈를 찾아보았다. 예산이 한정되어 있고, 여유롭지 않으니 최대한 적은 수의 카메라를 쓸 수 있도록 수평 FOV가 최대한 넓은 렌즈를 찾아보았다.
+카메라가 360도를 볼 수 있도록, 적당한 렌즈를 찾아보았다. 예산이 한정되어 있고, 여유롭지 않으니 최대한 적은 수의 카메라를 쓸 수 있도록 수평 FOV가 최대한 넓은 렌즈를 찾아보았다.<br/>
+
+그렇게 찾은게 [이거](https://www.aico-lens.com/product/5mm-10mp-manual-iris-wide-angle-4k-c-mount-lens-ach0518m10m/)다. 수평 FOV 82.7도로, 카메라를 4개 달면 330도까지 볼 수 있다.
 
