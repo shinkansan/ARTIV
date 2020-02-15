@@ -5,4 +5,7 @@
 Author : Eunbin Seo <br/>
 Date : 2020.02.11.
 
-##
+## Data type we need
+## Performance
+## Framework
+## Code applicability
