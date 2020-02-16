@@ -30,9 +30,17 @@ This error happens at cv2.imread(os.path.join(~)) in test_erfnet.py <br/>
 
 ## Today's outcome
 ### lane detection
-<center><img src="img/lanedetection.png" width="450"></center>
+<center><img src="img/lanedetection.png" width="900"></center>
+--> I think this model detects lanes well even though test image is the night picture!!!
 
+### But we have to solve fps problem....
+<center><img src="img/time-evaluation.png" width="900"></center>
+--> It has only 10fps.... <br/>
+According to the paper, performance is 111fps by using this model. I hope our performance reach the 111fps!
 
+## To do
+1. algorithm
+2. Think about how to draw the smooth lane in test image
 
 
 
