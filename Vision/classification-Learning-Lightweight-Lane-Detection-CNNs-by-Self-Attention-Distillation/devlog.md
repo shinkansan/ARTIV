@@ -40,8 +40,6 @@ According to the paper, performance is 111fps by using this model. I hope our pe
 
 ## To do
 1. algorithm
-2. Think about how to draw the smooth lane in test image
-
-
+2. Think about how to draw the smooth lane
 
 
