@@ -29,7 +29,8 @@ This error happens at cv2.imread(os.path.join(~)) in test_erfnet.py <br/>
 --> This error happens because the path is wrong. We have to compare "ERNet_ROOT/list/test_img.txt" file with "os.path.join(self.img_path, self.img_list[idx])".
 
 ## Today's outcome
-
+### lane detection
+<img width="340" src=".Vision/classification-Learning-Lightweight-Lane-Detection-CNNs-by-Self-Attention-Distillation/img/lanedetection.png"> 
 
 
 
