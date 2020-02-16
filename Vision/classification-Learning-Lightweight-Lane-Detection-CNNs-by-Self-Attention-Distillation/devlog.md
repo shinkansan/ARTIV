@@ -30,7 +30,7 @@ This error happens at cv2.imread(os.path.join(~)) in test_erfnet.py <br/>
 
 ## Today's outcome
 ### lane detection
-<img width="340" src=".Vision/classification-Learning-Lightweight-Lane-Detection-CNNs-by-Self-Attention-Distillation/img/lanedetection.png"> 
+<center><img src="Vision/classification-Learning-Lightweight-Lane-Detection-CNNs-by-Self-Attention-Distillation/img/lanedetection.png" width="450"></center>
 
 
 
