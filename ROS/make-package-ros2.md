@@ -1,4 +1,4 @@
-# Making Packaing in ROS2
+# Making Packaging in ROS2
 Making packaing in ROS2 is like insatll program into your computer.   
 
 
@@ -104,7 +104,20 @@ if __name__ == '__main__':
 5. Run it   
   `ros2 run my_pakcage_python my_node_python`
    
+   
+## 3. Customize Install Setting
+
+  1. Package.xml
+    description and license contain TODO notes. 
+    __AND Depencies Link__ 
     
+  2.setup.py (python only)
+    description and license contain TODO notes. 
+    __NOTICE : You need to match information same as Package.xml__
+  
+  
+## Next
+Make Publisher for seonsor input
     
      
 
