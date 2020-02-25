@@ -17,4 +17,5 @@
   1. [차에다가 막 구멍 뚫어도 돼요? part1](./vehicle-exterior-tuning-part1.md)
   2. [CAN으로 차량 제어하기 part1](./vehicle-can-part1.md)
   3. [센서 구성과 전원관리 part1](./sensor_management.md)
-  4. [CAN 통신이란 무엇인가? part1](./what_is_can.md)
+  4. [CAN 통신이란 무엇인가? part1](./what_is_can1.md)
+  5. [CAN 통신이란 무엇인가? part2](./what_is_can2.md)
