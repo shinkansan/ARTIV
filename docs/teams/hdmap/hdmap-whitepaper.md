@@ -1,4 +1,5 @@
 # HD Map과 다른 OpenPlatform의 HD Map 비교해보기
+Author : 신관준 / 2020.02.25.
 
 ## Introduction
 지금 시중에 풀려있는 차들은 반자율주행이라는 표현을 쓰는데, 대부분 레이더와 카메라를 이용하여 ADAS, LDA, LKAS 같은 반자율주행 기능들을 자동차에 탑재한다.   
