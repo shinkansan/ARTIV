@@ -76,10 +76,10 @@ HD Map은 아래와 같은 구조로 되어 있는데, 미국의 Uber의 라이�
   
   
   ## 참고자료 (읽어보는 것을 추천)
-    1. https://medium.com/pixmoving/running-autoware-based-mapping-in-the-cloud-2737861fbddc  --> 상세하게 맵핑하는 방법이 코드로 있고, 큰 맵을 하다보며 생기는 오류들을 해결하는 과정도 있다.
-    2. https://discourse.ros.org/t/autoware-maps-and-map-formats-working-group-meeting-minutes-24-july-2019/10059 
-    3. https://icave2.cse.buffalo.edu/papers/Mapping%20the%20Future.pdf
-    4. https://github.com/fzi-forschungszentrum-informatik/lanelet2
-    5. https://www.researchgate.net/publication/332228465_Open-Source_Tool_of_Vector_Map_for_Path_Planning_in_Autoware_Autonomous_Driving_Software
-    6. https://redisle.tistory.com/9 -> 한국어블로그로 맵핑하는게 다 나와있다.
-    7. https://sdi4apps.eu/2016/03/journey-to-creating-drivenet-maps-open-data-real-time-road-maps-for-autonomous-driving-from-3d-lidar-point-clouds/ - 일반 Pcap 파일 및 gps로 mapping 하기 ndt 말고
+    1. https://medium.com/pixmoving/running-autoware-based-mapping-in-the-cloud-2737861fbddc  --> 상세하게 맵핑하는 방법이 코드로 있고, 큰 맵을 하다보며 생기는 오류들을 해결하는 과정도 있다.   
+    2. https://discourse.ros.org/t/autoware-maps-and-map-formats-working-group-meeting-minutes-24-july-2019/10059    
+    3. https://icave2.cse.buffalo.edu/papers/Mapping%20the%20Future.pdf   
+    4. https://github.com/fzi-forschungszentrum-informatik/lanelet2   
+    5. https://www.researchgate.net/publication/332228465_Open-Source_Tool_of_Vector_Map_for_Path_Planning_in_Autoware_Autonomous_Driving_Software   
+    6. https://redisle.tistory.com/9 -> 한국어블로그로 맵핑하는게 다 나와있다.   
+    7. https://sdi4apps.eu/2016/03/journey-to-creating-drivenet-maps-open-data-real-time-road-maps-for-autonomous-driving-from-3d-lidar-point-clouds/ - 일반 Pcap 파일 및 gps로 mapping 하기 ndt 말고   
