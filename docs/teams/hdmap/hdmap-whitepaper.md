@@ -68,7 +68,8 @@ HD Map은 아래와 같은 구조로 되어 있는데, 미국의 Uber의 라이�
       5. RVIZ상에서 pcd와 csv를 서로 Align 한다. 잘 안맞는 Issue도 있다.   
       6. 데이터를 잘 사용한다.   
       
-      [예시 영상](https://www.youtube.com/watch?v=OpvTeTaiXo4) 
+  [예시 영상](https://www.youtube.com/watch?v=OpvTeTaiXo4)
+     
   여기에는 Align과 GroundTruth, 보정 같은 이유로 라이다만이 아니라, GPS, IMU를 사용할 수 있도록 Autoware는 제공하고 있다.
   
   
