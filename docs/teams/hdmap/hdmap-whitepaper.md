@@ -8,7 +8,7 @@ Author : 신관준 / 2020.02.25.
 대응하는 움직임은 지금의 반자율주행과는 훨 다를 것이다.
 
 ## Open Platform
-2020년 현재 다양한 자율주행 오픈플랫폼이 있다. Baidu의 __Apollo__, TierIV의 __Autoware__, Comma AI의 __OpenPilot__   
+2020년 현재 다양한 자율주행 오픈플랫폼이 있다. Baidu의 [__Apollo__](https://github.com/ApolloAuto/apollo), TierIV의 [__Autoware__](https://gitlab.com/autowarefoundation/autoware.ai), Comma AI의 [__OpenPilot__](https://github.com/commaai/openpilot)   
 모두 기트허브/랩에 공개되어 있으며
 착하게 도커로 공개하며 손쉽게 시험해 볼 수 있도록 되어있다.
 
