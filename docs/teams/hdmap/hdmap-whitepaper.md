@@ -54,7 +54,8 @@ HD Map은 아래와 같은 구조로 되어 있는데, 미국의 Uber의 라이�
      기업이 이끄는 편이기도 하고... 하지만 기타 자료(인지, 파이프라인, 스무딩 등)는 정말 잘 나와있으므로 공부하는데에는 정말 도움이 된다. [참고](https://github.com/ApolloAuto/apollo/tree/master/docs/specs)
   2. Autoware 는 PCD 기반에 Vector Mapper 등을 이용한 csv 파일에 좌표와 관련 요소의 속성을 넣어서 진행한다. 이 역시 OpenDrvie 호환과 Lanelet등 다양한 플랫폼을 지원하고 있다.
   > 참고로 모든 HD Map은 LiDAR를 통해 Pointcloud를 수집하면 mapping (autoware는 ndt mapping) 을 통해 말끔한 pcd 파일을 만들고 이를 3rd party 벡터 맵핑 프로그램으로 annotation을 하는 것으로 보인다.   
-  > 관련 프로그램으로는 오픈소스 기반 Vector Mapper와 TierIV에서 제공하는 Vector Mapper 프로그램이 있다.
+  > 관련 프로그램으로는 오픈소스 기반 Vector Mapper와 TierIV에서 제공하는 [Vector Mapper](https://tools.tier4.jp/feature/vector_map_builder/
+  )프로그램이 있다.
   
   
   그래서 일단은 HD MAP이라 하여도 간단하게 나누면
@@ -63,12 +64,13 @@ HD Map은 아래와 같은 구조로 되어 있는데, 미국의 Uber의 라이�
       1. NDT든, 뭐든 풀패키지 SLAM을 이용하여 mapping을 수행한다.   
       2. PCD 파일로 변환한다.   
       3. MappingTool (Autoware에서는 TierIV에서 제공하는 Tool이 있다.)   
-      4. 잘 ~~노가다~~ Annotation을 한다.
+      4. 잘 ~~노가다~~ Annotation을 한다.   
       5. RVIZ상에서 pcd와 csv를 서로 Align 한다. 잘 안맞는 Issue도 있다.   
       6. 데이터를 잘 사용한다.   
       
-  
+      [예시 영상](https://www.youtube.com/watch?v=OpvTeTaiXo4) 
   여기에는 Align과 GroundTruth, 보정 같은 이유로 라이다만이 아니라, GPS, IMU를 사용할 수 있도록 Autoware는 제공하고 있다.
+  
   
   
   
@@ -79,3 +81,4 @@ HD Map은 아래와 같은 구조로 되어 있는데, 미국의 Uber의 라이�
     4. https://github.com/fzi-forschungszentrum-informatik/lanelet2
     5. https://www.researchgate.net/publication/332228465_Open-Source_Tool_of_Vector_Map_for_Path_Planning_in_Autoware_Autonomous_Driving_Software
     6. https://redisle.tistory.com/9 -> 한국어블로그로 맵핑하는게 다 나와있다.
+    7. https://sdi4apps.eu/2016/03/journey-to-creating-drivenet-maps-open-data-real-time-road-maps-for-autonomous-driving-from-3d-lidar-point-clouds/ - 일반 Pcap 파일 및 gps로 mapping 하기 ndt 말고
