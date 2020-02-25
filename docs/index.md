@@ -7,6 +7,7 @@
   3. [차량HW/통신파트](./teams/hw&comms/)
   4. [차세대교통시스템 파트](./teams/transport_system/index.md)
   5. [Computer Vision part](/teams/vision/index.md)
+  6. [위치측위센서/HDMap 파트](./teams/hdmap/)
 
 ## Introduction
 ### 1. 우리는 자율차를 들어는 봤지, 타보지도 않은 사람들이다.
