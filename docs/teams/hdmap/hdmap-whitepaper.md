@@ -23,6 +23,7 @@
 
 ## HD Map 포맷과 구조
 HD Map은 아래와 같은 구조로 되어 있는데, 미국의 Uber의 라이벌인 Lyft가 공개한 자료이다.
+
 ![hdmap-layer](media/hdmap-layer.png)
 
 기본적으로 이미 존재하는 위성지도와 차량에 탑재된 GNSS 를 이용하여 추정하는 방식도 있지만 이 방식은 현재 내비게이션 같은 방식이다.   
@@ -32,8 +33,9 @@ HD Map은 아래와 같은 구조로 되어 있는데, 미국의 Uber의 라이�
 현재 대부분의 트렌드는 LiDAR의 도움을 받아 PointCloud를 만들고
 이를 이용해 SLAM으로 위치를 추정하고 또 GNSS를 나온 결과와 잘 섞어서 정확한 자동차의 위치를 얻는게 주력하고 있다. 동시에
 위치 추정 뿐만 아니라 차선, 표지판, 신호등, 교차로 주행 경로등 차에 탑재되는 센서의 Redunduancy를 높일 수 있는 다양한 요소들이 추가되고 있다.   
-그래서 아래 앞서 말한 Apollo의 지도는 아래와 같은 요소를 담고 있다.
-![apolloMap](media/apolloMapComponent.png]
+그래서 아래 앞서 말한 Apollo의 지도는 아래와 같은 요소를 담고 있다.   
+
+![apolloMap](media/apolloMapComponent.png)
 
 이미 이렇게 체계적으로 갖추어진 HD Map을 다시 새로이 설계하는건 시간이 낭비고, 존재하는 HD Map의 성능을 최대한 이끄는 연구와 여기에 새로운 요소를   
 추가하는 연구를 해야할 듯 싶다.
