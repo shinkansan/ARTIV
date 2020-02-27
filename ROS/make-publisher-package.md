@@ -25,7 +25,7 @@ Goto `image_sub_cpp` & `image_sub_py`로 들어가자, 아마 전 챕터 (패키
 맞는말이다. 이 것을 무작정하면 안되고
 Python도 버전이 있듯이 C++도 컴파일러가 다양하다. 그래서 우리는 ROS2에 사용되는 `ament_cmake`를 사용할 것이다. 추가적으로 ROS1는 `catkin`을 많이 쓴다.
    
-C++ 적용의 좋은점은, 파이썬보다 코드자체가 버전을 잘 안타서 ROS2에서 작성하다가 잘 안되서 혹은 사용하는 디펜던시가 ros1만 지원되는 상황이라면 과감하게 ros2에서 작성하던 코드를 쭉 긁어와서 ros1에서 컴파일을 할 수 있는 것이다. 물론 CmakeFile을 catkin 버전으로 수정해야되지만.
+C++ 적용의 좋은점은, 파이썬보다 코드자체가 버전을 잘 안타서 ROS2에서 작성하다가 잘 안되서 혹은 사용하는 디펜던시가 ros1만 지원되는 상황이라면 과감하게 ros2에서 작성하던 코드를 쭉 긁어와서 ros1에서 컴파일을 할 수 있는 것이다. 물론 CmakeFile을 catkin 버전으로 수정해야되지만., 또 물론 rclcpp가 아니라 ros.h 로 바뀐다.
 
 우선 cmakefile에 대한 개념을 위 글에서 이해했다면 이제는 ros1의 catkin 컴파일러 버전을 보도록 하자 [링크](http://wiki.ros.org/ko/ROS/Tutorials/catkin/CreatingPackage)
 
