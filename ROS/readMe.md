@@ -49,13 +49,19 @@ source ~/.bashrc
 
 ## What's in Repos
 ### 1. [image_rclpy.py](./image_rclpy.py)
-Connect ROS2 with Python
+Connect ROS2 with Python .. (그냥 예제 코드 스킵가능)
+
 ### 2. [ros2-ros1-bridge.md](./ros2-ros1-bridge.md)
+설치를 다했다면 ros1과 2를 연결하는 방법을 배워보자
+ 1. 예제 ros2로 webcam 띄우고, ros1의 rviz로 보기
 
 ### 3. [make-package-ros2.md](./make-package-ros2.md)
+ 패키지를 만들어보자, 기트허브에서 ros 전용으로 작성된 코드들을 이 챕터를 거치면 컴파일 해서 사용할 수 있다.
 
 ### 4. [make-publisher-package.md](./make-publisher-package.md)
 Publisher/Subscriber for Sensor input with C++ or Python
+ 토픽의 발행과 구독?에 대한 코드를 작성하면서 ros와 cpp를 어떻게 연동하는지 알아보자   
+ 그런 김에 rosbag 사용법과 topic 활용에 유용한 명령어도 알아보자
 
 __IMPORTANT__ require 1,2,3 courses
 
