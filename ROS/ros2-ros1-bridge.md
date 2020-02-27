@@ -15,7 +15,7 @@ After install ros1 & ros2, we've to establish inter connection solution called /
 > `echo "alias start_ros1='source /opt/ros/melodic/setup.bash'" >> ~/.bashrc`   
 > `echo "alias start_ros2='source /opt/ros/dashing/setup.bash'" >> ~/.bashrc`   
 
-Now you can activate ros1 or ros2 without sourcing. Just type `'start_ros1'` or `'start_ros2'`!   
+Now you can activate ros1 or ros2 without sourcing. Just type `start_ros1` or `start_ros2`!   
 Remember for applying changes of bashrc, open new terminal or type `source ~/.bashrc`      
 
 ### Type these commands manually (works everytime)
