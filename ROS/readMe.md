@@ -24,10 +24,10 @@ Connect ROS2 with Python
 ### 4. [make-publisher-package.md](./make-publisher-package.md)
 Publisher/Subscriber for Sensor input with C++ or Python
 
+__IMPORTANT__ require 1,2,3 courses
+
 ### 5. [유용한 초반 ROS 공부 블로그](./start-ros-begin.md)   
 
-###
-__IMPORTANT__ require 1,2,3 courses
 
 
 ## 공부법
