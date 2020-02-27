@@ -3,16 +3,45 @@ Author : Gwanjun Shin <br/>
 date : 2020.02.04.
 
 ## How to install
+ 
+ * ROS2 install 하기
+ 
  Goto [Link](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/#dashing-linux-ros1-add-pkgs) <br/>
  we use __ros2 dashing__ for our integrated SW. _Be aware that there are many version of ros2_
  
  
+ 
+ 
 ### installation final job
 we need to assign setup.bash file to bashrc. so that we don't have to source it as we open terminal
-```bash
-# type below command
-export source /opt/ros/dashing/setup.bash
+
+인스톨이 다 끝나면, 여기서 고려해야되는게 있다. ROS1도 깔고 2도 깔면 Terminal 창에서 그때그때 어떤 ROS를 사용할지는 골라줘야한다.
+
+즉 ros1은 melodic이라고 한다. `source /opt/ros/melodic/setup.bash` 를 치면 이 명령어를 __타입한 터미널은 melodic 명령어가 들어간다.__   
+그리고 ros2는 dashing 이라고 한다. `source /opt/ros/dashing/setup.bash`를 치면 이 명령어를 __타입한 터미널은 dashing 명령어가 들어간다.__ 
+
+원래 하나만 쓰는거면 터미널을 킬 때마다 자동으로 저 명령어가 타입되도록 ~/.bashrc (환경변수 설정같은거다 윈도우 치면 시작프로그램 설정?) 
+안에 기입해주면 된다. 
+
+자기가 bashrc 라는거에 뭔가 복사해서 이미 넣은 것 같다면, 무서워 하지말고
+`sudo nano ~/.bashrc`를 치면 무언가 많이 나올 것이다. 보통 `ALT+/` 를 치면 그 문서의 맨 아래로 내려가는데 거기에 위에 source ~ 뭐시기가 있는지 확인해보는 것도 좋고.. 바로 아래에 있는 명령어는 source ~ 뭐시기를 bashrc에 추가한다는 말이다. 
+
+만약 본인이 bashrc를 수정했다면 수정본은 __새로운 터미널을 열때부터 적용된다__, 만약 같은 터미널에서 적용된 버전을 보고 싶으면 
+   `source ~/.bashrc` 라고 치면된다.
+
+설명하면 source는 따라오는 스크립트를 실행한 터미널에 적용한다 하는 뜻이다.
 ```
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+> 오류가 나면 echo 앞에 sudo를 붙여 권한을 높일 필요가 있다.   
+
+그래서 위 명령어를 만약에 자기가 ROS1만 사용하겠다 라고 하면 저기다가 치면된다. 반대로 ros2면? melodic을 dashing 바꾸면 되겠죠?
+
+여튼 앞으로 ROS1과 ROS2를 번갈아 가면서 사용할텐데 우리 팀원 여러분들은 필요에 따라 source /opt/ros.~~ 이런 명령어를 수없이 치면서 바꿔야한다.   
+당연히 스크립트가 shortcut 있지만 기본적으로 언제나 먹히는 방법이니 외우자!
+
+
 
 ## What's in Repos
 ### 1. [image_rclpy.py](./image_rclpy.py)
