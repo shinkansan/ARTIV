@@ -37,9 +37,11 @@ rosbag 관련해서 실행하는 방법은 찾아봐도 된다. 그리고 rosbag
  4. 또한 rosbag info [bag파일] 치면 bag파일에 어떤 topic이 있는 지 확인 할 수 있다.
  
  그리고 이 과정에서 많이 쓰는 명령와 툴이 있다.
-  [링크를 봐도된다](https://snowdeer.github.io/ros2/2017/12/20/simple-command-of-ros2/)
+  [링크를 봐도된다](https://snowdeer.github.io/ros2/2017/12/20/simple-command-of-ros2/)   
+  
   [rqt 관련 필독!! 링크](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=11&ved=2ahUKEwjIlKr3jvHnAhUMIIgKHaRqAa0QFjAKegQICRAB&url=http%3A%2F%2Fwww.modulabs.co.kr%2F%3Fmodule%3Dfile%26act%3DprocFileDownload%26file_srl%3D664%26sid%3D92250d7710d8fe05ca840c6388b38a8c%26module_srl%3D334&usg=AOvVaw2PUJDoPZYy0wb1Deb27JWX)
-  위 자료는 그냥 꼭 읽어봐요 별로 안되용
+     
+  위 자료는 그냥 꼭 읽어봐요 양도 별로 안되용
   
   
   1.` ros2 topic echo /joint_state` #특정메시지 수신 --> dashing 환경 
