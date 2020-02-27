@@ -1,4 +1,4 @@
-# Making Publisher Package
+# Making Subscriber & Publisher Package
 
 ![example](media/cpp_py_example_1.png)
 
