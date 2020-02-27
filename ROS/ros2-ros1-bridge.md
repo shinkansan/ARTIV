@@ -37,7 +37,7 @@ note that melodic is stand for ros1 and dashing is stand for ros2
 ### ROS2 for broadcasting Webcam feed, ROS1 for visualizing
 > `ros2 run ros1_bridge dynamic_bridge --bridge-all-topics`    You can pass if you already execute this.
 > `ros2 run image_tools cam2image`   
-> 다른 터미널 실행 후 멜로딕 
+> 다른 터미널 실행 후 멜로딕    
 > `rviz` and add topic image
 
 Tip : You can try vice versa
