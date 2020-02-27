@@ -5,14 +5,26 @@ Making packaing in ROS2 is like insatll program into your computer.
 ## Install Colcon build dependency
 `sudo apt install python3-colcon-common-extensions`
 
+* 다른 디펜던시를 make 했다면 알 것이다. 보통 cmake를 쓰는데, 여기서는 colcon을 쓴다. ros2와 친해서.. (참고로 ros1은 catkin을 쓰는데 명령어는 검색해보자, 이것도 많이 쓴다. 대부분의 ros 관련 오픈소스가 catkin으로 작성되어있다.)
+물론 cmakefile은 규격을 따라서 cmake로도 된다!.
+
 
 ## C++ Version
+  ROS의 컴파일 시스템은 workspace라는 개념이 있는데 아래와 같은 구조에서 만드는 것이다. 그래서 폴더명을 보통 ros1 용 ws면 ros1_ws, 2면 ros2_ws 라고한다. 혹은 colcon_ws, catkin_ws 라고도 많이 한다.
+  
+
   1. First we have to make workspace which source code placed and builded in (for first time only)
     `mkdir -p ~/dev_ws/src`   
     `cd ~/dev_ws/src`   
-    `ros2 pkg create --build-type ament_cmake <package_name>`   
-    In this Tutorial we use `ros2 pkg create --build-type ament_cmake --node-name my_node my_package`
-    And Colcon build hierachy is `package > node`
+    `ros2 pkg create --build-type ament_cmake <package_name>`      
+    보통 패키지를 만들고 안에 src에 cpp를 그냥 만들어줘도 된다.
+    
+   우리는 아래 파라미터로 cpp를 하나 만들어 놓으면 초반 cmakefile을 생성해줘서 편해서 아래 명령어로 진행한다.
+       
+   In this Tutorial we use `ros2 pkg create --build-type ament_cmake --node-name my_node my_package`
+   And Colcon build hierachy is `package > node`   
+    
+   > Visual Studio로 치면 my_node는 일종의 cpp 파일이고, my_package는 project 이름이다. 
     
    Then, folder looks like below   
     
@@ -23,6 +35,10 @@ Making packaing in ROS2 is like insatll program into your computer.
             package.xml   
               src/   
                 my_node.cpp
+         
+ 나중에 같은 패키지안에 cpp 파일을 추가하고 싶으면 그 패키지 src안에 그냥 cpp 를 추가하고 cmakelist에 cpp를 추가하면 된다.
+ 
+ 다른 프로젝트를 만드는 것은 위의 명령어 또 하면되고.
                 
    2. And you can write your code in 'my_node.cpp'
    __Example__
