@@ -2,6 +2,8 @@
 Author : Gwanjun Shin <br/>
 date : 2020.02.04.
 
+* 한국어와 영어가 섞여있는데, 중복되는 말도 있습니다. ubuntu가 영어밖에서 안되서 작성하고 개인 컴으로 한글화 하는거라 양해바랍니다!
+
 ## How to install
  
  * ROS2 install 하기
