@@ -144,6 +144,14 @@ if __name__ == '__main__':
     __NOTICE : You need to match information same as Package.xml__
   
   
+# 해봐야 할 것!
+추가적으로 다양한 오픈소스들은 ros1으로 작성되어있는 경우가 있는데요 이 경우 여러분들은 멜로딕도 설치했으니, 멜로딕 모드로 전환하고
+멜로딕은 colcon 빌드가 아니라 catkin 이라는 컴파일러를 사용합니다. 한국어 블로그가 정말 많습니다. 이 ws 도 만들어보세요
+
+검색어 팁: catkin 빌드하기, ros catkin 컴파일 등등
+
+* 참고로 다음 챕터를 위해서면 ws 폴더명을 ros1_ws , ros2_ws 를 만드는 것을 추천드립니다. 그리고! 폴더명은 별 중요한게 아니라 지우고 다시 만들어도되요 폴더명은 그냥 본인 마음대로 적는거에요
+  
 ## Next
 Make Publisher for seonsor input
     
