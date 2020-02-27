@@ -23,7 +23,8 @@ Goto `image_sub_cpp` & `image_sub_py`로 들어가자, 아마 전 챕터 (패키
 
 > 기타 데이터셋   
 > 아래 코드는 Udacity의 자율주행데이터셋 rosbag (40G) 기준으로 동작합니다.   
-> 
+>  [링크](http://bit.ly/udacity-dataset-2-1)   
+> 너무 크면 그냥 대체할만한 다른 rosabag을 인터넷에서 찾는것도 좋아요!
 
 
 ## CMAKE 101
