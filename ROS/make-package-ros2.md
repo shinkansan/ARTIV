@@ -8,7 +8,6 @@ Making packaing in ROS2 is like insatll program into your computer.
 * 다른 디펜던시를 make 했다면 알 것이다. 보통 cmake를 쓰는데, 여기서는 colcon을 쓴다. ros2와 친해서.. (참고로 ros1은 catkin을 쓰는데 명령어는 검색해보자, 이것도 많이 쓴다. 대부분의 ros 관련 오픈소스가 catkin으로 작성되어있다.)
 물론 cmakefile은 규격을 따라서 cmake로도 된다!.
 
-
 ## C++ Version
   ROS의 컴파일 시스템은 workspace라는 개념이 있는데 아래와 같은 구조에서 만드는 것이다. 그래서 폴더명을 보통 ros1 용 ws면 ros1_ws, 2면 ros2_ws 라고한다. 혹은 colcon_ws, catkin_ws 라고도 많이 한다.
   
@@ -69,9 +68,18 @@ int main(int argc, char ** argv)
   Goto ~/dev_ws
   and `colcon build`
   
-4. Source it!
+4. Source it!   
+> 이 소스는 왜 사용하냐면요! 컴파일이 된 실행 파일을 ros2 run [패키지이름] [노드이름] 으로 실행 할 수 있어요.   
+> 보통 상식상으로 컴파일 되면 윈도우는 .exe 파일이 생성되는데 Linux 계열은 그렇게 안되거든요 직접 실행하는 방법은 ws안에 build 폴더안에서   
+> 그냥 실행 파일을 이름을 터미널에 치면되고요!
+
+우리는 ros2 용 패키지를 만든거니까, 빌드한 프로그램을 ros2 패키지로 등록하는 절차라고 보시면 됩니다.
+
   Inside dev_ws
+  
+  여튼 dev_ws안에서는    
   `source insatll/setup.bash`
+  >  __절대경로가 아닙니다.__ , 절대 경로로도 할 수 있어요, 이경우에 보통 ws를 홈 폴더에 넣으니 `source ~/dev_ws/install/setup.bash` 하면 되겠죠? (리눅스에서 ~/ 이뜻은 Home 폴더를 뜻하는 것입니다.)
 
 5. Run it   
   `ros2 run my_pakcage my_node`
