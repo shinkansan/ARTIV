@@ -27,8 +27,11 @@ __or You can just type manually (works everytime)__
 > `source /opt/ros/melodic/setup.bash `   
 > `roscore`   종료하지 말기   
 > 다른 터미널 실행!   
+> `source /opt/ros/melodic/setup.bash `    
 > `source /opt/ros/dashing/setup.bash`          
 > `ros2 run ros1_bridge dynamic_bridge --bridge-all-topics`      
+ _잠깐! 같은 터미널에서 두개의 환경을 왜 나란히 쳐요? --> ros1_bridge 패키지 안에는 ros1과 2를 둘다 사용하기 때문에 나란히 실행하는 걸 추천합니다._
+ 
 
 note that melodic is stand for ros1 and dashing is stand for ros2
 
