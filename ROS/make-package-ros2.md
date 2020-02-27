@@ -81,7 +81,7 @@ int main(int argc, char ** argv)
     `mkdir -p ~/dev_ws/src`   
     `cd ~/dev_ws/src`   
     `ros2 pkg create --build-type ament_python <package_name>`   
-    In this Tutorial we use `ros2 pkg create --build-type ament_python --node-name my_node my_package`
+    In this Tutorial we use `ros2 pkg create --build-type ament_python --node-name my_node_python my_package_python`
     And Colcon build hierachy is `package > node`
     
    Then, folder looks like below   
@@ -115,7 +115,7 @@ if __name__ == '__main__':
   
 4. Source it!
   Inside dev_ws
-  `source insatll/setup.bash`
+  `source install/setup.bash`
 
 5. Run it   
   `ros2 run my_pakcage_python my_node_python`
