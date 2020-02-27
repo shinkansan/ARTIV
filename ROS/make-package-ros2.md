@@ -131,6 +131,10 @@ if __name__ == '__main__':
    
 ## 3. Customize Install Setting
 
+  cpp package 만들면서 생성되는 CMAKE 관련해서는 다음 챕터 publisher package 만들기에 상세하게 적혀있습니다!!
+
+  두개를 보통 설정하는데, pkg create 명령어 하는 경우에는 상황에 자동생성되서 신경 안써도되긴 합니다.
+  
   1. Package.xml
     description and license contain TODO notes. 
     __AND Depencies Link__ 
