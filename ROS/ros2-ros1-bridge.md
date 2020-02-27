@@ -13,6 +13,8 @@ After install ros1 & ros2, we've to establish inter connection solution called /
 
 ## Add shortcut command to Activate ros1 and Bridge (옵션임!!)
 
+수동으로 할려면 아래로 내려가자
+
 > 1. `echo 'alias start_ros1_bridge"=( source /opt/ros/melodic/setup.bash && ( roscore & source ~/ros1_bridge_ws/install/setup.bash && sleep 1 && ros2 run ros1_bridge dynamic_bridge --bridge-all-topics ) && killall roscore ) || killall roscore"' >> ~/.bashrc `   
    
 > 2. ` echo 'alias start_ros1"=( source /opt/ros/melodic/setup.bash )"' >> ~/.bashrc `   
@@ -21,9 +23,7 @@ Then, you can simply activate ros1 and bridge with simple command `start_ros1_br
 And only for ros1 environment by `start_ros1`
 
 
-Topic으로
-
-or You can just type manually (works everytime)
+__or You can just type manually (works everytime)__
 > `source /opt/ros/melodic/setup.bash `   
 > `roscore`   종료하지 말기   
 > 다른 터미널 실행!   
