@@ -35,12 +35,16 @@ __IMPORTANT__ require 1,2,3 courses
  2. ROS1-melodic ROS2-dashing 를 설치한다. (설치법은 위에 있음)
  3. pinkwink에 있는 ROS2 관련 예제를 수행한다.
  4. ros2-ros1 bridge를 깔고, md에 있는 예제를 수행한다.
- 5. ROS에서 C++ Python 둘다 패키지를 만들 수 있도록 예제로 만들어본다.
- 6. Subscriber 프로그램을 만들어보자! (image_rclpy 는 Python이고 CPP로 만드는게 과제다.)
- 7. Publisher를 만들어보면서 각 msg 타입은 뭔지, 어떤 식으로 검색하고 정보를 얻을 수 있는지 깨닫는다. (만들어보는게 과제다)
+ 5. ROS에서 C++ Python 둘다 패키지를 만들 수 있도록 예제로 만들어본다. __(예제를 따라서 만들어보기 (과제))__
+ 6. Subscriber 프로그램을 만들어보자! (image_rclpy 는 Python이고 CPP로 만드는게 과제다.) -> 필자가 깜빡하고 make-publisher-package.md에 다 해버렸다. 그래도 각자 코드를 하나하나 수정하고 넣어보면서 공부해도록 하자.
+ 
+ 7. Publisher를 만들어보면서 각 msg 타입은 뭔지, 어떤 식으로 검색하고 정보를 얻을 수 있는지 깨닫는다. __(만들어보는게 과제다)__
  8. RVIZ 시각화와 RQT를 공부한다. (RQT는 깊게 말고, 통합SW 팀이 주로한다.) (곧 통합 SW에서 RQT 관련 설치 매뉴얼을 배포할것이다.)
  9. ROS에 대해 감은 잡혔다 (1/100) 
  
 이제 남이 올린 코드를 수정하면서 배워보자!
+
+7번 퍼플리셔 과제 상세.
+make-publisher-package.md에 joinst state에 보면 속도가 나오는데 KM/H 이다 이를 M/S를 바꿔서 새로 publish 해보자, 이경우 JointState 가 아닌 새로운 토픽 /ms_speed 로 만들어라 형은 Float64 type으로 진행하여라
 
 
