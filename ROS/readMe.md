@@ -41,6 +41,8 @@ source ~/.bashrc
 여튼 앞으로 ROS1과 ROS2를 번갈아 가면서 사용할텐데 우리 팀원 여러분들은 필요에 따라 source /opt/ros.~~ 이런 명령어를 수없이 치면서 바꿔야한다.   
 당연히 스크립트가 shortcut 있지만 기본적으로 언제나 먹히는 방법이니 외우자!
 
+그리고 ros2로 bashrc에 적용했다해도, ros1으로 바꾸고 싶으면 그냥 터미널에 `source /opt/ros/melodic/setup.bash` 치면 바뀐다. 맘대로 설정하자.
+
 
 
 ## What's in Repos
