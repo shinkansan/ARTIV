@@ -12,8 +12,6 @@ date : 2020.02.04.
  we use __ros2 dashing__ for our integrated SW. _Be aware that there are many version of ros2_
  
  
- 
- 
 ### installation final job
 we need to assign setup.bash file to bashrc. so that we don't have to source it as we open terminal
 
@@ -65,7 +63,9 @@ Publisher/Subscriber for Sensor input with C++ or Python
 
 __IMPORTANT__ require 1,2,3 courses
 
-### 5. [유용한 초반 ROS 공부 블로그](./start-ros-begin.md)   
+### 5. [유용한 ROS2 관련 사이트 및 블로그](./start-ros-begin.md)   
+RTOS, RMW, RTPS 등 어려운 용어들이 많이 사용되는 ROS 설명글들과
+service, msg등 다양한 타입의 예제를 다룬 ROS 사이트를 적어놓습니다. 각자 좋은 자료 찾으면 추가해주세요!
 
 
 
