@@ -9,7 +9,7 @@ After install ros1 & ros2, we've to establish inter connection solution called /
 0. You need to finish ROS1 & ROS2 Install via [index.ros.org](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 1. our development environment is based on Ubuntu 18.04 LTS
 2. Install bridge package by `sudo apt install ros-dashing-ros1-bridge`
-3. ROS2 must be default ROS system on Terminal --> `source /opt/ros/dashing/setup.bash' must be on ./bashrc
+
 
 ## Add short command to activate ros1 or ros2 (optional)
 > `echo "alias start_ros1='source /opt/ros/melodic/setup.bash'" >> ~/.bashrc`   
