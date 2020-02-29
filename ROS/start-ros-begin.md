@@ -42,6 +42,12 @@ https://refe.tistory.com/entry/configure-make-make-install-%EC%9D%98%EB%AF%B8
 딥러닝에서 실시간를 해야될 떄
 https://devblogs.nvidia.com/int8-inference-autonomous-vehicles-tensorrt/
 
+한 토픽을 Subscribing 했을 때 Delay 여 알 수 있을까?
+https://answers.ros.org/question/213635/how-can-i-measure-the-delay-in-a-multisystem-ros/
+
+만약 Delay가 발생하면 어떻게 하면 좋을까
+(고민)
+
 OpenCV dll. 관련 프로그램 배포시 팁
 https://darkpgmr.tistory.com/50
 
