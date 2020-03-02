@@ -126,7 +126,7 @@ if __name__ == '__main__':
   `source install/setup.bash`
 
 5. Run it   
-  `ros2 run my_pakcage_python my_node_python`
+  `ros2 run my_package_python my_node_python`
    
    
 ## 3. Customize Install Setting
