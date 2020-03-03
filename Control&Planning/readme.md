@@ -8,11 +8,13 @@
   2. [PID Control](http://daddynkidsmakers.blogspot.com/2015/09/pid.html)
   3. [Model Predictive Control](https://hyonlim.tistory.com/m/2)
   
-[Path planning 관련]  
-  4. [A star algorithm 설명 블로그](http://www.gisdeveloper.co.kr/?p=3897)  
+[Path planning 관련]    
+
+> 4. [A star algorithm 설명 블로그](http://www.gisdeveloper.co.kr/?p=3897)  
   
-[Hybrid A star 관련 github 주소] 혹시 다른 Hybrid A star 관련된 좋은 자료 있으면 여기에 추가해주세요  
-  5. [Hybrid A star algorithm 1](https://github.com/karlkurzer/path_planner)  
-  6. [Hybrid A star algorithm 2](https://github.com/tejus-gupta/hybrid-astar-planner)  
-  7. [Hybrid A star algorithm 3(긴 트럭이 주차하는 경우)](https://github.com/AtsushiSakai/HybridAStarTrailer)   
+[Hybrid A star 관련 github 주소] 혹시 다른 Hybrid A star 관련된 좋은 자료 있으면 여기에 추가해주세요    
+
+> 5. [Hybrid A star algorithm 1](https://github.com/karlkurzer/path_planner)  
+> 6. [Hybrid A star algorithm 2](https://github.com/tejus-gupta/hybrid-astar-planner)  
+> 7. [Hybrid A star algorithm 3(긴 트럭이 주차하는 경우)](https://github.com/AtsushiSakai/HybridAStarTrailer)   
      7번은 해당이 안될수도 있지만 일단 링크 넣어놨어요
