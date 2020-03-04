@@ -34,7 +34,7 @@ CAN 통신과 관련된 hardware, software(data 수신, simulation 등)를 이�
 OBD2-9pin케이블과 9pin-9pin 케이블 연결하고 그것을 컴퓨터에 연결한 CAN controller와 연결했다.    
 ![사진](./media/test_3.jpg)    
 다 놓고 보니 그럴싸하다.    
-컴퓨터가 CAN controller를 인식할 수 있게 드라이버를 설치하고 CAN 데이터를 받아오는 software를 설치했다.    
+컴퓨터가 CAN controller를 인식할 수 있게 드라이버를 설치하고 데이터를 받아오는 software를 설치했다.    
 이제 테스트 해볼 시간이다.
 
 ## 첫 번째 문제
