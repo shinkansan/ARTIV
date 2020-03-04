@@ -19,3 +19,4 @@
   3. [센서 구성과 전원관리 part1](./sensor_management.md)
   4. [CAN 통신이란 무엇인가? part1](./what_is_can1.md)
   5. [CAN 통신이란 무엇인가? part2](./what_is_can2.md)
+  6. [차량과 컴퓨터를 연결해보자! part1](./try_to_can1.md)
