@@ -60,14 +60,16 @@ Connect ROS2 with Python .. (그냥 예제 코드 스킵가능)
 Publisher/Subscriber for Sensor input with C++ or Python
  토픽의 발행과 구독?에 대한 코드를 작성하면서 ros와 cpp를 어떻게 연동하는지 알아보자   
  그런 김에 rosbag 사용법과 topic 활용에 유용한 명령어도 알아보자
+ 
+### 5. [ROS2 Launch File Example](./ros2-launch-file.md)
 
 __IMPORTANT__ require 1,2,3 courses
 
-### 5. [유용한 ROS2 관련 사이트 및 블로그](./start-ros-begin.md)   
+### 6. [유용한 ROS2 관련 사이트 및 블로그](./start-ros-begin.md)   
 RTOS, RMW, RTPS 등 어려운 용어들이 많이 사용되는 ROS 설명글들과
 service, msg등 다양한 타입의 예제를 다룬 ROS 사이트를 적어놓습니다. 각자 좋은 자료 찾으면 추가해주세요!
 
-### 6. [ROS관련 디펜던시 설명서](./ros_py_docs.md)
+### 7. [ROS관련 디펜던시 설명서](./ros_py_docs.md)
 rclcpp, rclpy 등 디펜던시의 기초 설명 및 참고자료 링크를 담았습니다.
 
 
@@ -86,7 +88,7 @@ rclcpp, rclpy 등 디펜던시의 기초 설명 및 참고자료 링크를 담�
  
 이제 남이 올린 코드를 수정하면서 배워보자!
 
-7번 퍼플리셔 과제 상세.
-make-publisher-package.md에 joinst state에 보면 속도가 나오는데 KM/H 이다 이를 M/S를 바꿔서 새로 publish 해보자, 이경우 JointState 가 아닌 새로운 토픽 /ms_speed 로 만들어라 형은 Float64 type으로 진행하여라
+* 7번 퍼플리셔 과제 상세.
+ make-publisher-package.md에 joinst state에 보면 속도가 나오는데 KM/H 이다 이를 M/S를 바꿔서 새로 publish 해보자, 이경우 JointState 가 아닌  새로운 토픽 /ms_speed 로 만들어라 형은 Float64 type으로 진행하여라 [Answer](./speed_ms_cpp)
 
 
