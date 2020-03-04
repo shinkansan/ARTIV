@@ -20,7 +20,7 @@ rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr pub;
 void joint_callback(const sensor_msgs::msg::JointState::SharedPtr msg){
  currentSpeed = msg->velocity[0];
  auto pub_message = std::make_shared<std_msgs::msg::Float64>();
- pub_message->data = currentSpeed*3.6;
+ pub_message->data = currentSpeed/3.6;
  pub->publish(pub_message);
 
  cout << "Got " << currentSpeed << " in km/h -> Publish " << to_string(pub_message->data) << " in m/s" << endl;
