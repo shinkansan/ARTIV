@@ -10,5 +10,5 @@
 __YOUR_PDF_EXTERNAL_LINK__ is a trello pdf link   
 You can get this link by 
 
-  ![img](docs/media/trello_link_help_2.jpg)
+  ![img](media/trello_link_help_2.jpg)
   
