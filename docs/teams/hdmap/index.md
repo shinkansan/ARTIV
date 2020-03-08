@@ -5,3 +5,8 @@
 
 ## devlog #1
   1. [다른 회사의 hd map 따라하기](hdmap-whitepaper.md)
+  
+  
+## Autoware vs Apollo analysis (korean)
+  1. [Baidu Apollo](./apollo_analysis.md)
+  2. [TierIV Autoware](./autoware_analysis.md)
