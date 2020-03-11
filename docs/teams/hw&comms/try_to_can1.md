@@ -16,8 +16,8 @@ CAN 통신과 관련된 hardware, software(data 수신, simulation 등)를 이�
 하여튼 알아본 결과 OBD2-9Pin(CAN) 케이블과 9Pin-9Pin(CAN) 케이블 그리고 마지막으로 CAN 컨트롤러(USB 포트가 있음)가 필요하다.    
 그림으로 그리면 다음과 같다. (못그렸지만 이해 좀...ㅎ)    
 ![사진](./media/diagram0.jpg)    
-[Embedded system korea](http://www.eskorea-shop.kr/, "es-korea") 사이트에서 모든 케이블을 구매했다. (CAN controller 포함 - Kvaser사)    
-위 그림에서 가운데에 9Pin-9Pin 케이블이 필요한 이유는 양 쪽이 전부 male이기 때문이다.    
+[Embedded system korea](http://www.eskorea-shop.kr/, "es-korea") 사이트에서 모든 케이블을 구매했다. (CAN Interface 포함 - Kvaser사)    
+위 그림에서 가운데에 9Pin-9Pin 케이블이 필요한 이유는 양 쪽이 전부 male이기 때문이다. (Kvaser사 제품은 중간에 9Pin-9Pin 케이블이 필요 없음)    
 구매는 사이트에서 키워드만 입력하면 되니 만약에 필요하면 참고하면 될 듯하다.
 
 ## 물품 도착
