@@ -62,6 +62,7 @@ Publisher/Subscriber for Sensor input with C++ or Python
  그런 김에 rosbag 사용법과 topic 활용에 유용한 명령어도 알아보자
  
 ### 5. [ROS2 Launch File Example](./ros2-launch-file.md)
+### 5-2. [ROS nodelet example](./ros2-launch-file.md#what-is-ros-nodelet)
 
 __IMPORTANT__ require 1,2,3 courses
 
