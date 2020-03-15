@@ -8,3 +8,32 @@ rosbag이란 node와 node간의 topic의 통신을 시계열로 모두 수집한
 https://epan-utbm.github.io/utbm_robocar_dataset/
 
 아래 링크에 들어가서 `rosbag play` 명령을 인터넷에서 찾아서 돌려보자
+
+---
+# ROSBAG dedicate server
+
+Since rosbag is large and hard to download (most of server is not good as dedicate server)   
+We collect ROSBAG from open dataset web or our Autonomous Car platform
+
+Dedicate Server address
+> [ktk1501.synology.me:5000](https://ktk1501.synology.me:5000)
+
+### Server saving guideline
+
+#### Folder Structure
+```
+/Non-image
+..../lidar
+..../radar
+..../All-in-one
+........{order}-{lengthOfFile}.bag
+........{order}-bagInfo.txt
+/Imgae
+```
+
+#### baginfo
+Scrap terminal text by `rosbag info` to text file   
+and add links to original opensource dataset link for copyright issue
+
+
+![example](https://i.imgur.com/ArmzfZ6.png)
