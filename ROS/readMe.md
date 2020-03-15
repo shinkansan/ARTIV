@@ -60,6 +60,7 @@ Connect ROS2 with Python .. (그냥 예제 코드 스킵가능)
 Publisher/Subscriber for Sensor input with C++ or Python
  토픽의 발행과 구독?에 대한 코드를 작성하면서 ros와 cpp를 어떻게 연동하는지 알아보자   
  그런 김에 rosbag 사용법과 topic 활용에 유용한 명령어도 알아보자
+### 4-1. [rosbag leverage and example](./make-publisher-package.md#rosbag-실행)
  
 ### 5. [ROS2 Launch File Example](./ros2-launch-file.md)
 ### 5-2. [ROS nodelet example](./ros2-launch-file.md#what-is-ros-nodelet)
