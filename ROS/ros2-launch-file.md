@@ -27,3 +27,11 @@ def generate_launch_description():
         )
     ])
 ```
+
+
+
+
+## What is ROS nodelet
+https://answers.ros.org/question/230972/what-is-a-nodelet/
+
+
