@@ -38,6 +38,7 @@ date : 2020.03.16.
   [리눅스 명령어 모음 Best 50](https://dora-guide.com/linux-commands/)
   
   ### 4. 마크다운 문법 
+   > :warning: 현대인이라면 배워야되는 필수 문법!, emoji를 어떻게 넣었는지 궁금하다면? [링크](https://gist.github.com/rxaviers/7360908)
   
 ## RQT 매뉴얼
 
