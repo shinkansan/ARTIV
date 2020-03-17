@@ -30,7 +30,7 @@ date : 2020.03.16.
   처음 설정했던 복잡한 비밀번호 대신 간단한 사용자 비밀번호를 통해 개발 속도를 조금이나마 향상시킬수 있어요 ㅎㅎ..
   
   
-  `passwd 계정명`: 기존 비밀번호 입력 후 새 비밀번호 입력
+  __`passwd 계정명`: 기존 비밀번호 입력 후 새 비밀번호 입력__
   
   ### 3. 리눅스 기초 명령어 이해
   
@@ -38,9 +38,9 @@ date : 2020.03.16.
   우분투를 사용하기 전 기초 명령어의 원리와 뜻을 알고 시작하면 큰 도움이 됩니다.
   가독성 좋은 링크를 첨부합니다.
   
-  [리눅스 기본 명령어/자주 쓰는 명령어](https://itholic.github.io/linux-basic-command/)
+  __[리눅스 기본 명령어/자주 쓰는 명령어](https://itholic.github.io/linux-basic-command/)__
   
-  [리눅스 명령어 모음 Best 50](https://dora-guide.com/linux-commands/)
+  __[리눅스 명령어 모음 Best 50](https://dora-guide.com/linux-commands/)__
   
   ### 4. 마크다운 문법 
   
