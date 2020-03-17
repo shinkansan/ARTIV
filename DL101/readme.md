@@ -25,7 +25,8 @@ Author : Gwanjun Shin
   
 3. 네트워크에서 많이 사용하는 용어 알기 [encyclopedia.md](encyclopedia.md)
 
-4. HW -> GPU 성능 관계와 최적화를 위한 간단한 개념 정리
+4. HW -> GPU 성능 관계와 최적화를 위한 간단한 개념 정리   
+  1. [모델 경량화](model-optimization)
 5. 모델 Deploy와 안정적인 사용 방법 예시
 
 ## 심화 실습
