@@ -20,4 +20,4 @@
   
   그 방법에 대한 링크도 첨부합니다.
   
-  [우분투 시작 프로그램/명령어 자동 실행] (https://nonnos11.tistory.com/21)
+  [우분투 시작 프로그램/명령어 자동 실행](https://nonnos11.tistory.com/21)
