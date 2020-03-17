@@ -2,7 +2,7 @@
 
   1. 우분투 화면 좌측 하단의 'Show Applications' 클릭
   
-  2. 보라색 아이콘의 'Startup Applications Preferences' 클릭
+  2. 보라색 아이콘의 'Startup Applications Preferences'를 찾아서 클릭
   
   3. Add를 누르고, __Name : `Hangul1` , command : `xmodmap -e 'remove mod1 = Alt_R'`__ 입력 후 Save
   
