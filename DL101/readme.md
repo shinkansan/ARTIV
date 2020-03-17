@@ -12,6 +12,9 @@ Author : Gwanjun Shin
 
 > [Google Colab](https://zzsza.github.io/data/2018/08/30/google-colab/)
 
+#### :loudspeaker: 신관준의 DL101 PPT 자료 (LIVE로 만들고 있음, 실시간으로 진행상황이 업데이트됩니다.) [링크](https://dgistackr-my.sharepoint.com/:p:/g/personal/shinkansan_dgist_ac_kr/EWgcbM-pK89HguSDCcR0b_YBT2YrO-JyVmdz0wE0SqniQQ?e=TvGBHe)
+> :shipit: 외부 유출 삼가해주세요~
+
 ## 기본 커리큘럼
 
 1. 프레임워크 (케라스, 파이토치) 공부   
