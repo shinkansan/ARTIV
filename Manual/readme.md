@@ -20,18 +20,11 @@ date : 2020.03.16.
   
   [우분투 18.04 한영키 사용 및 한글 입력하기](https://pangtrue.tistory.com/70) 
   
-  한글 및 한자 키 맵핑을 우분투 재실행 때마다 설정해주어야하기에, 프로그램이 시작될 때 커맨드가 자동으로 실행되도록 설정해둡시다.
+  #### 일련의 과정을 끝냈다면, 아래 매뉴얼을 참고하여 프로그램이 시작될 때 커맨드가 자동으로 실행되도록 설정해줍시다.
   
-  #### 1. 좌측 하단의 'Show Applications' 클릭 
-  #### 2. 보라색 아이콘의 'Startup Applications Preferences' 클릭
-  #### 3. Add를 누르고, Name은 Hangul1 command에는 `xmodmap -e 'remove mod1 = Alt_R'` 입력 후 Save
-  #### 4. Add를 누르고, Name은 Hangul2 command에는 `xmodmap -e 'keycode 108 = Hangul'` 입력 후 Save
-  #### 5. Add를 누르고, Name은 Hangul3 command에는 `xmodmap -e 'remove control = Control_R''` 입력 후 Save
-  #### 6. Add를 누르고, Name은 Hangul4 command에는 `xmodmap -e 'keycode 105 = Hangul_Hanja'` 입력 후 Save
-  #### 7. Add를 누르고, Name은 Hangul5 command에는 `xmodmap -pke > ~/.Xmodmap` 입력 후 Save
-  #### 8. close하고 재부팅하면 이제 한영키를 반영구적으로 사용할 수 있습니다~!
- 
- 
+  __[우분투 시작 명령어 자동 실행 매뉴얼 (abt 한영키)](https://github.com/shinkansan/ARTIV/blob/master/Manual/Startup_Hangul_Setting.md)__
+  
+  
   ### 2. 사용자 비밀번호를 쉽게쉽게
   
    정말 사소할 수도 있지만, 우분투로 코딩 할 때 sudo를 많이 사용하고 그 때마다 사용자 비밀번호를 입력해야합니다.~~개귀찮음~~
