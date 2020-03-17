@@ -26,6 +26,8 @@ Goto `image_sub_cpp` & `image_sub_py`로 들어가자, 아마 전 챕터 (패키
 >  [링크](http://bit.ly/udacity-dataset-2-1)   
 > 너무 크면 그냥 대체할만한 다른 rosabag을 인터넷에서 찾는것도 좋아요!
 
+> ARTIV rosbag dedicate server http://ktk1501.synology.me:5000/
+
 
 ## rosbag 실행
 rosbag 관련해서 실행하는 방법은 찾아봐도 된다. 그리고 rosbag 패키지가 dashing에는 없다 즉 melodic으로 실행하고 bridge를 이용해서
