@@ -14,9 +14,21 @@ date : 2020.03.16.
   
   한글 입력에 성공하더라도 `ㅎㅏㄴㄱㅡㄹ` 처럼 깨져서 입력되었고, 한영키 바인딩 설정과 UIM 패키지 통해 해결할 수 있었습니다!
   
-  아래 링크에 상세히 설명되어 있습니다.    
+  아래 링크에 상세히 설명되어 있습니다. 아래 링크에서 마지막 단계, 한글 및 한자 키 맵핑을 하지말고 다시 여기로 돌아오세요. 
   
-  [우분투 18.04 한영키 사용 및 한글 입력하기](https://pangtrue.tistory.com/70)   
+  [우분투 18.04 한영키 사용 및 한글 입력하기](https://pangtrue.tistory.com/70) 
+  
+  한글 및 한자 키 맵핑을 우분투 재실행 때마다 설정해주어야하기에, 프로그램이 시작될 때 커맨드가 자동으로 실행되도록 설정해둡시다.
+  
+  #### 1. 좌측 하단의 'Show Applications' 클릭 
+  #### 2. 보라색 아이콘의 'Startup Applications Preferences' 클릭
+  #### 3. Add를 누르고, Name은 Hangul1 command에는 `xmodmap -e 'remove mod1 = Alt_R'` 입력 후 Save
+  #### 4. Add를 누르고, Name은 Hangul2 command에는 `xmodmap -e 'keycode 108 = Hangul'` 입력 후 Save
+  #### 5. Add를 누르고, Name은 Hangul3 command에는 `xmodmap -e 'remove control = Control_R''` 입력 후 Save
+  #### 6. Add를 누르고, Name은 Hangul4 command에는 `xmodmap -e 'keycode 105 = Hangul_Hanja'` 입력 후 Save
+  #### 7. Add를 누르고, Name은 Hangul5 command에는 `xmodmap -pke > ~/.Xmodmap` 입력 후 Save
+  #### 8. close하고 재부팅하면 이제 한영키를 반영구적으로 사용할 수 있습니다~!
+ 
  
   ### 2. 사용자 비밀번호를 쉽게쉽게
   
@@ -38,7 +50,6 @@ date : 2020.03.16.
   [리눅스 명령어 모음 Best 50](https://dora-guide.com/linux-commands/)
   
   ### 4. 마크다운 문법 
-   > :warning: 현대인이라면 배워야되는 필수 문법!, emoji를 어떻게 넣었는지 궁금하다면? [링크](https://github.com/StylishThemes/GitHub-Dark/wiki/Emoji)
   
 ## RQT 매뉴얼
 
