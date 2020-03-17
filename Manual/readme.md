@@ -44,7 +44,9 @@ date : 2020.03.16.
   
   __[리눅스 명령어 모음 Best 50](https://dora-guide.com/linux-commands/)__
   
-  ### 4. 마크다운 문법 
+  ### 4. 마크다운 문법 (github 디렉토리 작성법)
+    ㅇ
+  
   
 ## RQT 매뉴얼
 
