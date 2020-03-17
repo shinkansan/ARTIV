@@ -78,8 +78,10 @@ int main(int argc, char ** argv)
   Inside dev_ws
   
   여튼 dev_ws안에서는    
+  
+ > :warning: **YOU MUST TYPE BELOW COMMANDS**, it Regist Complied Src to ROS2 run   
   `source insatll/setup.bash`
-  >  __절대경로가 아닙니다.__ , 절대 경로로도 할 수 있어요, 이경우에 보통 ws를 홈 폴더에 넣으니 `source ~/dev_ws/install/setup.bash` 하면 되겠죠? (리눅스에서 ~/ 이뜻은 Home 폴더를 뜻하는 것입니다.)
+  > :warning: __절대경로가 아닙니다.__ , 절대 경로로도 할 수 있어요, 이경우에 보통 ws를 홈 폴더에 넣으니 `source ~/dev_ws/install/setup.bash` 하면 되겠죠? (리눅스에서 ~/ 이뜻은 Home 폴더를 뜻하는 것입니다.)
 
 5. Run it   
   `ros2 run my_package my_node`
