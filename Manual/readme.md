@@ -1,4 +1,4 @@
-#  기본 매뉴얼 정리
+#  매뉴얼 정리
 Author : Juho Song <br/>
 date : 2020.03.16.
 
