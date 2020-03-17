@@ -64,4 +64,4 @@ date : 2020.03.16.
   
 ## 1. ROS RQT, RViz 매뉴얼
 
-  다 날라가서 다시 해야한다... 일단 주요 링크 정리 https://github.com/shinkansan/ARTIV/blob/master/Manual/RQT.md 
+  다 날라가서 다시 해야한다 ㅅㅂ 낼 일나서 할래... 일단 주요 링크 정리 https://github.com/shinkansan/ARTIV/blob/master/Manual/RQT.md 
