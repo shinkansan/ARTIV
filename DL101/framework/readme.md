@@ -37,6 +37,8 @@ Rule:
 
 > :warning: 두 프레임워크의 차이를 보는 것이라, 귀찮더라도 인터넷에 {framework이름} MNIST/ 개 고양이 인식 등 키워드를 입력해서 합니다.
 
+[Dog&Cats in Keras on Colab](http://daddynkidsmakers.blogspot.com/2019/06/blog-post_5.html)
+[Dog&Cats in Pytorch on Colab](https://www.kaggle.com/lmadhuranga/dog-cat-classifier-pretrained-pytorch)
 제출사항에 포함됩니다.
 
 
