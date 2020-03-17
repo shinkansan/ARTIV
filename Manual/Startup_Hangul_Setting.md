@@ -1,6 +1,6 @@
 # 시작 프로그램으로 한글키 설정 커맨드 자동 실행시키기
 
-  1. 우분투 화면 좌측 하단의 'Show Applications' 클릭 
+  __1. 우분투 화면 좌측 하단의 'Show Applications' 클릭 
   
   2. 보라색 아이콘의 'Startup Applications Preferences' 클릭
   
