@@ -4,7 +4,7 @@
   
   __2. 보라색 아이콘의 'Startup Applications Preferences' 클릭__
   
-  __3.__ Add를 누르고, Name : `Hangul1` , command : `xmodmap -e 'remove mod1 = Alt_R'` 입력 후 Save
+  __3.__ Add를 누르고, __Name : `Hangul1` , command : `xmodmap -e 'remove mod1 = Alt_R'__` 입력 후 Save
   
   __4.__ Add를 누르고, Name : `Hangul2` , command : `xmodmap -e 'keycode 108 = Hangul'` 입력 후 Save
   
