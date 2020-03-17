@@ -10,6 +10,8 @@ Author : Gwanjun Shin
   
 > :warning: GPU가 없는 노트북이어도, MNIST 같은 간단한 예제를 연산이 가능하니, 그냥 돌려보것에 의미를 두고 모든 코드 실습에 참여 할 것.
 
+> [Google Colab](https://zzsza.github.io/data/2018/08/30/google-colab/)
+
 ## 기본 커리큘럼
 
 1. 프레임워크 (케라스, 파이토치) 공부   
