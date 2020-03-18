@@ -14,8 +14,7 @@
   ##
   ### 2. 활용예제 : ROS Image subscriber delay
   
-  
-  **개요 :
+  __개요 :__
   
              5Hz로 /camera/image_raw로 이미지를 스트리밍하는 rosbag 사용, 
             
@@ -25,7 +24,7 @@
              
              (initialized with queue = 1)
              
-  **예상 결과 :
+  __예상 결과 :__
             
              queue 크기가 1이므로 subscriber는 최신 프레임을 처리하고 그 동안 다른 모든 프레임을 건너 뛰어야한다. 
             
@@ -34,7 +33,7 @@
              이로 인해, 고르지는 않지만 lag이 없는 비디오가 생성되어야 함.(fps가 낮지만 rosbag stream delay가 없는)
              
  
-  **실제 결과 :
+  __실제 결과 :__
             
              published stream 뒤에 subscriber가 지연된다. 
             
@@ -46,13 +45,13 @@
              
              rosbag stream을 중지해도, subscriber는 queue가 1임에도 queue의 이미지를 계속 처리한다.
             
-  **naive solution :
+  __naive solution :__
             
              subscriber의 버퍼를 매우 크게 설정하면, 앞의 예상 결과 대로 실행된다.
              
  `self.subscriber = rospy.Subscriber("/camera/image_raw", Image, self.callback, queue_size = 1, buff_size=2**24)`
              
-  **fundamental solution :
+  __fundamental solution :__
             
              버퍼 솔루션은 clean하지 않다.
              
@@ -70,7 +69,7 @@
              
              문제가 여전히 지속된다면, publisher의 transport_hint를 UDP로 변경해본다. (real driver에서는 가능한데, rosbag에서는 힘듬)
              
- **additional solution :
+ __additional solution :__
             
              image나 point clouds와 같은 대형 messages로 작업 할 때, `nodelet` 사용을 추천한다.
              
