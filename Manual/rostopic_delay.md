@@ -50,8 +50,9 @@
              subscriber의 버퍼를 매우 크게 설정하면, 앞의 예상 결과 대로 실행된다.
              
  `self.subscriber = rospy.Subscriber("/camera/image_raw", Image, self.callback, queue_size = 1, buff_size=2**24)`
-             
-  __fundamental solution :__
+ 
+ 
+ __fundamental solution :__
             
              버퍼 솔루션은 clean하지 않다.
              
