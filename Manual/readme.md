@@ -64,7 +64,7 @@ date : 2020.03.16.
   
   ##
 
-## rostopic delay 매뉴얼
+## [rostopic delay 매뉴얼](https://github.com/shinkansan/ARTIV/blob/master/Manual/rostopic_delay.md)
 
 ## ROS RQT, RViz 매뉴얼
 
