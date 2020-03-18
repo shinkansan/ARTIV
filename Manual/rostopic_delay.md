@@ -56,9 +56,9 @@
             
              버퍼 솔루션은 clean하지 않다.
              
-             image_view 노드는 cv_bridge + opencv와 더불어 많은 리소스를 사용하기에 이미지 자체를 지연시키는 경향이 있고,
+             image_view 노드는 cv_bridge + opencv와 더불어 많은 리소스를 사용하기에 이미지 자체를 지연시키는
              
-             그렇기에 topic stream에서의 Delay를 계산하려는 접근 자체가 잘못되었다.
+             경향이 있고, 그렇기에 topic stream에서의 Delay를 계산하려는 접근 자체가 잘못되었다.
              
              publisher가 ros transport hint를 변경하지 않는다면, 서로 다른 2개의 노드에서 image topic을 
              
