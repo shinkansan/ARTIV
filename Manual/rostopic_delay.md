@@ -18,7 +18,7 @@
   
              5Hz로 /camera/image_raw로 이미지를 스트리밍하는 rosbag 사용, 
             
-             참조를 위해 이미지를 display하는 image_view 노드 (5Hz로 display),
+             참조를 위해 이미지를 display하는 image_view 노드 사용 (5Hz로 display),
              
              (image_view 노드와 지연시간을 비교하기 위한 이미지를 display) rospy subscriber 
              
