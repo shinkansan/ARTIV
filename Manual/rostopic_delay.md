@@ -68,15 +68,17 @@
              
              `rostopic delay someTopic`을 사용하여 delay를 확인하는 것이다.
              
-             문제가 여전히 지속된다면, publisher의 transport_hint를 UDP로 변경해본다. (real driver에서는 가능한데, rosbag에서는 힘듬)
+             문제가 여전히 지속된다면, publisher의 transport_hint를 UDP로 변경해본다.
+             
+             (real driver에서는 가능한데, rosbag에서는 힘듬)
              
  __additional solution :__
             
-             image나 point clouds와 같은 대형 messages로 작업 할 때, `nodelet` 사용을 추천한다.
+             image나 point clouds와 같은 대형 messages로 작업 할 때, `nodelet` 사용을 추천한다. 아래 링크 첨부
              
-             __[ros wiki nodelt](http://wiki.ros.org/nodelet)__
+__[ros wiki nodelt](http://wiki.ros.org/nodelet)__
              
-             __[nodelet 한글자료](https://blog.naver.com/PostView.nhn?blogId=rich0812&logNo=221466635955&categoryNo=0&parentCategoryNo=0)__
+__[nodelet 한글자료](https://blog.naver.com/PostView.nhn?blogId=rich0812&logNo=221466635955&categoryNo=0&parentCategoryNo=0)__
             
             
              
