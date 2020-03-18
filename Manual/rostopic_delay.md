@@ -6,6 +6,6 @@
 
   ### 1. rostopic에 내장된 `rostopic delay`
 
-  사용방법 : `delay <topic-name>`
+  사용방법 : `$ rostopic delay /topic_name`
   
   기능 : 헤더가 있는 주제에 대한 지연을 표시합니다.
