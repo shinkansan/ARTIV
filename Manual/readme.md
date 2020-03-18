@@ -68,7 +68,7 @@ date : 2020.03.16.
 
 * ros topic을 주고받는 코딩을 할 때 알 수 없는 lack이 걸려서 통신이나 streaming이 원활하지 않을 경우,
 
-delay가 있는지 확인하는 방법에 대한 매뉴얼입니다. (특히, 영상이나 이미지 파일, 포인트 클라우드 관련)
+delay가 있는지 확인하는 방법에 대한 매뉴얼입니다. __(abt image, video, point clouds)__
 
 ## [ROS RQT, RViz 매뉴얼](https://github.com/shinkansan/ARTIV/blob/master/Manual/RQT.md)
 
