@@ -85,6 +85,18 @@
   
   ##
   ### 3. rospy 시간 관련 tool
+  
+  그렇다면, ROS를 위한 python client library인 rospy에 내장된 기능으로 딜레이를 알아볼 수는 없을까요?!
+  
+  rospy는 자체적으로 내장시간을 포함하고 있고, `rospy.get_rostime()`를 이용하여 출력할 수 있으며,
+  
+  `rospy.Time()`를 통해 새로운 시간 인스턴스를 만들어 원하는 방향으로 변환이 가능합니다.
+  
+  또한, ROS 1.5부터 새롭게 추가된, 기능성 Timer를 사용할 수 있습니다.
+  
+  아래 링크를 참고하여 적절히 사용하기 바랍니다!
+  
+  __[rospy_time wiki](http://wiki.ros.org/rospy/Overview/Time)__
             
              
              
