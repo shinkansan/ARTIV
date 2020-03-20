@@ -12,8 +12,11 @@
 
 ### 열원. 특수목적 차량용 IPC
 
-자율주행에 필수적인 고성능 PC. 스펙 및 규격은 아래와 같다.
+자율주행에 필수적이자 전체 열원의 90%를 차지...할 것 같은 고성능 PC. 스펙은 아래와 같다.
 
 <img src="./media/ipcSpec1.jpg" width="90%" height="90%" title="ipcSpec1.jpg" ></img>   
-<img src="./media/ipcSpec2.jpg" width="90%" height="90%" title="ipcSpec1.jpg" ></img>   
-<img src="./media/ipcSpec3.jpg" width="90%" height="90%" title="ipcSpec1.jpg" ></img>   
+<img src="./media/ipcSpec2.jpg" width="90%" height="90%" title="ipcSpec1.jpg" ></img>
+
+규격에 관한 스펙도 있으나 이는 part2 유체 시뮬레이션 할때나 필요하니 그때 다루겠다.
+
+여기서 눈여겨보아야 하는 부분은 당연히 
