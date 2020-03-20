@@ -10,3 +10,6 @@
 
 ## 열원과 계(系, Thermodynamics System)
 
+### 열원. 특수목적 차량용 IPC
+
+<img src="/media/ipcSpec.png" width="40%" height="30%" title="Nuvo-8108GC_NX Specification" alt="whatIsAlt"></img>
