@@ -36,11 +36,11 @@
 이로써 해당 컴퓨터는 대략 350W 내외의 전력을 잡아먹는다고 할 수 있겠다.
 여기서 전기에너지에 대한 ~~간단한~~ 복습을 해보자.
 
+$$
+Ee = { V \times I \times t } [J]
+P = { V \times I } [W]
+$$   
 
-$$
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
-\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
-\end{vmatrix}
-$$
+**수식 입력법 인터넷에서 찾아봤는데 _include 디렉토리를 못찾아서 입력이 안되네유...**
+
+전기에너지는 전압과 전류, 아 졸려 그만쓸래
