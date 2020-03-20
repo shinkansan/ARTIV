@@ -37,4 +37,10 @@
 여기서 전기에너지에 대한 ~~간단한~~ 복습을 해보자.
 
 
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
+\end{vmatrix}
+$$
