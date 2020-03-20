@@ -37,5 +37,4 @@
 여기서 전기에너지에 대한 ~~간단한~~ 복습을 해보자.
 
 
-$$ E = {V \times I \times t [J]}$$   
-$$ P = V*I [W]$$
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
