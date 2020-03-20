@@ -12,4 +12,8 @@
 
 ### 열원. 특수목적 차량용 IPC
 
-<img src="./media/ipcSpec1.jpg" width="90%" height="90%" title="ipcSpec1.jpg" ></img>
+자율주행에 필수적인 고성능 PC. 스펙 및 규격은 아래와 같다.
+
+<img src="./media/ipcSpec1.jpg" width="90%" height="90%" title="ipcSpec1.jpg" ></img>   
+<img src="./media/ipcSpec2.jpg" width="90%" height="90%" title="ipcSpec1.jpg" ></img>   
+<img src="./media/ipcSpec3.jpg" width="90%" height="90%" title="ipcSpec1.jpg" ></img>   
