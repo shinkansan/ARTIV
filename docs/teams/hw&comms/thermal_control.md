@@ -12,4 +12,4 @@
 
 ### 열원. 특수목적 차량용 IPC
 
-<img src="/media/ipcSpec1.png" width="40%" height="30%" title="Nuvo-8108GC_NX Specification" alt="whatIsAlt"></img>
+<img src="./media/ipcSpec1.jpg" width="90%" height="90%" title="ipcSpec1.jpg" ></img>
