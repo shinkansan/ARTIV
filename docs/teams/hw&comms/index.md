@@ -22,4 +22,4 @@
   6. [차량과 컴퓨터를 연결해보자! part1](./try_to_can1.md)
   7. [차량 내부 온도조절하기 part1](./thermal_control_part1.md)
   8. [차량 내부 온도조절하기 part2](./thermal_control_part2.md)
-  9. [CFD 설치](./CFD_install.md)
+  9. [Autodesk CFD 설치](./CFD_install.md)
