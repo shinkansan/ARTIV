@@ -15,8 +15,8 @@
 자율주행에 필수적이자 전체 열원의 90%를 차지...할 것 같은 특수목적 차량용 IPC Nuvo-8108GC-NX.   
 스펙은 아래와 같다.
 
-<img src="./media/ipcSpec1.jpg" width="90%" height="90%" title="ipcSpec1.jpg" ></img>   
-<img src="./media/ipcSpec2.jpg" width="90%" height="90%" title="ipcSpec1.jpg" ></img>
+<img src="./media/ipcSpec1.jpg" width="80%" height="80%" title="ipcSpec1.jpg" ></img>   
+<img src="./media/ipcSpec2.jpg" width="80%" height="80%" title="ipcSpec1.jpg" ></img>
 
 규격에 관한 스펙도 있으나 이는 part2 유체 시뮬레이션 할때나 필요하니 그때 다루겠다.
 
@@ -76,4 +76,19 @@ $$
 ### 계. 현대 아이오닉 일렉트릭
 
 앞으로 얼마나 오랫동안 써야 할지 모를 우리의 자동차.
+
+<img src="./media/IONIQe.jpg" width="80%" height="80%" title="IONIQe.jpg" ></img>
+
+아이오닉 일렉트릭은 해치백이라 객실과 트렁크가 연결되어있다.   
+따라서 아무것도 건드리지 않는다면 차량 내부 전체가 계가 될 것이다.   
+물론 그보다는 IPC만의 공간을 만들어서 따로 열관리를 하는 것이 훨씬 효율적일 것이다.   
+감사하게도 어느 다른 분께서 블로그에 아이오닉의 트렁크 크기를 측정해서 올려주셨다.
+
+<img src="./media/IONIQt.jpg" width="60%" height="60%" title="IONIQt.jpg" ></img>
+
+출처: https://blog.naver.com/clauds/220673115378
+
+이제 여기에 이 정도 크기의 IPC를 배치될 예정이다.
+
+<img src="./media/ipcSpec3.jpg" width="60%" height="60%" title="ipcSpec3.jpg" ></img>
 
