@@ -9,15 +9,15 @@
 가능한 효율적이면서 효과가 좋은 온도조절 방법을 찾아야 한다.   
 
 그래서 사용하는 것이 유체 시뮬레이션이며,   
-Solidworks의 flow simulation을 사용할 수도 있지만   
-현재 Autodesk사의 Inventor를 사용하고 있으므로 동일사의 유체 시뮬레이터인 CFD를 사용한다.
+Solidworks의 flow simulation 애드온을 사용할 수도 있지만   
+현재 Autodesk사의 Inventor를 사용하고 있으므로 호환성을 위해 동일사의 유체 시뮬레이터인 CFD를 사용한다.
 
 <img src="./media/CFD.jpg" title="CFD.jpg" >
 
 설치 링크는 아래에 있으며, Inventor와 동일하게 대학생 프로모션으로 무료 사용이 가능하다.   
 https://www.autodesk.com/education/free-software/cfd-ultimate
 
-**단, 평소 하던대로 설치하다간 ~~나처럼~~ 뭐가 문제인지도 모르고 빙글빙글 돌기 마련이니 아래 방법에 따라 설치하자.**
+**단, 그냥 설치하다간 ~~나처럼~~ 뭐가 문제인지도 모르고 빙글빙글 돌기 마련이니 아래 방법에 따라 설치하자.**
 
 ## Autodesk CFD 설치
 
