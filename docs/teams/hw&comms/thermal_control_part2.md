@@ -23,22 +23,22 @@ https://www.autodesk.com/education/free-software/cfd-ultimate
 
 > 1. 위에 올린 링크로 들어간다.   
 >   
->   <br>
-> <img src="./media/CFDinstall1.jpg" width="70%" height="70%" title="CFDinstall1.jpg" >   
+>   <br><br>
+> <img src="./media/CFDinstall1.jpg" width="70%" height="70%" title="CFDinstall1.jpg" ><br>   
 >   
-> 2. 대학생 프로모션 인증이 된 계정으로 로그인한다. (없다면 가입해서 즉시 사용할 수 있음)   
+> 2. 대학생 프로모션 인증이 된 계정으로 로그인한다. (없다면 가입해서 즉시 인증할 수 있음)   
 >   
 > 3. Version, Operating system, Language 선택.   
 >   
->   <br>
-> <img src="./media/CFDinstall2_.jpg" width="70%" height="70%" title="CFDinstall2_.jpg" >   
+>   <br><br>
+> <img src="./media/CFDinstall2_.jpg" width="70%" height="70%" title="CFDinstall2_.jpg" ><br>   
 >   
 > 4. **Serial number, Produck key를 기록해둔다.**   
 >   
 > 5. 다운로드 시작하기 전에 **방화벽 비활성화**   
 >   
->   <br>
-> <img src="./media/CFDinstall3.jpg" width="70%" height="70%" title="CFDinstall3.jpg" >
+>   <br><br>
+> <img src="./media/CFDinstall3.jpg" width="70%" height="70%" title="CFDinstall3.jpg" ><br>
 >   
 > 6. **INSTALL NOW 누르지 말고 버튼 가장 오른쪽의 화살표 클릭**   
 >   
