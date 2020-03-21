@@ -39,10 +39,8 @@
 
 여기서 전기에너지에 대한 ~~간단한~~ 복습을 해보자.
 
-> $EE = { V \times I \times t } [J]$   
-> $P = { V \times I } [W]$   
-
-**수식 입력법 인터넷에서 찾아봤는데 _include 디렉토리를 못찾아서 입력이 안되네유...**
+> <img src="./media/equation/CodeCogsEqn.png" title="CodeCogsEqn.png" >   
+> <img src="./media/equation/CodeCogsEqn (1).png" title="CodeCogsEqn (1).png" >
 
 전기에너지 EE는 전압과 전류, 그리고 동작한 시간(sec)의 곱으로 표현된다.   
 그리고 여러 전기 부품의 전력으로 표현되는 P는 입력 전압과 전류의 곱으로 표현된다.   
@@ -55,19 +53,16 @@
 ...직류라 그런지 엄청 높게 흐르네. ~~디지털검류계 달면 순식간에 터지려나~~   
 아무튼 여기서 전류와 저항에 대한 줄(Jool)의 법칙을 사용하면 다음과 같다.
 
-> $$
-H = { I^2 \times R \times t } [J] $$
+> <img src="./media/equation/CodeCogsEqn (2).png" title="CodeCogsEqn (2).png" >
 
 그렇다. 전기에너지와 전력의 식으로 구하는 거랑 완전 똑같다.   
 그냥 우리 컴퓨터에 흐르는 전류가 얼마인지도 말하고 싶어서 줄의 법칙도 언급한거다.   
 아무튼 우리 컴퓨터가 1시간 동안 내는 열을 계산해보면 다음과 같다.
 
-> $$
-H = { 350-600W \times 60^2 } = 1260-2160 kJ $$   
-> $$
-4.2 J = 1 cal $$   
-> $$
-H = 300-514 kcal $$   
+> <img src="./media/equation/CodeCogsEqn (3).png" title="CodeCogsEqn (3).png" >   
+> <img src="./media/equation/CodeCogsEqn (4).png" title="CodeCogsEqn (4).png" >   
+> <img src="./media/equation/CodeCogsEqn (5).png" title="CodeCogsEqn (5).png" >
+> <img src="./media/equation/CodeCogsEqn (6).png" title="CodeCogsEqn (6).png" >
 
 이게 얼마나 큰 양인지는 계(系)의 크기도 계산해봐야 알 것이다.
 
