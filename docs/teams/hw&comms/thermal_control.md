@@ -20,16 +20,16 @@
 
 규격에 관한 스펙도 있으나 이는 아래의 계(系)에서 다루겠다.
 
-여기서 눈여겨보아야 하는 부분은 당연히 DC Input과 Operating Temperature 부분.   
+여기서 눈여겨보아야 하는 부분은 당연히 **DC Input**과 **Operating Temperature** 부분.   
 우리는 이놈에게 24V의 전원을 입력할 예정이라는 것을 이미 알고 있다. 그러니 들어가는 전기는 해결.   
 
 컴퓨터라는 것은 중간중간의 여러 소자를 거치면서 여러 연산과정을 거칠 뿐이지,
 결국은 하나의 커다란 저항이라고 할 수 있다.
 이를 각 부품이 소모하는 전력(W)을 통해 간접적으로 계산할 수 있다.
 
-> 1. CPU: Intel Xeon Processor E-2176G (80W average)
-> 2. GPU: GeForce RTX-2080Ti 11GB (260W)
-> 3. SSD: 970 PRO NVMe 512GB MLC (5.2W, 8.5W at maximum)
+> **1. CPU: Intel Xeon Processor E-2176G (80W average)**   
+> **2. GPU: GeForce RTX-2080Ti 11GB (260W)**   
+> **3. SSD: 970 PRO NVMe 512GB MLC (5.2W, 8.5W at maximum)**   
 
 이 외에도 전력을 잡아먹긴 하겠지만 그 존재감은 상대적으로 매우 작을 것이기 때문에 무시해도 될것이다.   
 (만약 이외에도 고려해야 할 부품이 있거나, 위 정보에서 수정 필요하면 지적해주시길.)   
@@ -39,7 +39,7 @@
 
 여기서 전기에너지에 대한 ~~간단한~~ 복습을 해보자.
 
-> <img src="./media/equation/CodeCogsEqn.png" title="CodeCogsEqn.png" ><\n>   
+> <img src="./media/equation/CodeCogsEqn.png" title="CodeCogsEqn.png" ><br>
 > <img src="./media/equation/CodeCogsEqn (1).png" title="CodeCogsEqn (1).png" >
 
 전기에너지 EE는 전압과 전류, 그리고 동작한 시간(sec)의 곱으로 표현된다.   
@@ -49,8 +49,8 @@
 
 기왕 계산하는거 전류도 계산하고 넘어가자. 
 위 방법에서 우리는 입력 전원이 24V인 것을 알고 있다.   
-전력이 350-600W 인게 사실이라면 이 컴퓨터에 흐르는 전류는 15-25A 이다.   
-...직류라 그런지 엄청 높게 흐르네. ~~디지털검류계 달면 순식간에 터지려나~~   
+전력이 350-600W 인게 사실이라면 **이 컴퓨터에 흐르는 전류는 15-25A 이다.**   
+...내가 잘못 계산한게 아니라면 엄청 높게 흐르고 있는거다. ~~디지털검류계 달면 순식간에 터지려나~~   
 아무튼 여기서 전류와 저항에 대한 줄(Jool)의 법칙을 사용하면 다음과 같다.
 
 > <img src="./media/equation/CodeCogsEqn (2).png" title="CodeCogsEqn (2).png" >
@@ -59,9 +59,9 @@
 그냥 우리 컴퓨터에 흐르는 전류가 얼마인지도 말하고 싶어서 줄의 법칙도 언급한거다.   
 아무튼 우리 컴퓨터가 1시간 동안 내는 열을 계산해보면 다음과 같다.
 
-> <img src="./media/equation/CodeCogsEqn (3).png" title="CodeCogsEqn (3).png" ><\n>   
-> <img src="./media/equation/CodeCogsEqn (4).png" title="CodeCogsEqn (4).png" ><\n>   
-> <img src="./media/equation/CodeCogsEqn (5).png" title="CodeCogsEqn (5).png" ><\n>   
+> <img src="./media/equation/CodeCogsEqn (3).png" title="CodeCogsEqn (3).png" ><br>
+> <img src="./media/equation/CodeCogsEqn (4).png" title="CodeCogsEqn (4).png" ><br>
+> <img src="./media/equation/CodeCogsEqn (5).png" title="CodeCogsEqn (5).png" ><br>
 > <img src="./media/equation/CodeCogsEqn (6).png" title="CodeCogsEqn (6).png" >
 
 이게 얼마나 큰 양인지는 계(系)의 크기도 계산해봐야 알 것이다.
@@ -88,14 +88,17 @@
 앞서 계산한 열원의 열 발생량은 300-514 kcal이다.   
 이 계에서 온도가 얼마나 빠르게 증가될지 예상해보자.   
 트렁크를 위 사진에서 보여진 수치의 직육면체 크기의 공간이라고 가정하자. (당연히 이거보단 크다!)   
-약 0.34 m^3 의 공간이 나온다.   
-그렇다면 이 공간의 열용량은?
+약 0.34 m<sup>3</sup> 의 공간이 나온다.
+
+## 고립계를 가정하고 계산한다면?
+
+위 트렁크 공간이 고립계이고, IPC를 배치하여 1시간 가동한다면?
 
 > 공기의 비열 : 0.24 kcal/kgCº   
-> 공기의 질량 : 1.2 kg/m^3   
+> 공기의 질량 : 1.2 kg/m<sup>3</sup>   
 > 트렁크 공간 내부의 질량 : 0.41 kg   
 > 트렁크 공간 내부의 열용량 : 0.0984 kcal/Cº   
-> IPC가 1시간 작동하는 동안 트렁크 공간 내부의 온도 변화 : 3049-5224 Cº ~~꺄악~~
+> IPC가 1시간 작동하는 동안 트렁크 공간 내부의 온도 변화 : **3049-5224 Cº** ~~꺄악~~
 
 물론... 이거보단 당연히 온도변화가 적을 것이다.   
 트렁크의 공간을 실제보다 작게 근사하기도 했고,   
@@ -105,18 +108,21 @@
 그러나 공간이 더 커봤자 3~4배 밖에 안될 것이고,   
 고립계는 아니다 하더라도 창문을 제외한 대부분은 단열재이고,   
 차량 내부의 표면은 그 온도가 충분히 올라가고 나서는 열평형 상태에 도달할 것이다...   
-그리고 IPC의 허용 온도는 60 Cº 이다. ~~IPC:죽...여..줘...~~   
+그리고 **IPC의 허용 온도는 60 Cº 이다.** ~~IPC:죽...여..줘...~~   
 내가 잘못 계산한게 아니라면 저것의 열을 뺄 수단이 하나쯤은 반드시 필요할 것으로 보인다.
 
 예를 들면... 이런거?
 
-<img src="./media/ipcFan.jpg" width="40%" height="40%" title="ipcFan.jpg" >
+<img src="./media/ipcFan.jpg" width="30%" height="30%" title="ipcFan.jpg" >
 
 트렁크에서 IPC 주변 공간만 별도로 밀폐시킨 후 이거랑 연결해서 항시 작동하게 한다던가...
 뭐 어쨌거나 하나 확실한 것은 적어도 한 번쯤은 시뮬레이션이 필요하다는 것이다.   
 
-정말 다행인 것은, 어제 AutoDesk의 유체 시뮬 프로그램 CFD를 성공적으로 설치했다.   
-그동안 자꾸 안되는 이유는, AutoDesk가 CFD에 학생 라이센스를 넣는 것을 깜빡한거 같다는 것이다. ~~무엇;~~   
+정말 다행인 것은, 어제 AutoDesk의 유체 시뮬 프로그램 CFD를 성공적으로 설치했다.
+
+<img src="./media/CFD.jpg" title="CFD.jpg" >
+
+그동안 자꾸 실행이 안됐던 이유는, AutoDesk가 CFD에 학생 라이센스 즉시 적용을 깜빡했다는 듯. ~~무엇;~~   
 사실 메인 이슈는 아니라서 다른 사람들도 이걸 설치해서 사용법을 익힐 필요까지는 없을 것 같고   
 기왕 CFD 설치한거 내가 열 관리를 아예 전담하는 게 나을 것 같다.   
 그래도 해보고 싶은 사람이 있다면 다음 파트에서 CFD 시뮬레이션하는 내용 올리면서 설치법도 같이 올리겠다.
