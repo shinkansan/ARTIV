@@ -1,4 +1,4 @@
-# 차량 내부 온도조절하기 part2
+# 차량 내부 온도조절하기 part2 (+CFD설치)
 김찬영 / 2020. 03. 21
 
 [차량 내부 온도조절하기 part1](./thermal_control_part1.md)
