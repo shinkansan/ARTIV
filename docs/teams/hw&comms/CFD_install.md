@@ -10,14 +10,12 @@
 > 2. 대학생 프로모션 인증이 된 계정으로 로그인한다. (없다면 가입해서 즉시 인증할 수 있음)   
 >   
 > 3. Version, Operating system, Language 선택.   
->   
 >   <br><br>
 > <img src="./media/CFDinstall2_.jpg" width="70%" height="70%" title="CFDinstall2_.jpg" ><br>   
 >   
 > 4. **Serial number, Produck key를 기록해둔다.**   
 >   
 > 5. 다운로드 시작하기 전에 **방화벽 비활성화**   
->   
 >   <br><br>
 > <img src="./media/CFDinstall3.jpg" width="70%" height="70%" title="CFDinstall3.jpg" ><br>
 >   
