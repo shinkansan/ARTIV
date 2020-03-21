@@ -20,7 +20,7 @@ https://www.autodesk.com/education/free-software/cfd-ultimate
 
 **단, 그냥 설치하다간 ~~나처럼~~ 뭐가 문제인지도 모르고 빙글빙글 돌기 마련이니 아래 링크를 참조하라.**
 
-[CFD 설치](./CFD_install.md)
+[Autodesk CFD 설치](./CFD_install.md)
 
 ## Simulation System 모델링
 
