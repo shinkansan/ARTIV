@@ -131,5 +131,5 @@
 기왕 CFD 설치한거 내가 열 관리를 아예 전담하는 게 나을 것 같다.   
 그래도 해보고 싶은 사람이 있다면 아래 링크에서 CFD 설치법을 참조하면 되겠다.
 
-이후 포스팅 : [차량 내부 온도조절하기 part2](./thermal_control_part2.md)
+이후 포스팅 : [차량 내부 온도조절하기 part2](./thermal_control_part2.md)   
 참조 : [CFD 설치](./CFD_install.md)
