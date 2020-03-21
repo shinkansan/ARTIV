@@ -15,8 +15,8 @@
 자율주행에 필수적이자 전체 열원의 90%를 차지...할 것 같은 특수목적 차량용 IPC Nuvo-8108GC-NX.   
 스펙은 아래와 같다.
 
-<img src="./media/ipcSpec1.jpg" width="80%" height="80%" title="ipcSpec1.jpg" ></img>   
-<img src="./media/ipcSpec2.jpg" width="80%" height="80%" title="ipcSpec1.jpg" ></img>
+<img src="./media/ipcSpec1.jpg" width="80%" height="80%" title="ipcSpec1.jpg" >   
+<img src="./media/ipcSpec2.jpg" width="80%" height="80%" title="ipcSpec1.jpg" >
 
 규격에 관한 스펙도 있으나 이는 아래의 계(系)에서 다루겠다.
 
@@ -77,7 +77,7 @@ H = 300-514 kcal $$
 
 앞으로 얼마나 오랫동안 써야 할지 모를 우리의 자동차.
 
-<img src="./media/IONIQe.jpg" width="80%" height="80%" title="IONIQe.jpg" ></img>
+<img src="./media/IONIQe.jpg" width="80%" height="80%" title="IONIQe.jpg" >
 
 아이오닉 일렉트릭은 해치백이라 객실과 트렁크가 연결되어있다.   
 따라서 아무것도 건드리지 않는다면 차량 내부 전체가 계가 될 것이다.   
@@ -90,7 +90,7 @@ H = 300-514 kcal $$
 
 이제 여기에 이 정도 크기의 IPC를 배치될 예정이다.
 
-<img src="./media/ipcSpec3.jpg" width="80%" height="80%" title="ipcSpec3.jpg" ></img>
+<img src="./media/ipcSpec3.jpg" width="80%" height="80%" title="ipcSpec3.jpg" >
 
 앞서 계산한 열원의 열 발생량은 300-514 kcal이다.   
 이 계에서 온도가 얼마나 빠르게 증가될지 예상해보자.   
@@ -117,7 +117,7 @@ H = 300-514 kcal $$
 
 예를 들면... 이런거?
 
-<img src="./media/ipcFan.jpg" width="40%" height="40%" title="ipcFan.jpg" ></img>
+<img src="./media/ipcFan.jpg" width="40%" height="40%" title="ipcFan.jpg" >
 
 트렁크에서 IPC 주변 공간만 별도로 밀폐시킨 후 이거랑 연결해서 항시 작동하게 한다던가...
 뭐 어쨌거나 하나 확실한 것은 적어도 한 번쯤은 시뮬레이션이 필요하다는 것이다.   
