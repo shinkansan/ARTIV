@@ -84,7 +84,7 @@ H = 300-514 kcal $$
 물론 그보다는 IPC만의 공간을 만들어서 따로 열관리를 하는 것이 훨씬 효율적일 것이다.   
 감사하게도 어느 다른 분께서 블로그에 아이오닉의 트렁크 크기를 측정해서 올려주셨다.
 
-<img src="./media/IONIQt.jpg" width="60%" height="60%" title="IONIQt.jpg" ></img>
+<img src="./media/IONIQt.jpg" width="60%" height="60%" title="IONIQt.jpg" >
 
 > 출처: https://blog.naver.com/clauds/220673115378
 
