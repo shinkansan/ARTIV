@@ -20,7 +20,7 @@ https://www.autodesk.com/education/free-software/cfd-ultimate
 **단, 그냥 설치하다간 ~~나처럼~~ 뭐가 문제인지도 모르고 빙글빙글 돌기 마련이니 아래 방법에 따라 설치하자.**
 
 ## Autodesk CFD 설치
-<br><br><br>
+<br>
 > 1. 위에 올린 링크로 들어간다.   
 >   
 >   <br><br>
