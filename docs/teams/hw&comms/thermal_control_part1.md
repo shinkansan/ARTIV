@@ -132,4 +132,4 @@
 그래도 해보고 싶은 사람이 있다면 아래 링크에서 CFD 설치법을 참조하면 되겠다.
 
 이후 포스팅 : [차량 내부 온도조절하기 part2](./thermal_control_part2.md)   
-참조 : [CFD 설치](./CFD_install.md)
+참조 : [Autodesk CFD 설치](./CFD_install.md)
