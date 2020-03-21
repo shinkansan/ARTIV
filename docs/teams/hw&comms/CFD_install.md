@@ -15,7 +15,7 @@
 >   
 > 4. **Serial number, Produck key를 기록해둔다.**   
 >   
-> 5 . 다운로드 시작하기 전에 **방화벽 비활성화**   
+> 5. 다운로드 시작하기 전에 **방화벽 비활성화**   
 >   <br>
 > <img src="./media/CFDinstall3.jpg" width="70%" height="70%" title="CFDinstall3.jpg" ><br>
 >   
