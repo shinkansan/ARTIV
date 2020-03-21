@@ -18,41 +18,19 @@ Solidworks의 flow simulation 애드온을 사용할 수도 있지만
 설치 링크는 아래에 있으며, Inventor와 동일하게 대학생 프로모션으로 무료 사용이 가능하다.   
 https://www.autodesk.com/education/free-software/cfd-ultimate
 
-**단, 그냥 설치하다간 ~~나처럼~~ 뭐가 문제인지도 모르고 빙글빙글 돌기 마련이니 아래 방법에 따라 설치하자.**
+**단, 그냥 설치하다간 ~~나처럼~~ 뭐가 문제인지도 모르고 빙글빙글 돌기 마련이니 아래 링크를 참조하라.**
 
-## Autodesk CFD 설치
+[CFD 설치](./CFD_install.md)
 
-<br><br>
+## Simulation System 모델링
 
-> 1. 위에 올린 링크로 들어간다.   
->   
->   <br><br>
-> <img src="./media/CFDinstall1.jpg" width="70%" height="70%" title="CFDinstall1.jpg" ><br>   
->   
-> 2. 대학생 프로모션 인증이 된 계정으로 로그인한다. (없다면 가입해서 즉시 인증할 수 있음)   
->   
-> 3. Version, Operating system, Language 선택.   
->   
->   <br><br>
-> <img src="./media/CFDinstall2_.jpg" width="70%" height="70%" title="CFDinstall2_.jpg" ><br>   
->   
-> 4. **Serial number, Produck key를 기록해둔다.**   
->   
-> 5. 다운로드 시작하기 전에 **방화벽 비활성화**   
->   
->   <br><br>
-> <img src="./media/CFDinstall3.jpg" width="70%" height="70%" title="CFDinstall3.jpg" ><br>
->   
-> 6. **INSTALL NOW 누르지 말고 버튼 가장 오른쪽의 화살표 클릭**   
->   
-> 7. BROWSER DOWNLOAD 선택   
->   
-> 8. 이후 설치파일이 다운로드되고, 실행해서 Autodesk CFD를 설치한다.   
->   
-> 9. 설치된 Autodesk CFD를 실행한다. 관리자 권한으로 실행할 것을 추천한다.   
->   
-> 10. Serial number와 Product key를 요구하면 입력한다.   
->   
-> 11. 입력했음에도 또 물어보는 경우가 있다. 당황하지 말고 다시 입력해주자.
->   
-> 12. 성공적으로 실행했다면 방화벽 다시 활성화하는 것을 잊지 말자.
+계산 방법이 정확하다면 계산 대상 또한 정확할수록 그 결과가 의미가 높아진다.   
+무슨 말이냐면, LiDAR로 두 진자 사이의 거리를 측정 하는데   
+진자운동을 선형 모델로 근사하면 LiDAR의 정확한 측정 능력이 무용지물이 되는거처럼.
+
+그러니까 우리도 Autodesk CFD 라는 정확한 flow simulation tool을 사용하는 만큼,   
+열원도, 계(系)도 더 정확하게 모델링할 필요가 있다.   
+그렇다고 트렁크 안쪽의 손잡이나 시트의 잔굴곡 등을 다 모델링할 수는 없는 노릇이다.   
+이번 포스팅에서는 그 타협점을 잡으면서 Autodesk Inventor로 열원인 IPC와 계(系)인 아이오닉 차량을 모델링한다.
+
+
