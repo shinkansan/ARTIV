@@ -1,9 +1,9 @@
 # Autodesk CFD 설치
 
-<br><br>
+<br>
 
-> 1. 위에 올린 링크로 들어간다.   
->   
+> 1. 아래 링크로 들어간다.   
+> https://www.autodesk.com/education/free-software/cfd-ultimate
 >   <br><br>
 > <img src="./media/CFDinstall1.jpg" width="70%" height="70%" title="CFDinstall1.jpg" ><br>   
 >   
