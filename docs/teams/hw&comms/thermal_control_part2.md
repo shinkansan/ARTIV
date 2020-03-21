@@ -15,10 +15,9 @@ Solidworks의 flow simulation 애드온을 사용할 수도 있지만
 
 <img src="./media/CFD.jpg" title="CFD.jpg" >
 
-설치 링크는 아래에 있으며, Inventor와 동일하게 대학생 프로모션으로 무료 사용이 가능하다.   
-https://www.autodesk.com/education/free-software/cfd-ultimate
+Inventor와 동일하게 대학생 프로모션으로 무료 사용이 가능하다.   
 
-**단, 그냥 설치하다간 ~~나처럼~~ 뭐가 문제인지도 모르고 빙글빙글 돌기 마련이니 아래 링크를 참조하라.**
+**단, 그냥 설치하다간** ~~나처럼~~ **뭐가 문제인지도 모르고 빙글빙글 돌기 마련이니 아래 링크를 참조하라.**
 
 [Autodesk CFD 설치](./CFD_install.md)
 
