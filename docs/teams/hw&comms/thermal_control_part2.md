@@ -1,4 +1,4 @@
-# 차량 내부 온도조절하기 part2 (+CFD설치)
+# 차량 내부 온도조절하기 part2
 김찬영 / 2020. 03. 21
 
 이전 포스팅 : [차량 내부 온도조절하기 part1](./thermal_control_part1.md)   
@@ -31,6 +31,6 @@ https://www.autodesk.com/education/free-software/cfd-ultimate
 그러니까 우리도 Autodesk CFD 라는 정확한 flow simulation tool을 사용하는 만큼,   
 열원도, 계(系)도 더 정확하게 모델링할 필요가 있다.   
 그렇다고 트렁크 안쪽의 손잡이나 시트의 잔굴곡 등을 다 모델링할 수는 없는 노릇이다.   
-이번 포스팅에서는 그 타협점을 잡으면서 Autodesk Inventor로 열원인 IPC와 계(系)인 아이오닉 차량을 모델링한다.
+이번 글에서는 그 타협점을 잡으면서 Autodesk Inventor로 열원인 IPC와 계(系)인 아이오닉 차량을 모델링한다.
 
 
