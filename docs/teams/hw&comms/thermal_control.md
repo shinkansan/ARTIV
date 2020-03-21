@@ -39,7 +39,7 @@
 
 여기서 전기에너지에 대한 ~~간단한~~ 복습을 해보자.
 
-> <img src="./media/equation/CodeCogsEqn.png" title="CodeCogsEqn.png" >   
+> <img src="./media/equation/CodeCogsEqn.png" title="CodeCogsEqn.png" ><\n>   
 > <img src="./media/equation/CodeCogsEqn (1).png" title="CodeCogsEqn (1).png" >
 
 전기에너지 EE는 전압과 전류, 그리고 동작한 시간(sec)의 곱으로 표현된다.   
@@ -59,9 +59,9 @@
 그냥 우리 컴퓨터에 흐르는 전류가 얼마인지도 말하고 싶어서 줄의 법칙도 언급한거다.   
 아무튼 우리 컴퓨터가 1시간 동안 내는 열을 계산해보면 다음과 같다.
 
-> <img src="./media/equation/CodeCogsEqn (3).png" title="CodeCogsEqn (3).png" >   
-> <img src="./media/equation/CodeCogsEqn (4).png" title="CodeCogsEqn (4).png" >   
-> <img src="./media/equation/CodeCogsEqn (5).png" title="CodeCogsEqn (5).png" >
+> <img src="./media/equation/CodeCogsEqn (3).png" title="CodeCogsEqn (3).png" ><\n>   
+> <img src="./media/equation/CodeCogsEqn (4).png" title="CodeCogsEqn (4).png" ><\n>   
+> <img src="./media/equation/CodeCogsEqn (5).png" title="CodeCogsEqn (5).png" ><\n>   
 > <img src="./media/equation/CodeCogsEqn (6).png" title="CodeCogsEqn (6).png" >
 
 이게 얼마나 큰 양인지는 계(系)의 크기도 계산해봐야 알 것이다.
