@@ -11,4 +11,4 @@ Author : Gwanjun Shin
   
  
  ## ScreenShot
- ![img](screenShot.png)
+ ![img](screenshot.png)
