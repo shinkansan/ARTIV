@@ -5,6 +5,8 @@
 
 ## devlog #1
   1. [다른 회사의 hd map 따라하기](hdmap-whitepaper.md)
+  2. [OpenStreetMap, GeoPanda 테스트 1](example-osm-blog.md)
+  3. [OpenStreetMap, GeoPanda 테스트 2](example-osm2-blog.md)
   
   
 ## Autoware vs Apollo analysis (korean)
