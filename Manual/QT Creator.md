@@ -29,3 +29,4 @@
   
   ![manual1](./img/artiv_logo.png)
   
+  ![vehicle](./img/vehicle_layout.png)
