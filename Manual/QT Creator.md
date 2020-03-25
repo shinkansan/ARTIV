@@ -27,6 +27,4 @@
   
   최신버전은 지속적으로 업데이트될 것이므로, 아래 사진과 같이 버전을 확인하여 위의 코드에서 파일에 해당하는 코드를 고쳐주어야 정상적으로 실행된다.
   
-  ![manual1](./img/artiv_logo.png)
-  
-  ![vehicle](./img/vehicle_layout.png)
+  ![qt_manual1](https://user-images.githubusercontent.com/59792475/77538998-fa0cdd00-6ee3-11ea-9d2e-5f933354d8e3.png)
