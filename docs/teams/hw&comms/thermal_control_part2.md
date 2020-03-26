@@ -52,3 +52,9 @@ Autodesk Inventor로 위 사항들을 고려하여 3D 모델링을 진행하였�
 <img src="./media/Model2.png" width="100%" height="100%" title="Model2.png" ><br>
 <img src="./media/Model3.png" width="100%" height="100%" title="Model3.png" ><br>
 <img src="./media/Model4.png" width="100%" height="100%" title="Model4.png" ><br>
+<br>
+
+Autodesk CFD는 서로 다른 재질 설정을 위해서는 각 solid가 독립된 객체여야 하기 때문에   
+차체(약한 단열재) / 좌석(나일론?) / 창문(유리) 로 나누어 모델링하였다.   
+위 사진은 순수 차량만을 모델링한 모습이며, 여기에 사람이나 IPC 등을 필요에 따라 추가하면 되겠다.   
+(사진 상에서 천장 및 후방 창문이 없지만 나중에 추가했음을 알림)
