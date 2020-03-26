@@ -48,3 +48,7 @@ Autodesk Inventor로 위 사항들을 고려하여 3D 모델링을 진행하였�
 적당한 세단 차량 카울 3D파일을 바탕으로 구조와 수치를 최대한 아이오닉에 비슷하게끔 모델링하였다.
 
 <br>
+<img src="./media/Model1.png" width="100%" height="100%" title="Model1.png" ><br>
+<img src="./media/Model2.png" width="100%" height="100%" title="Model2.png" ><br>
+<img src="./media/Model3.png" width="100%" height="100%" title="Model3.png" ><br>
+<img src="./media/Model4.png" width="100%" height="100%" title="Model4.png" ><br>
