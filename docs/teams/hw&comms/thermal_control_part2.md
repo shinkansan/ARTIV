@@ -13,8 +13,6 @@
 Solidworks의 flow simulation 애드온을 사용할 수도 있지만   
 현재 Autodesk사의 Inventor를 사용하고 있으므로 동일사의 유체 시뮬레이터인 CFD를 사용한다.
 
-<img src="./media/CFD.jpg" title="CFD.jpg" >
-
 Inventor와 동일하게 대학생 프로모션으로 무료 사용이 가능하다.   
 
 **단, 그냥 설치하다간** ~~나처럼~~ **뭐가 문제인지도 모르고 빙글빙글 돌기 마련이니 아래 링크를 참조하라.**
@@ -31,6 +29,8 @@ Inventor와 동일하게 대학생 프로모션으로 무료 사용이 가능하
 열원도, 계(系)도 더 정확하게 모델링할 필요가 있다.   
 그렇다고 트렁크 안쪽의 손잡이나 시트의 잔굴곡 등을 다 모델링할 수는 없는 노릇이다.   
 이번 글에서는 그 타협점을 잡으면서 Autodesk Inventor로 열원인 IPC와 계(系)인 아이오닉 차량을 모델링한다.
+
+<img src="./media/inventor.jpg" title="inventor.jpg" ><br>
 
 필수적으로 구현해야 하는 부분은 다음과 같다.   
 > 열원 : 차량IPC(350~600W), 사람(약 60W)   
