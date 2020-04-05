@@ -1,4 +1,6 @@
 ## 0. 차세대 교통 시스템 도대체 뭐지?
+Author : 서은빈
+---
 
 자동차에 관심있는 친구들이면 V2X를 많이 들어봤을 것이다. Vehicle to everything이라고 해서
 V2V(Vehicle to Vehicle), V2I(Vehicle to Infrastructure), V2P(Vehicle to Person), V2N(Vehicle to Network) 등등.. 자동차와 통신하며
