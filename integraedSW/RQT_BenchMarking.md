@@ -19,6 +19,13 @@ date : 2020.04.05.
   
   ### step 1. RQT 설치
   
-  코드 : `$ sudo apt-get install ros-melodic-rqt ros-melodic-rqt-common-plugins`
+  아래의 코드를 터미널에 입력하여, 우리가 사용하는 ROS1 melodic version의 rqt와 해당 UI에서 띄울 수 있는 plugin 패키지들을 다운받습니다.
   
-  기능 : 우리가 사용하는 ROS1 melodic version의 rqt와 해당 UI에서 띄울 수 있는 plugin 패키지들을 다운받습니다.
+  코드 : `$ sudo apt-get install ros-melodic-rqt ros-melodic-rqt-common-plugins`
+ 
+  ### step 2. RQT 실행
+  
+  기본 루틴 아시죠? `start_ros1` 또는 `source /opt/ros/melodic/setup.bash`하고 `roscore` 실행
+  
+  >> 터미널 하나 더 열어서 `rqt` 실행합니다.
+  
