@@ -81,7 +81,7 @@ date : 2020.04.05.
   
   ## UI Design 꿀팁
   
-  QT Creator Manager가 깔려있는 상태에서 소스코드 다운받고, `.ui`형식의 파일을 더블클릭하면 해당 UI가 바로 QT Creator Manager로 열립니다.
+  QT Creator Designer가 깔려있는 상태에서 소스코드 다운받고, `.ui`형식의 파일을 더블클릭하면 해당 UI가 바로 QT Creator Designer로 열립니다.
   
   완성도가 높아서 간단한 수정만으로 원하는 형태로 바꿀 수 있어요!
   
