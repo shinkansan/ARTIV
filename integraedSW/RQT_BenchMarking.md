@@ -27,5 +27,8 @@ date : 2020.04.05.
   
   기본 루틴 아시죠? `start_ros1` 또는 `source /opt/ros/melodic/setup.bash`하고 `roscore` 실행
   
-  >> 터미널 하나 더 열어서 `rqt` 실행합니다.
+  터미널 하나 더 열어서 `rqt` 실행합니다.
   
+  처음 실행하면 아래 사진처럼, 아무것도 없는 Default-rqt 창이 뜹니다.
+  
+  ![Default-rqt](https://user-images.githubusercontent.com/59792475/78566793-b3f83780-785a-11ea-8963-7897e34b112d.png)
