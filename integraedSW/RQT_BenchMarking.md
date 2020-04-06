@@ -7,7 +7,7 @@ date : 2020.04.05.
 
   ##
 
-  ### step 0. Conditioning
+  ### Conditioning
 
   __먼저,__
 
