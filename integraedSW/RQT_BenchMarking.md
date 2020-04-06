@@ -9,7 +9,7 @@ date : 2020.04.05.
 
   ### Step 0. ros 기본 숙지
 
-  우리 깃허브의 __ROS__ 항목에서 기본적인 ROS 설치 및 이용방법을 먼저 숙지하시고 와주세요.
+  우리 깃허브의 __[ROS](https://github.com/shinkansan/ARTIV/tree/master/ROS)__ 항목에서 기본적인 ROS 설치 및 이용방법을 먼저 숙지하시고 와주세요.
   
   
   
