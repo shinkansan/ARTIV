@@ -13,8 +13,7 @@
 그러니 header, uint32, uint8 등의 데이터 타입을 가지는 요소들이 출력되었다.    
 
 ## can_msgs는 ros의 표준(?) 타입인가?
-can_msgs는 ros의 기본 폴더(?) `(/opt/ros/melodic)`에 있는 메시지 타입이 아니었기 때문에 ros 홈페이지에서 따로 다운 받아야 했었다.    
-파일을 뜯어보니 `can_msgs/src` 폴더 안에 `Frame.msg`라는 것이 있었고 이는 topic에서 출력되는 형태가 텍스트로 저장되어있었다.    
+can_msgs는 ros의 기본 폴더(?) `(/opt/ros/melodic)`에 있는 메시지 타입이 아니었기 때문에 ros 홈페이지에서 따로 다운 받아야 했었다. 파일을 뜯어보니 `can_msgs/src` 폴더 안에 `Frame.msg`라는 것이 있었고 이는 topic에서 출력되는 형태가 텍스트로 저장되어있었다.    
 근데 `can_msgs` 폴더 안에 있는 `CMakeList.txt` 파일과 `package.xml` 파일을 확인해봤는데 ros의 표준(?) 타입인 std_msgs만 dependency로 저장되어있다? 이전에는 `can_msgs/frame`이라는 ros 내에서 subscribe하고 publish 하기 위해서 관련 헤더파일을 include 해야했는데 `can_msgs`에는 없다. `can_msgs`는 msg일뿐 헤더파일도 없고 cpp 파일에서 include 할 수도 없는 타입의 메시지는 아닐까? 하는 생각이 들었다.    
 단지 종속된 타입인 std_msgs만 이용하면 되는 것이다.(확실하진 않음.)    
 
