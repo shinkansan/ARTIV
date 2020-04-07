@@ -24,7 +24,7 @@ sudo chmod u+x term3_sim.x86_64
 git clone https://github.com/udacity/CarND-Path-Planning-Project.git
 ~~~
 
-#### ependencies
+### Dependencies
 ![dependencies](./media/CarND_planner_dependencies.PNG)
 우리는 linux 기반이므로 uWebSockets만 잘 설정해주면 된다.
 1) 방법 1: 권한을 주고 install-ubuntu.sh를 실행시킨다.
@@ -59,7 +59,7 @@ cd uWebSockets
 git checkout e94b6e1
 ~~~
 
-#### Run CarND Planner
+### Run CarND Planner
 1. main.cpp 수정 및 spline.h 추가하기
 - main.cpp 수정
 main.cpp 내용을 모두 지우고 https://github.com/darienmt/CarND-Path-Planning-Project-P1/blob/master/src/main.cpp 이 링크에 있는 main.cpp를 붙여넣는다.
