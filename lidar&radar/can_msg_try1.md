@@ -1,5 +1,5 @@
 # CAN 데이터 Publish 시도 1
-날짜 : ~2020.04.06
+날짜 : ~2020.04.06    
 글쓴이 : 여호영
 
 ## rosbag에서 radar 관련된 topic은 무엇인가?
@@ -59,5 +59,5 @@ add_dependencies(print_radar radar_data_generate_messages_cpp)
 ```
 
 `[package_name]/package.xml` 에는 기본적으로 `std_msgs`가 포함되어있기 때문에 딱히 수정할 필요가 없었다.    
-다음과 같은 code로 성공적으로 catkin build를 완료하고 rosbag을 킨 다음에 `print_radar.cpp` 파일을 실행했다.
+다음과 같은 code로 성공적으로 `catkin build`를 완료하고 rosbag을 킨 다음에 `print_radar.cpp` 파일을 실행했다.    
 근데 아무 것도 출력되지 않았다 ㅠㅠ.
