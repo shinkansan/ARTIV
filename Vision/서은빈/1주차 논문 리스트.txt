@@ -1,0 +1,18 @@
+기본 논문
+
+1. Faster R-CNN 
+
+[1] Ren et al, Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks
+[2] github, faster-rcnn.pytorch, https://github.com/jwyang/faster-rcnn.pytorch 
+
+2. Alex Net
+https://www.learnopencv.com/understanding-alexnet/
+논문은 이미 아니까 패스
+
+==========
+
+SOTA 논문 (차선, 세그먼테이션)
+
+- E-Net SAD (코드 매팅)
+
+- Pin Net (https://arxiv.org/pdf/2002.06604.pdf) 2020 SOTA
