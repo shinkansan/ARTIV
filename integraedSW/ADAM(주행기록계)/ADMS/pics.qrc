@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="pics">
+    <file>hiclipart.com (1).png</file>
+    <file>hiclipart.com.png</file>
     <file>artiv_logo2.png</file>
     <file>dgist_1.png</file>
   </qresource>
