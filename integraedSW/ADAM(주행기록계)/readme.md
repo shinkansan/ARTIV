@@ -1,3 +1,3 @@
 # 주행기록계
 
-![IMG](./media/adam1.gif)
+![IMG](./media/adsm2gif.gif)
