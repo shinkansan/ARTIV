@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="pics">
+    <file>artiv_logo2.png</file>
+    <file>dgist_1.png</file>
+  </qresource>
+</RCC>
