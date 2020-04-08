@@ -196,6 +196,14 @@ int
 
 ![Screenshot from 2020-04-08 21-00-49](https://user-images.githubusercontent.com/59762212/78782130-78857680-79dc-11ea-9feb-41b319b7c79e.png)
 
+시각화 방법 (cpp 파일이 있는 폴더에서 실행)
+> `pcl_viewer tabletop.pcd`
+
+> `pcl_viewer tabletop_passthrough.pcd`
+
+실행하면 새로운 창이 뜨면서 점이 보인다!
+
+점군을 적게하면 아무것도 안보일 수 있으니 pcd파일을 잘 구해보자!
 
 
 
