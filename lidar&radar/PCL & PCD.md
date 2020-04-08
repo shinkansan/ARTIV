@@ -48,6 +48,7 @@ PDC는 헤더와 데이터 정보를 가진 파일이다. 아래 사진을 보�
 ##
 
 #### PCL-Python
+일단 cpp 부터..
 
 
 
@@ -117,6 +118,92 @@ cpp파일이 있는 폴더에서
 실행 예시
 
 ![Screenshot from 2020-04-08 20-31-21](https://user-images.githubusercontent.com/59762212/78779467-f8f5a880-79d7-11ea-935f-16beda0b90b8.png)
+
+#### ROI(Region of Interesting) 설정
+관심 영역을 설정하여 LIDAR 데이터 중 자율 주행에 필요없는 점군을 제거하거나 차량 근처 위험반경을 관심영역으로 만들어 예의주시할 수 있다.
+
+//CMakeLists.txt
+
+위에서 한 pcd_read를 위해 CMakeLists.txt 파일을 만들어놨다면 
+~~~
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+
+project(pcd_read)
++project(pcd_roi)
+
+find_package(PCL 1.2 REQUIRED)
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+
+add_executable (pcd_read pcd_read.cpp)
++add_executable (pcd_roi pcd_roi.cpp)
+target_link_libraries (pcd_read ${PCL_LIBRARIES})
++target_link_libraries (pcd_roi ${PCL_LIBRARIES})
+~~~
+이런 식으로 +부분만 추가해주면 된다.(pcl을 사용하기 떄문)
+##
+
+//pcd_roi.cpp (코드 내 tabletop.pcd를 내가 저장한 pcd 파일로 바꿔주자!)
+~~~
+#include <iostream>
+#include <pcl/io/pcd_io.h>
+#include <pcl/point_types.h>
+#include <pcl/filters/passthrough.h>
+
+int
+ main (int argc, char** argv)
+{
+  pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZRGB>);
+  pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_filtered (new pcl::PointCloud<pcl::PointXYZRGB>);
+
+
+  pcl::io::loadPCDFile<pcl::PointXYZRGB> ("tabletop.pcd", *cloud);
+
+  std::cout << "Loaded :" << cloud->width * cloud->height  << std::endl;
+
+  // Create the filtering object
+  pcl::PassThrough<pcl::PointXYZRGB> pass;
+  pass.setInputCloud (cloud);
+  pass.setFilterFieldName ("x");
+  pass.setFilterLimits (0.70, 1.5);
+  //pass.setFilterLimitsNegative (true);
+  pass.filter (*cloud_filtered);
+
+  std::cout << "Filtered :" << cloud_filtered->width * cloud_filtered->height  << std::endl;
+  
+  
+  
+
+  pcl::io::savePCDFile<pcl::PointXYZRGB>("tabletop_passthrough.pcd", *cloud_filtered); //Default binary mode save
+
+  return (0);
+}
+~~~
+ 
+실행 방법 (pcd_read.cpp 와 같은 방식으로 파일 배치 후)
+
+> `cmake .. && make`
+
+> `./pcd_roi`
+
+실행 예시
+
+![Screenshot from 2020-04-08 21-00-28](https://user-images.githubusercontent.com/59762212/78781913-0f9dfe80-79dc-11ea-8a4a-42e2f1300d9c.png)
+
+// passthrough.pcd 파일이 생성된것을 알 수 있다.
+
+![Screenshot from 2020-04-08 21-00-49](https://user-images.githubusercontent.com/59762212/78782130-78857680-79dc-11ea-9feb-41b319b7c79e.png)
+
+
+
+
+
+
+
+
+
 
 
 
