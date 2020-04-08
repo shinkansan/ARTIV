@@ -9,8 +9,11 @@ PCL은 Point cloud의 파일 저장, 읽기, 잡음제거, 정합, 군집화, �
 PDC는 헤더와 데이터 정보를 가진 파일이다. 아래 사진을 보면 헤더에는 version ~ points 까지 있다. 데이터는 x,y,z 값과 센서가 보내는 부가 정보를 나타낸다. 여기서 가장 중요한건 데이터가 어떻게 저장되어있는지 알려주는 FIELDS 다.
 
 ![Screenshot from 2020-04-08 18-25-31](https://user-images.githubusercontent.com/59762212/78768149-83351100-79c6-11ea-87a1-9c37a1b2544d.png)
+##
 
 [참고 사이트(한글)](https://pcl.gitbook.io/tutorial/)
+
+[참고 사이트(영어)](http://pointclouds.org/documentation/)
 
 ##
 
@@ -33,13 +36,89 @@ PDC는 헤더와 데이터 정보를 가진 파일이다. 아래 사진을 보�
 > `cmake -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_GPU=ON -DBUILD_apps=ON -DBUILD_examples=ON -DCMAKE_INSTALL_PREFIX=/usr ..`
 
 > `make -j8` 
-한참걸림
+  한참걸림
 
 > `sudo make install`
 
+> `sudo apt-get install ros-melodic-pcl-conversions ros-melodic-pcl-ros`
+  ros 뒤의 melodic은 ros 버전을 맞춰서 적어주면 된다.
 
+설치 끝. 
+
+##
 
 #### PCL-Python
+
+
+
+### PCL 사용
+
+#### File 생성 및 입출력
+
+##### PCD 파일 데이터 읽어오기
+파일 위치가 중요하다. CMakeLists.txt 는 pcd_read.cpp 의 바로 상위파일에 존재해야한다. (그래야 build가 가능하다)
+
+//CMakeLists.txt
+
+~~~
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+
+project(pcd_read)
+
+find_package(PCL 1.2 REQUIRED)
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+
+add_executable (pcd_read pcd_read.cpp)
+target_link_libraries (pcd_read ${PCL_LIBRARIES})
+~~~
+
+##
+
+//pcd_read.cpp (코드 내 test_pcd.pcd를 내가 저장한 pcd 파일로 바꿔주자!)
+
+~~~
+#include <iostream>
+#include <pcl/io/pcd_io.h>
+#include <pcl/point_types.h>
+
+int main (int argc, char** argv)
+{
+  pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
+
+  if (pcl::io::loadPCDFile<pcl::PointXYZ> ("test_pcd.pcd", *cloud) == -1) //* load the file
+  {
+    PCL_ERROR ("Couldn't read file test_pcd.pcd \n");
+    return (-1);
+  }
+  std::cout << "Loaded "
+            << cloud->width * cloud->height
+            << " data points from test_pcd.pcd with the following fields: "
+            << std::endl;
+  for (std::size_t i = 0; i < cloud->points.size (); ++i)
+    std::cout << "    " << cloud->points[i].x
+              << " "    << cloud->points[i].y
+              << " "    << cloud->points[i].z << std::endl;
+
+  return (0);
+}
+~~~
+##
+
+실행 방법 (pcd 파일을 pcd_read.cpp 와 같은 폴더에 넣어주면 된다. - 아니면 파일 위치를 정확히 코드 내에 기재해라!)
+
+cpp파일이 있는 폴더에서 
+> `cmake .. && make`
+
+> `./pcd_read`
+
+실행 예시
+
+![Screenshot from 2020-04-08 20-31-21](https://user-images.githubusercontent.com/59762212/78779467-f8f5a880-79d7-11ea-935f-16beda0b90b8.png)
+
+
 
 [[1](https://pcl.gitbook.io/tutorial/)] PCL 튜토리얼
 
