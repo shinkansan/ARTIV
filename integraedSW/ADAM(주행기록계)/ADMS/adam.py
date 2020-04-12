@@ -16,6 +16,7 @@ from std_msgs.msg import Float64
 from sensor_msgs.msg import JointState
 from sensor_msgs.msg import Image
 import numpy as np
+from authManager import authentication_server
 login_form = uic.loadUiType("adam-login2.ui")[0]
 main_form = uic.loadUiType("adam-main.ui")[0]
 
@@ -39,27 +40,58 @@ class loginWindow(QMainWindow, login_form):
 
 		self.commandLinkButton.clicked.connect(self.loginBtn)
 		self.lineEdit_2.returnPressed.connect(self.credentialCheck)
-		
+
+		self.update_auth.clicked.connect(self.updateAuth)
+		self.authManager = authentication_server()
+
+		try:
+
+			temp = np.load('./adms_user_db.npz', allow_pickle=True)
+			self.userDB = temp['db'].item()
+
+		except Exception:
+			QMessageBox.warning(self, "인증 DB 가져오기 실패", "로그인을 하기위해서는 인증DB 갱신을 꼭 해주세요.", QMessageBox.Ok)
 
 
 	def loginBtn(self):
 		self.credentialCheck()
 			
-			
+	#test 용 0Vyk090ARPaeXe20mRvv
+	def updateAuth(self):
+		buttonReply=QMessageBox.question(self, '인증 서버 DB 갱신', "이 작업은 되돌릴 수 없습니다. \n1. KeyPair를 제대로 확인해주세요\n2. 조회 후 업데이트된 DB 적용까지 시간이 걸릴 수 있습니다.", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+		if buttonReply == QMessageBox.Yes:
+			keyPair = self.lineEdit_3.text()
+			try:
+				self.authManager.update(keyPair)
+			except Exception as ex:
+				buttonReply=QMessageBox.warning(self, "서버에서 가져오기 실패", "서버에서 조회를 실패하였습니다.\nKey Pair를 확인해주세요", QMessageBox.Ok)
+				return;
+
+			temp = np.load('./adms_user_db.npz', allow_pickle=True)
+			self.userDB = temp['db'].item()
+			QMessageBox.information(self, "인증 DB 갱신 성공", "프로그램 재시작 후 로그인 해주세요.", QMessageBox.Ok)
+
+
+		else:
+			return;
+
+
+
 
 	def credentialCheck(self, id=None, pwd=None):
 		self.id = id if id else self.lineEdit.text()
 		self.pwd = pws if pwd else self.lineEdit_2.text()
-		credDb = {"201811093" : ["gwanjunshin", "신관준", "201811093"]}
+
 		try:
-			if credDb.get(self.id)[0] == self.pwd:
-				self.mW = mainWidnow(credDb.get(self.id))
+			if self.userDB.passValidation(self.id, self.pwd):
+				self.mW = mainWidnow(self.userDB.retrieve(self.id, 'all'))
 				self.mW.show()
 				self.hide()
 				return 1
 			else:
 				self.label_7.setText("Wrong Passwords")
 				return 0
+			pass
 		except Exception as ex:
 			self.label_7.setText(f"Invalid Input\n{ex}")
 			return 0
@@ -83,8 +115,12 @@ class mainWidnow(QMainWindow, main_form):
 		self.center()
 		self.saveDialog.clicked.connect(self.saveFileDialog)
 		self.logout.clicked.connect(self.logoutBtn)
-		self.label.setText(self.label.text() + userInfo[1])
-		self.label_5.setText(self.label_5.text() + userInfo[2])
+
+		name = userInfo[0]
+		sid = userInfo[3]
+
+		self.label.setText(self.label.text() + name)
+		self.label_5.setText(self.label_5.text() + sid)
 
 		self.adms_subscriber_class = adms_subscriber()
 		self.adms_subscriber_class.start()
