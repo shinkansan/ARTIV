@@ -8,6 +8,12 @@ DGIST ARTIV Repos
 > ### Main IDE : qt creator
 > ### MiddleWare : ROS2-Dashing, ROS1-Melodic 
 
+### 고용량 데이터 공유용 지정 파일서버
+Dedicate Server address
+> [ktk1501.synology.me:5000](http://ktk1501.synology.me:5000)   
+> Confidential ID : artiv, pw : dgist1234
+
+
 
 ## Vehicle Layout
 Hyundai IONIQ 2019   
