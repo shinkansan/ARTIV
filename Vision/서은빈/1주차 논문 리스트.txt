@@ -15,4 +15,4 @@ SOTA 논문 (차선, 세그먼테이션)
 
 - E-Net SAD (코드 매팅)
 
-- Pin Net (https://arxiv.org/pdf/2002.06604.pdf) 2020 SOTA
+- 

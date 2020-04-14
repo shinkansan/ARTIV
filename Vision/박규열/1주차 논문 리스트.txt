@@ -1,0 +1,16 @@
+기본 논문
+
+2. M2Det
+[1] https://arxiv.org/abs/1811.04533
+[2] https://eehoeskrap.tistory.com/393?category=705416
+
+- Single . Two Stage Classficiation 개념 꼭 익히고 네트워크의 장점파악
+
+==========
+
+SOTA 논문 (인식, 세그먼테이션, 트랙
+* 어떤 논문이 mAP중심인지, 속도 중심인지 트레이드 오프를 각각 파악
+
+[1] https://paperswithcode.com/paper/objects-as-point
+
+
