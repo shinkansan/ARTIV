@@ -72,8 +72,12 @@ RTOS, RMW, RTPS 등 어려운 용어들이 많이 사용되는 ROS 설명글들�
 service, msg등 다양한 타입의 예제를 다룬 ROS 사이트를 적어놓습니다. 각자 좋은 자료 찾으면 추가해주세요!
 
 ### 7. [ROS관련 디펜던시 설명서](./ros_py_docs.md)
-rclcpp, rclpy 등 디펜던시의 기초 설명 및 참고자료 링크를 담았습니다.
-
+rclcpp, rclpy 등 디펜던시의 기초 설명 및 참고자료 링크를 담았습니다.      
+      
+   
+### 8. Tips
+1. [Node Rebuilding while Threading](./rebuild_node_in_thread.md)   
+쓰레드에서 깔끔하게 node를 생성 및 삭제할 수 있는 방법
 
 
 ## 공부법
