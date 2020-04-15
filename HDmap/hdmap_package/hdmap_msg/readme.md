@@ -1,9 +1,9 @@
 ### Custom Msg만들기   
 ros1, ros2의 msg 만들기는 굉장히 유사하고 쉽다. 하지만 몇가지만 숙지하자
 
-  1. msg안에서 기본적으로 제공하는 스탠다드 형을 제외하고 geometry_msg나 can_msg를 쓸 때는 CMakeList에 꼭 dependenci 추가를 하도록 하자.
+  1. msg안에서 기본적으로 제공하는 스탠다드 형을 제외하고 geometry_msg나 can_msg를 쓸 때는 CMakeList에 꼭 dependencies 추가를 하도록 하자.
   (https://answers.ros.org/question/326008/ros2-run-symbol-not-found-on-custom-msg/)
-  2. ros2와 ros1는 msg의 종류가 서로 상이한 것이 있으니 단순한 msg를 제외하고는 호환이 안된다.    
+  2. ros2와 ros1는 msg의 종류가 서로 상이한 것이 있으니 단순한 msg를 제외하고는 호환이 안된다.  (ros1 header <-> Time)  
   
   
 
