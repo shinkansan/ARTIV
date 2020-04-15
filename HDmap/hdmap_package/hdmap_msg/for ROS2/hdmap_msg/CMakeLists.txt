@@ -14,11 +14,14 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(rosidl_typesupport_interface REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(hdmap_msg
   "msg/HdmapMarker.msg"
   "msg/HdmapArray.msg"
-  DEPENDENCIES builtin_interfaces
+  DEPENDENCIES geometry_msgs std_msgs builtin_interfaces
 )
 
 ament_package()

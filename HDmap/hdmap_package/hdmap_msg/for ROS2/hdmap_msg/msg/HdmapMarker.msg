@@ -17,12 +17,11 @@ uint8 ADD=0
 uint8 MODIFY=0
 uint8 DELETE=2
 uint8 DELETEALL=3
-
-			# Update marker if MODIFY is set
-
+# Update marker if MODIFY is set
 
 
-builtin_interfaces/Time stamp
+
+std_msgs/Header header
 string ns
 int32 id
 
