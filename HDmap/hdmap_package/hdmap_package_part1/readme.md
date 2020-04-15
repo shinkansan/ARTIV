@@ -11,7 +11,12 @@
 _(동작 화면)_
 
 1. 필요파일 : dgist_a1.geojson (수정 버전, 새로운 type 적용)   
-2. 동작방식 : HD MAP을 읽고, 이를 hdmap_msg/HdmapMarker 형태에 적용 후 HdmapArray로 Publish 합니다.
+2. 동작방식 : HD MAP을 읽고, 이를 hdmap_msg/HdmapMarker -> HdmapArray msg타입으로    
+Topic: /hdmap_array로 Publish 합니다.      
+
+> Marker는 한 타입의 집합체   
+> Array는 타입들의 집합체로 구분하였습니다.
+
 3. Pub Data 사진
   자세한 형식은, hdmap_msg에서 확인가능
   ![img](./media/pic5.png)
