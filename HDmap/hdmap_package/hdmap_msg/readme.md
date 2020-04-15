@@ -50,3 +50,13 @@ std_msgs/ColorRGBA[] colors
 
 string text
 ```
+
+
+### 간단 Pub test
+
+Ros1 : rostopic pub
+Ros2 : ros2 topic pub
+
+ 명령어를 통해 만든 msg에 데이터를 담아볼 수 있다.
+ 
+ `ros2 topic pub /topic hdmap_msg/HdmapMarker '{id : 2}'`
