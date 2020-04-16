@@ -1,7 +1,6 @@
 기본 논문
 
-1. Yolov3
-https://arxiv.org/pdf/1804.02767.pdf
+1. pass!!
 
 
 2. SqueezeNet
