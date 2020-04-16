@@ -1,7 +1,7 @@
 ## ROS catkin package를 QT Creator로 생성하고 작성하기
 
 * 작성일 : 2020/04/13
-* 작성자 
+* 작성자 : Juho Song
 
 ##
 
