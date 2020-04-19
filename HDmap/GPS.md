@@ -40,10 +40,11 @@ NMEA는 시간, 위치, 방위 등의 정보를 전달하는 규격 중 하나�
 
 근데 사실 나는
 
+    $ sudo usermod -a -G dialout $USER
+    
+이걸로 해결했다.
 
-
-
-실행시키고 나면 몇가지의 토픽들이 있는데, 자세한건 위키에서 살펴보시고 우리가 사용할건 /fix 임.
+실행시키고 나서 rostopic list를 보면, 몇 가지가 있다. 자세한건 위키에서 살펴보시고 우리가 사용할건 /fix임.
 
 ### 한 번 볼까?
 
@@ -80,6 +81,8 @@ Mapviz는 ROS 기반의 visualization tool이다.
 참고자료
 https://wiki.ros.org/nmea_navsat_driver
 https://autoware.readthedocs.io/en/feature-documentation_rtd/DevelopersGuide/PackagesAPI/sensing/scripts.html
+https://www.youtube.com/watch?v=zTrzr5BhH-8
+https://blog.naver.com/chandong83/220780876639
 http://wiki.ros.org/mapviz/Plugins
 https://github.com/swri-robotics/mapviz/blob/master/README.md
 
