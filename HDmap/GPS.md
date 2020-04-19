@@ -109,6 +109,8 @@ Base URL에 아래의 구문을 입력 후, Max Zoom은 19로 설정한 뒤 Save
 
     http://localhost:8080/wmts/gm_layer/gm_grid/{level}/{x}/{y}.png
 
+쨘! 그럼 구글 위성지도가 뜨고 확대도 아주 잘 된다~
+
 
 #### 참고자료
 
