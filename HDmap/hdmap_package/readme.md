@@ -16,3 +16,6 @@ Author : GwanjunShin
 ## 3번 Task msg->event Trigger (신호를 줄 수 있는 유틸리티)
 
 ## GPS 연결
+Author : Junsang Ryu 
+결과물   
+> [GPS.md](./GPS.md)
