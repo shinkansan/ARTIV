@@ -28,7 +28,13 @@ NMEA는 시간, 위치, 방위 등의 정보를 전달하는 규격 중 하나�
     #MRP-2000이 지원하는 bandrate가 115200임.
     #당연히 다른 터미널에서 roscore부터 해야겠죠?
     
-### 아마 여기서 무슨 에러가 날텐데... 나중에 추가예정
+### 아마 에러가 날 것이다.
+
+    [FATAL] [1587321012.247533]: Could not open serial port: I/O error(13): could not open port /dev/ttyUSB0: [Errno 13] Permission denied: '/dev/ttyUSB0'
+
+이딴 에러가 뜬다.
+
+
 
 
 실행시키고 나면 몇가지의 토픽들이 있는데, 자세한건 위키에서 살펴보시고 우리가 사용할건 /fix 임.
