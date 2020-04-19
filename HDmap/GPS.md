@@ -76,6 +76,26 @@ Mapviz는 ROS 기반의 visualization tool이다.
 
     $ roslaunch mapviz mapviz.launch
 
+창이 하나 떴을 것이다.
+
+하단의 Add를 눌러서, tile_map을 추가하자.
+말 그대로, tile map을 띄워주는 것인데 기본값은 Stamen (terrain)이다. 근데 이게 한국에서만 그런지 몰라도, 일정 수준 이상으로 확대하면 네트워크 에러를 뿜으며 작동하지 않는다. 나중에 구글 위성지도로 교체할 것이다.
+일단 테스트만 해보자.
+
+또 Add를 눌러서, navsat를 불러오자.
+Topic 옆에 Select를 눌러서 /fix를 추가한다.
+
+Draw Style을 points로 바꾸고, 지도를 열심히 옮겨 대한민국을 찾고 대구를 찾아 현풍으로 확대해보자.
+아까도 말했듯이 일정수준 이상으로 확대를 못한다... 대충 된다는 것만 보자.
+점이 영롱하게 현풍에 찍힌다!
+
+### 구글 위성지도로 교체
+
+STEP 1
+
+    $ mkdir ~/mapproxy
+    $ sudo docker run -p 8080:8080 -d -t -v ~/mapproxy:/mapproxy danielsnider/mapproxy
+    
 
 
 참고자료
