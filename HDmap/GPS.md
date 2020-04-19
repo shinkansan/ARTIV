@@ -70,8 +70,6 @@ Mapviz는 ROS 기반의 visualization tool이다.
 
     $ sudo apt-get install ros-melodic-mapviz ros-melodic-mapviz-plugins ros-melodic-tile-map ros-melodic-multires-image
     
-빌딩해야되는지 테스트 후,,추가 예정
-
 ### How to run
 
     $ roslaunch mapviz mapviz.launch
@@ -112,15 +110,22 @@ Base URL에 아래의 구문을 입력 후, Max Zoom은 19로 설정한 뒤 Save
     http://localhost:8080/wmts/gm_layer/gm_grid/{level}/{x}/{y}.png
 
 
+#### 참고자료
 
-참고자료
 https://wiki.ros.org/nmea_navsat_driver
+
 https://autoware.readthedocs.io/en/feature-documentation_rtd/DevelopersGuide/PackagesAPI/sensing/scripts.html
+
 https://www.youtube.com/watch?v=zTrzr5BhH-8
+
 https://blog.naver.com/chandong83/220780876639
+
 http://wiki.ros.org/mapviz/Plugins
+
 https://github.com/swri-robotics/mapviz/blob/master/README.md
+
 https://github.com/solosito/MapViz-Tile-Map-Google-Maps-Satellite
+
 https://blog.cosmosfarm.com/archives/248/%EC%9A%B0%EB%B6%84%ED%88%AC-18-04-%EB%8F%84%EC%BB%A4-docker-%EC%84%A4%EC%B9%98-%EB%B0%A9%EB%B2%95/
 
 
