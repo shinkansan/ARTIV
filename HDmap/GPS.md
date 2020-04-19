@@ -92,7 +92,7 @@ Draw Style을 points로 바꾸고, 지도를 열심히 옮겨 대한민국을 �
 Mapviz에서는 WMTS를 이용하는데, 더 좋은 지도가 있으면 그걸 쓸거다.
 일단 지금으로써는 구글 위성지도만 작동을 확인해서 이걸로 했다.
 
-STEP 1
+#### STEP 1
 
     $ mkdir ~/mapproxy
     $ sudo docker run -p 8080:8080 -d -t -v ~/mapproxy:/mapproxy danielsnider/mapproxy
@@ -102,7 +102,7 @@ STEP 1
 
 [thislink]: https://blog.cosmosfarm.com/archives/248/%EC%9A%B0%EB%B6%84%ED%88%AC-18-04-%EB%8F%84%EC%BB%A4-docker-%EC%84%A4%EC%B9%98-%EB%B0%A9%EB%B2%95/
 
-STEP 2
+#### STEP 2
 
 Mapviz를 열고, tile_map의 Sources에서 Custom WMTS Source...를 누르자.
 Base URL에 아래의 구문을 입력 후, Max Zoom은 19로 설정한 뒤 Save한다.
