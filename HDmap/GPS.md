@@ -89,13 +89,21 @@ Draw Style을 points로 바꾸고, 지도를 열심히 옮겨 대한민국을 �
 아까도 말했듯이 일정수준 이상으로 확대를 못한다... 대충 된다는 것만 보자.
 점이 영롱하게 현풍에 찍힌다!
 
-### 구글 위성지도로 교체
+### 구글 위성지도로 교체(optional)
+
+Mapviz에서는 WMTS를 이용하는데, 더 좋은 지도가 있으면 그걸 쓸거다.
+일단 지금으로써는 구글 위성지도만 작동을 확인해서 이걸로 했다.
 
 STEP 1
 
     $ mkdir ~/mapproxy
     $ sudo docker run -p 8080:8080 -d -t -v ~/mapproxy:/mapproxy danielsnider/mapproxy
     
+아, 근데 Docker가 설치되어 있어야한다.
+없으면 설치하고 오자. 나는 [이거][thislink]보고 깔았다.
+
+[thislink]: https://blog.cosmosfarm.com/archives/248/%EC%9A%B0%EB%B6%84%ED%88%AC-18-04-%EB%8F%84%EC%BB%A4-docker-%EC%84%A4%EC%B9%98-%EB%B0%A9%EB%B2%95/
+
 
 
 참고자료
@@ -105,4 +113,7 @@ https://www.youtube.com/watch?v=zTrzr5BhH-8
 https://blog.naver.com/chandong83/220780876639
 http://wiki.ros.org/mapviz/Plugins
 https://github.com/swri-robotics/mapviz/blob/master/README.md
+구글지도
+https://blog.cosmosfarm.com/archives/248/%EC%9A%B0%EB%B6%84%ED%88%AC-18-04-%EB%8F%84%EC%BB%A4-docker-%EC%84%A4%EC%B9%98-%EB%B0%A9%EB%B2%95/
+
 
