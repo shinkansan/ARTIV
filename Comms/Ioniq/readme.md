@@ -6,16 +6,16 @@ Author : Hoyeong Yeo, Gwanjun Shin
 2. Python2
 
 ## Contents
-  1. Artivmsg file : Vehicle DBW ros msg
+  1. Artivmsg file : Vehicle DBW ros msg   
     Author : Hoyeong Yeo
     
-  2. Ioniq can db 
+  2. Ioniq can db    
     artiv_canDB_Ioniq_v1.dbc
     
-  3. executable node
+  3. executable node   
     canDB > src > dbw_ioniq_nod.py
     
-  4. Publish Node
+  4. Publish Node   
     /Ioniq_Info
     
  ![img](pics.png)
