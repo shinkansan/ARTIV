@@ -1,5 +1,5 @@
 # IONIQ DBW Communication Node
-Author : Hoyeong Yeo, Gwanjun Shin
+Authors : Hoyeong Yeo, Gwanjun Shin
 
 ## Condition
 1. ROS Melodic... (2 is on plan)
@@ -13,7 +13,7 @@ Author : Hoyeong Yeo, Gwanjun Shin
     artiv_canDB_Ioniq_v1.dbc
     
   3. executable node   
-    canDB > src > dbw_ioniq_nod.py
+    canDB > src > dbw_ioniq_node.py
     
   4. Publish Node   
     /Ioniq_Info
