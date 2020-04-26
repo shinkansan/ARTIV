@@ -21,10 +21,10 @@ Authors : Hoyeong Yeo, Gwanjun Shin
  ![img](pics.png)
  
  5. TODO
-  1. Add header info
-  2. int -> float msg update
-  3. prepare dbw data whitepaper
- 
+    1. Add header info
+    2. int -> float msg update
+    3. prepare dbw data whitepaper
+
 ## rosbag
 
 ARTIV rosbag data server [link](http://gofile.me/4o0Gn/k9ZL0YGhc)
