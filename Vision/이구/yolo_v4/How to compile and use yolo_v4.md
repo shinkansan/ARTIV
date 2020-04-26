@@ -1,6 +1,8 @@
 # how to use yolo_v4
 > reference: https://github.com/AlexeyAB/darknet
 
+### darknet 빌드
+
 1. 다운
 ~~~(bash)
 mkdir yolo_v4
@@ -18,11 +20,11 @@ make
 make install
 ~~~
 
-3. 사용(webcam)
+### yolo_v4
+
 ~~~(bash)
 ./darknet detector demo ./cfg/coco.data ./cfg/yolov4.cfg ./yolov4.weights -c 0
 ~~~
-
 
 yolov4.weights파일은 아래 링크에서 다운받을 수 있다.
 https://drive.google.com/uc?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT&export=download
