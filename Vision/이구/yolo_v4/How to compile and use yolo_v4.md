@@ -23,6 +23,6 @@ make install
 ./darknet detector demo ./cfg/coco.data ./cfg/yolov4.cfg ./yolov3.weights -c 0
 ~~~
 
-<img src="Vision/이구/img/Screenshot from 2020-04-26 17-27-55.png" width="80%" height="80%" title="Screenshot from 2020-04-26 17-27-55.png">
+<img src="Vision/이구/img/screenshot.png" width="80%" height="80%" title="Vision/이구/img/screenshot.png">
 
-이용하는 사람이 너무 많아서 아직 weights 파일을 다운받을 수 
+이용하는 사람이 너무 많아서 아직 weights 파일을 다운받을 수 없었다.
