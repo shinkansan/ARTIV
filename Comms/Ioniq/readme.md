@@ -20,6 +20,10 @@ Authors : Hoyeong Yeo, Gwanjun Shin
     
  ![img](pics.png)
  
+ 5. TODO
+  1. Add header info
+  2. int -> float msg update
+  3. prepare dbw data whitepaper
  
 ## rosbag
 
