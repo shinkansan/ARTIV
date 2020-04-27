@@ -48,3 +48,5 @@ rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.024 image:=/
 ~~~(bash)
 rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.024 image:=/usb_cam/image_raw camera:=/
 ~~~
+잘 실행된다면, 다음과 같이 sample data를 얻을 수 있을 것이다.
+<img src="./media/sample_data.PNG" width="80%" height="80%" title="sample_data.png" >
