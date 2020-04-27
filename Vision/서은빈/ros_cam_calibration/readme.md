@@ -50,3 +50,29 @@ rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.024 image:=/
 ~~~
 잘 실행된다면, 다음과 같이 sample data를 얻을 수 있을 것이다.
 <img src="./media/sample_data.PNG" width="80%" height="80%" title="sample_data.png" >
+sample은 41개 이상 뽑아야 위 사진처럼 calibrate button이 활성화된다.
+
+6. calibrate button을 누르고 다 끝나면 save button을 눌러 저장한다.
+calibration한 결과는 밑의 사진과 같이 나온다.
+<img src="./media/calibrate.PNG" width="80%" height="80%" title="calibrate.png" >
+save button을 누르면, 파일들이 /tmp/calibrationdata.tar.gz로 저장되었다는 문구를 볼 수 있다.
+
+7. /tmp/calibrationdata.tar.gz 파일을 새로운 파일 ~/camera_calibration_data 안에 압축을 풀어준다.
+~~~(bash)
+cd tmp
+ls
+tar -xzvf calibrationdata.tar.gz -C ~/camera_calibration_data/
+~~~
+<img src="./media/extract.PNG" width="80%" height="80%" title="extract.png" >
+파일 압축을 풀어주면 camera_calibration_data 파일은 다음과 같이 보여진다.
+<img src="./media/file.PNG" width="80%" height="80%" title="file.png" >
+
+8. ost.txt 를 yaml 로 바꾸어주고 최종 yaml 파일을 확인해본다.
+~~~(bash)
+mv ost.txt ost.ini
+rosrun camera_calibration_parsers convert ost.ini camera.yaml  # ost.txt to yml
+mkdir ~/.ros/camera_info  # for saving our calibration yaml
+mv camera.yaml ~/.ros.camera_info  # move the yaml file
+~~~
+ost.yaml 파일을 열어보면 밑의 화면과 같이 나올 것이다.
+<img src="./media/final.PNG" width="80%" height="80%" title="final.png" >
