@@ -18,6 +18,7 @@ mode 0: test the code
 --> I think this model detects lanes well in Tusimple dataset.
 mode 1: run our video
 <center><img src="img/mode1.png" width="900"></center>
+
 #### But we have to solve some problem....
 --> 직접 찍은 영상을 돌려본 결과인데, 끝쪽의 lane과 연석을 인식하는데 어려움이 있고 fps가 그렇게 높지 않다.(그 이유는 ~~GPU를 줘도 사용을 못하고 있는 상황이라서 이겠지...~~) fps는 최소 6fps~
 
