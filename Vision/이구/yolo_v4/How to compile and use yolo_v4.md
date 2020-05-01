@@ -32,3 +32,4 @@ https://drive.google.com/uc?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT&export=download
 ![screenshot](/Vision/이구/img/screenshot.png)
 
 이용하는 사람이 너무 많아서 아직 weights 파일을 다운받을 수 없었다.
+
