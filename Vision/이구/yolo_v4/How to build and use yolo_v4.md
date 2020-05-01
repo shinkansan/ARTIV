@@ -35,6 +35,6 @@ https://drive.google.com/uc?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT&export=download
 
 ![yolo_v4_test](/Vision/이구/img/yolo_v4_test.PNG)
 
-돌려본 결과, 4~6 frame으로 돌아간다.
+돌려본 결과, 4~6 frame정도 나온다.
 
 
