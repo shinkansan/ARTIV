@@ -9,7 +9,9 @@ we follow the [github](https://github.com/koyeongmin/PINet). So, we need to down
 
 ## Problems & How to solve the problems
 1. TypeError: new() received an invalid combination of arguments - got (float, int, int, int), but expected one of: * (torch.device device) * (torch.Storage storage) * (Tensor other) * (tuple of ints size, torch.device device) * (object data, torch.device device) <br/>
---> util_hourglass.py from line 175에서 int operation int를 하면 float으로 반환해주기 때문에 (out_channels/2)를 int(out_channels/2)로 바꿔줘야한다.
+--> util_hourglass.py
+line 49, 75, 100, in_channels//4  --> int(in_channels//4)
+from line 175에서 int operation int를 하면 float으로 반환해주기 때문에 (out_channels//2)를 int(out_channels//2)로 바꿔줘야한다.
 
 ## Today's outcome
 ### lane detection
