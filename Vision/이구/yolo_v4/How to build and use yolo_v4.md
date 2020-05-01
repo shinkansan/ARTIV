@@ -37,4 +37,6 @@ https://drive.google.com/uc?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT&export=download
 
 돌려본 결과, 4~6 frame정도 나온다.
 
+makefile CUDA,cudnn, opencv
+
 
