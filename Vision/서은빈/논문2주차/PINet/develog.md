@@ -13,6 +13,9 @@ we follow the [github](https://github.com/koyeongmin/PINet). So, we need to down
 line 49, 75, 100, in_channels//4  --> int(in_channels//4)
 from line 175에서 int operation int를 하면 float으로 반환해주기 때문에 (out_channels//2)를 int(out_channels//2)로 바꿔줘야한다.
 
+2. TypeError: 'float' object cannot be interpreted as an integer
+from parameters.py line 18, 19 ---> change the word to number 64, 32
+
 ## Today's outcome
 ### lane detection
 mode 0: test the code
