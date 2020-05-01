@@ -33,3 +33,8 @@ https://drive.google.com/uc?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT&export=download
 
 이용하는 사람이 너무 많아서 아직 weights 파일을 다운받을 수 없었다.
 
+![yolo_v4_test](/Vision/이구/img/yolo_v4_test.png)
+
+돌려본 결과, 4~6 frame으로 돌아간다.
+
+
