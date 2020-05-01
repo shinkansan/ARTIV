@@ -2,7 +2,7 @@
 > reference: https://github.com/AlexeyAB/darknet
 
 ### 2020/04/26 
-### darknet 빌드
+#### darknet 빌드
 
 1. 다운
 ~~~(bash)
@@ -21,7 +21,7 @@ make
 make install
 ~~~
 
-### yolo_v4
+#### yolo_v4
 
 ~~~(bash)
 ./darknet detector demo ./cfg/coco.data ./cfg/yolov4.cfg ./yolov4.weights -c 0
@@ -52,7 +52,7 @@ makefile의 CUDA,cudnn, opencv를 똑바로 설정하고 build 한 후, 실행�
 3. 직접 찍은 도로주행 영상 -> yolo_v3: 약 43fps
                           -> yolo_v4: 약 35fps
 
-성능평가 (4_28_18_43.avi 파일 사용)
+#### 성능평가 (4_28_18_43.avi 파일 사용)
 yolo 실행 시킬 때는 gpu 하나만 사용한다(titan xp사용). train할 때는 gpu 여러개 사용 가능.
 yolo_v3-> 사용전력 220W/250W, 사용 메모리 약 1GB, Volatile GPU-Util 50%
 yolo_v4 -> 사용전력 262W/250W, 사용 메모리 약 2GB, Volatile GPU-Util 81%
