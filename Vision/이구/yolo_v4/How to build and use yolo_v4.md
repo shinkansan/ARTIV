@@ -49,7 +49,7 @@ https://drive.google.com/uc?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT&export=download
 makefile의 CUDA,cudnn, opencv를 똑바로 설정하고 build 한 후, 실행한 결과
 1. 싸구려 웹캠 -> 약 30fps
 2. 비싼 웹캠 -> 약 5fps
-3. 직접 찍은 도로주행 영상 -> yolo_v3: 약 43fps
+3. 직접 찍은 도로주행 영상(4_28_18_43.avi) -> yolo_v3: 약 43fps
                           -> yolo_v4: 약 35fps
 
 #### 성능평가 (4_28_18_43.avi 파일 사용)
