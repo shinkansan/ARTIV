@@ -42,15 +42,14 @@ https://drive.google.com/uc?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT&export=download
 4~6fps. 작년에는 적어도 30fps 정도 나왔다고 한다. 느린 이유를 생각해보다가, 그래픽 드라이버를 다시 깔아보기로 했다.
 그래픽 드라이버를 다시 설치하던 중, 우분투가 죽었다. E5-219호의 컴퓨터를 모두 밀었다.
 
-2020/05/01
+### 2020/05/01
 그래픽 드라이버, CUDA, cudnn 설치
 
 ### 2020/05/02 1:59AM
 makefile의 CUDA,cudnn, opencv를 똑바로 설정하고 build 한 후, 실행한 결과
 1. 싸구려 웹캠 -> 약 30fps
 2. 비싼 웹캠 -> 약 5fps
-3. 직접 찍은 도로주행 영상(4_28_18_43.avi) -> yolo_v3: 약 43fps
-                          -> yolo_v4: 약 35fps
+3. 직접 찍은 도로주행 영상(4_28_18_43.avi) -> yolo_v3: 약 43fps / yolo_v4: 약 35fps
 
 #### 성능평가 (4_28_18_43.avi 파일 사용)
 <br>yolo 실행 시킬 때는 gpu 하나만 사용한다(titan xp사용). train할 때는 gpu 여러개 사용 가능.</br>
