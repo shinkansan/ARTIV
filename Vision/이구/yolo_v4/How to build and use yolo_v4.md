@@ -43,7 +43,7 @@ https://drive.google.com/uc?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT&export=download
 그래픽 드라이버를 다시 설치하던 중, 우분투가 죽었다. E5-219호의 컴퓨터를 모두 밀었다.
 
 ### 2020/05/01
-그래픽 드라이버, CUDA, cudnn 설치
+그래픽 드라이버, CUDA, cudnn, opencv 설치
 
 ### 2020/05/02 1:59AM
 makefile의 CUDA,cudnn, opencv를 똑바로 설정하고 build 한 후, 실행한 결과
