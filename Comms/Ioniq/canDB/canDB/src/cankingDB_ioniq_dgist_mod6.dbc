@@ -1,0 +1,87 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ OverrideFeedback : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 82 vehicleInfo1: 8 Vector__XXX
+ SG_ VehicleSpeed : 8|16@1+ (1,0) [0|0] "kmh" Vector__XXX
+ SG_ TurnSig : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BPS_Feed : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ APS_Feed : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ overrideFeedback : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DoorFL : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DoorFR : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DriverBelt : 50|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Trunk : 51|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DoorRL : 52|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DoorRR : 53|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 81 VehicleInfo2: 8 Vector__XXX
+ SG_ SteeringAngle : 40|16@1- (1,0) [0|0] "deg" Vector__XXX
+ SG_ APSFeedBack : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BrakeACTFeedback : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ GearPostition : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Estop : 56|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AutoStandby : 57|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ APMsw : 58|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ASMsw : 59|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AGMsw : 60|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 84 WheelSpeed: 8 Vector__XXX
+ SG_ WheelFL : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ WheelFR : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ WheelRL : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ WheelRR : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 336 Control_CMD: 8 Vector__XXX
+ SG_ AliveCount : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AngulaSpeedCMD : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 338 Driving_CMD: 8 Vector__XXX
+ SG_ AccelCMD : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BrakeCMD : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SteeringCMD : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ GearShiftCMD : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reserved : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ SG_ 81 GearPostition "
+";
+
