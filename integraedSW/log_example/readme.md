@@ -71,7 +71,8 @@ ros1의 경우
     WARN = 4
     ERROR = 8
     FATAL = 16
-    ```
+```
+
 ros2의 경우
 ```python
 DEBUG = 10
