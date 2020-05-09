@@ -22,8 +22,6 @@ Author : Gwanjun Shin
 
 1. steamcontroller [설치 방법](./steamcontroller/artiv_install.md)
 
-2. sox 라이브러리, 경고음 플레이용 `sudo apt-get install sox`
-
 2. kvaser linux can 드라이버 및 sdk
 
 2. python3, ros2 기반
