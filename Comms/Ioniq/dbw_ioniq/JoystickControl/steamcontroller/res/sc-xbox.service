@@ -1,0 +1,12 @@
+[Unit]
+Description=SteamController Userland driver
+
+[Service]
+Type=forking
+PIDFile=/tmp/steamcontroller.pid
+ExecStart=/usr/bin/sc-xbox.py start
+ExecReload=/usr/bin/sc-xbox.py restart
+ExecStop=/usr/bin/sc-xbox.py stop
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: python-steamcontroller
+Version: 1.2
+Summary: Steam Controller userland driver
+Home-page: https://github.com/ynsta/steamcontroller
+Author: Stany MARCEL
+Author-email: stanypub@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: Linux
