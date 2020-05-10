@@ -3,6 +3,14 @@
 
 * ROS2 기반
 
+
+* 종속성
+  * 베이스 프레임워크 ROS2
+  * Python3.6 +
+  * kvaser Can lib
+  * ioniq_can_v6.dbc (ARTIV 아이오닉용 전용 캔 데이터베이스)
+
+
 * Publishing Topic
 |Topic name|Topic Type|comment|
 |---|---|---|
