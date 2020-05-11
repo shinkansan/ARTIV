@@ -27,4 +27,5 @@ Authors : Hoyeong Yeo, Gwanjun Shin
 
 ## rosbag
 
+ROSbag 정리 [링크](https://github.com/shinkansan/ARTIV/blob/master/rosbag/rosbag_info.md).  
 ARTIV rosbag data server [link](http://gofile.me/4o0Gn/k9ZL0YGhc)
