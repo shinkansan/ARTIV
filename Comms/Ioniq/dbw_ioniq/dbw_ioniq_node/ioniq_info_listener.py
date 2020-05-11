@@ -9,6 +9,10 @@ from std_msgs.msg import String, Header, Float32MultiArray, MultiArrayDimension
 from sensor_msgs.msg import JointState
 
 def callback(data):
+    clear = lambda: os.system('clear')
+    clear()
+    
+    
     t = ["APS Feedback", "Brake ACT Feedback", "Gear position Feedback", 
         "Steering angle Feedback", "Estop_sw", 
         "Auto-Standby", "APM S/W", "ASM S/W", "AGM S/W", 
@@ -23,8 +27,7 @@ def callback(data):
     for i in range(len(t)):
         print('{0} : {1}'.format(t[i], l[i]))
 
-    clear = lambda: os.system('clear')
-    clear()
+    
 
 
 def listener():
