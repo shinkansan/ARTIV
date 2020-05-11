@@ -7,6 +7,13 @@ Date : 2020.02.16. ~ 2020.02.17.
 
 we follow the [github](https://github.com/cardwing/Codes-for-Lane-Detection/tree/master/ERFNet-CULane-PyTorch). So, we need to download the whole dataset about CULane at this [link](https://drive.google.com/drive/folders/1mSLgwVTiaUMAb4AVOWwlCD5JcWdrwpvu).<br/>
 
+## Dependencies
+First, we have to install tensorflow-gpu and torch.
+~~~(bash)
+pip install tensorflow-gpu==1.14.0
+pip install torch===1.2.0 torchvision===0.4.0 -f https://download.pytorch.org/whl/torch_stable.html
+~~~
+
 ## Problems & How to solve the problems
 1. No argument --npb
 --> we can solve it by erasing this line in test_erfnet.sh.
