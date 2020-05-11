@@ -69,7 +69,7 @@ class rosPub:
 
         jointmsg = JointState()
         floatmsg = Float32MultiArray()
-        floatmsg.data = [0]*24
+        floatmsg.data = [0.0]*24
 
         self.data_parser(data)
         floatmsg.data[0] = int(self.APSFeedBack)
