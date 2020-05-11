@@ -29,7 +29,7 @@ make install
 
 2. from video
 ~~~(bash)
-darknet.exe detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights -ext_output test.mp4
+./darknet detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights -ext_output test.mp4
 ~~~
 
 yolov4.weights파일은 아래 링크에서 다운받을 수 있다.
