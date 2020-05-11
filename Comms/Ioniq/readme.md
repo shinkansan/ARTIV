@@ -21,9 +21,8 @@ Authors : Hoyeong Yeo, Gwanjun Shin
  ![img](pics.png)
  
  5. TODO
-    1. Add header info
-    2. int -> float msg update
-    3. prepare dbw data whitepaper
+    1. 통신 에러 핸들링 및 ros fatal 출력
+    2. transmit buffer 에러 발생 해결
 
 ## rosbag
 
