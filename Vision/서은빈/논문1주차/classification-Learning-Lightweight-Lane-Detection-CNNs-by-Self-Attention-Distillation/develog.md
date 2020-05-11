@@ -35,6 +35,15 @@ tfs.debugging.set_log_device_placement(True)
 This error happens at cv2.imread(os.path.join(~)) in test_erfnet.py <br/>
 --> This error happens because the path is wrong. We have to compare "ERNet_ROOT/list/test_img.txt" file with "os.path.join(self.img_path, self.img_list[idx])".
 
+4. import error sync_bn
+edit the code.
+~~~(python)
+# from models import sync_bn
+~~~
+
+5. can't find the path
+edit the path code in dataset/voc_aug.py.
+
 ## Today's outcome
 ### lane detection
 <center><img src="img/lanedetection.png" width="900"></center>
