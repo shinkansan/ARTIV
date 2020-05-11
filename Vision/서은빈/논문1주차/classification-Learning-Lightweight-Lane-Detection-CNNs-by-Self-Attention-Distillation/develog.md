@@ -15,7 +15,7 @@ we follow the [github](https://github.com/cardwing/Codes-for-Lane-Detection/tree
 ~~~
 
 2. RuntimeError: cuda runtime error (38) <br/>
---> we can solve it by adding only two lines. <br/>
+--> we can solve it by adding only two lines in test_erfnet.py. <br/>
 I got help on this [link](https://www.tensorflow.org/guide/gpu?hl=ko)
 ~~~ python
 import tensorflow as tfs
