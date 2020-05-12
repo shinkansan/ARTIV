@@ -1,6 +1,9 @@
 ### 우분투 18.04에서 python-pcl이 지원 안되므로 cpp로 진행.
 catkin 파일 내에서 진행.  Lidar rosbag의 값을 subscribe하여 진행.
 
+author: 양재승 <br/>
+date: 2020.05.12
+---
 cpp파일은 input, sampling, ROI 로 이루어진다. 코드의 내용이 궁금하면 주석을 읽어라.(CMakeList.txt , package.xml 포함)
 
 ### 0. Rosbag rviz
