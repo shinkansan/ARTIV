@@ -86,3 +86,12 @@ rviz를 이용하여 시각화한 사진
 6. Add -> By topic -> velodyne_points_roi의 PointCloud2 추가.
 
 ###
+
+### 4. Ransac (바닥 제거)
+
+
+##### Conventional한 코드이다보니 확실한 바닥제거가 되지 않고, 노이즈가 많이 발생하는 문제점을 발견. 또한 값이 깜빡이는 것으로 보아 실제 적용은 어려워 보임 -> 향후 Machine Learning을 도입하여 문제를 해결하도록 할 것이다.
+
+![Screenshot from 2020-05-13 01-35-29](https://user-images.githubusercontent.com/59762212/81722708-bc2c3e00-94bc-11ea-9a5a-1cfa841feca6.png)
+
+rviz를 이용하여 시각화한 사진
