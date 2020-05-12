@@ -1,1 +1,1 @@
-# 양재승 지음 
+# made by Yang Jaeseung
