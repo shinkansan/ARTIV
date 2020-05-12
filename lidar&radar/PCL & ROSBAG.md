@@ -94,4 +94,4 @@ rviz를 이용하여 시각화한 사진
 
 ![Screenshot from 2020-05-13 01-35-29](https://user-images.githubusercontent.com/59762212/81722708-bc2c3e00-94bc-11ea-9a5a-1cfa841feca6.png)
 
-rviz를 이용하여 시각화한 사진
+rviz를 이용하여 시각화한 사진 (제거할 바닥을 시각화)
