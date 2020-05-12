@@ -3,4 +3,6 @@
 > 자주통소의 개발로 새시대 열어가자!   
 ![img](https://trello-attachments.s3.amazonaws.com/5e6776129d155f154d685a84/5e8c783ef68d2f0b44bcc1b7/c8226445b94ac2b7ed775239ef99755b/IMG_1284.JPG)
 
+
+### 매뉴얼   
 [PyQT 참고!!](./pyqt101.md)
