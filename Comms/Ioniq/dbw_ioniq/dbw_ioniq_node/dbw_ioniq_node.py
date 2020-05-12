@@ -2,6 +2,7 @@ import rclpy
 import os
 import pprint
 import threading
+import time
 
 from std_msgs.msg import Int16MultiArray, Float32MultiArray, MultiArrayDimension
 from sensor_msgs.msg import JointState
@@ -153,7 +154,7 @@ class canUtil:
             self.rosPubClass.node.get_logger().fatal("dbw_ioniq_node : CAN Device Connect Fail!")
             print(ex)
             return 0
-
+        self.rosPubClass.node.get_logger().info("dbw_ioniq_node : CAN Device Connect Success")
         return 1
 
     def receiveCan(self):
@@ -164,7 +165,7 @@ class canUtil:
             ticktime = None
         elif ticktime < timeout:
             timeout = ticktime
-
+        self.rosPubClass.node.get_logger().info("dbw_ioniq_node : CAN Device Connect Success")
         print("Working...")
 
         while True:
@@ -181,8 +182,15 @@ class canUtil:
                         print("tick")
                         tick_countup -= ticktime
             except KeyboardInterrupt:
+                self.rosPubClass.node.get_logger().error("dbw_ioniq_node : CAN Connect Terminated by User")
                 print("Stop.")
                 break
+            except:
+                self.rosPubClass.node.get_logger().error("dbw_ioniq_node : CAN Connection Failed, Retry")
+                self.rosPubClass.node.get_logger().info("Retry...")
+                if not self.setupCan():
+                    self.rosPubClass.node.get_logger().info("Retry...")
+                    time.sleep(8)
 
 
             self.rosPubClass.data_pub(self.dbCap.dataCapsule)

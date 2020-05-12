@@ -4,10 +4,10 @@ from canlib import Frame
 import ctypes
 import threading
 import time
-
+import rclpy
 
 class sender():
-    def __init__(self, ch):
+    def __init__(self, ch, node):
         self.ch = ch
 
 	## slot for 0x150 frame
@@ -20,7 +20,9 @@ class sender():
         self.gear = 0
         self.steer = 0
         self.data_152 = 0
-	
+
+
+        self.node = node
 
 
         print("Init Connection... send Alive CMD, Check Interface!")
@@ -31,17 +33,21 @@ class sender():
     def AliveSender(self):
         aliveVar = 0
         while True:
-            if aliveVar == 256: aliveVar = 0
-            self.data_150 += (aliveVar << 8)
-            self.data_150 += (self.angular)
+            try:
+                if aliveVar == 256: aliveVar = 0
+                self.data_150 += (aliveVar << 8)
+                self.data_150 += (self.angular)
 
 
-            frame = Frame(id_ = 0x150, data = (self.data_150).to_bytes(8, byteorder="little", signed=False))
-            self.ch.write(frame)
-            time.sleep(0.001)
-            aliveVar += 1
-            #print(frame)
-            self.data_150 = 0
+                frame = Frame(id_ = 0x150, data = (self.data_150).to_bytes(8, byteorder="little", signed=False))
+                self.ch.write(frame)
+                time.sleep(0.001)
+                aliveVar += 1
+                #print(frame)
+                self.data_150 = 0
+            except:
+                self.node.get_logger().fatal("dbw_cmd_node : alive send failed!")
+                exit(0);
 
     def setAngularSpeed(self, value):
         value = value if value < 255 else 255
@@ -50,7 +56,10 @@ class sender():
 
         frame = Frame(id_ = 0x150, data = (self.angular).to_bytes(8, byteorder="little", signed=False))
         #print(frame)
-        self.ch.write(frame)
+        try:
+            self.ch.write(frame)
+        except:
+            self.node.get_logger().fatal("dbw_cmd_node : can send failed")
         time.sleep(0.001)
 
 
@@ -59,7 +68,7 @@ class sender():
         self.data_152 +=  self.brake << 16
         #print('!', (self.steer & 0xffff) << 32)
         self.data_152 +=  (self.steer & 0xffff) << 32
-	
+
         self.data_152 +=  self.gear << 48
         returnVal = self.data_152
         self.data_152 = 0
@@ -73,14 +82,20 @@ class sender():
         self.accel = value
         frame = Frame(id_ = 0x152, data = (self.frame152()).to_bytes(8, byteorder="little", signed=False))
         #print(frame)
-        self.ch.write(frame)
+        try:
+            self.ch.write(frame)
+        except:
+            self.node.get_logger().fatal("dbw_cmd_node : can send failed")
         time.sleep(0.001)
 
     def setBrakeCMD(self, value):
         value = value if value < 30000 else 30000
         self.brake = value
         frame = Frame(id_ = 0x152, data = (self.frame152()).to_bytes(8, byteorder="little", signed=False))
-        self.ch.write(frame)
+        try:
+            self.ch.write(frame)
+        except:
+            self.node.get_logger().fatal("dbw_cmd_node : can send failed")
         time.sleep(0.001)
 
     def setSteerCMD(self, value):
@@ -89,7 +104,10 @@ class sender():
             value = Hsigned * 440
         self.steer = value
         frame = Frame(id_ = 0x152, data = (self.frame152()).to_bytes(8, byteorder="little", signed=False))
-        self.ch.write(frame)
+        try:
+            self.ch.write(frame)
+        except:
+            self.node.get_logger().fatal("dbw_cmd_node : can send failed")
         time.sleep(0.001)
 
     def setGearCMD(self, value):
@@ -100,9 +118,12 @@ class sender():
         #print(value)
 
         self.gear = value
-        
+
         frame = Frame(id_ = 0x152, data = (self.frame152()).to_bytes(8, byteorder="little", signed=False))
-        self.ch.write(frame)
+        try:
+            self.ch.write(frame)
+        except:
+            self.node.get_logger().fatal("dbw_cmd_node : can send failed")
         time.sleep(0.001)
 
 

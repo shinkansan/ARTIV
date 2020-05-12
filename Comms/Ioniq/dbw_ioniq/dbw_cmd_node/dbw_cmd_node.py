@@ -37,6 +37,7 @@ class subNode():
             node.get_logger().fatal("dbw_cmd_node : CAN Device Connect Error!!")
             print("Error occured :: ", ex, '\nprogram terminated')
             return
+        node.get_logger().info("dbw_cmd_node : CAN Device Connect Success")
 
         accelSub = node.create_subscription(Int16,
         rootname+subAccel,
@@ -54,7 +55,7 @@ class subNode():
         rootname + subBrake,
             self.brakeCallback)
 
-        self.canSender = can_communication.sender(ch)
+        self.canSender = can_communication.sender(ch, node)
 
         print("Node Sub ready")
         try:

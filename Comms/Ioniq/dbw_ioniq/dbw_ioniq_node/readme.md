@@ -12,12 +12,11 @@
 
 
 * Publishing Topic
-
-|Topic name|Topic Type|comment| 
-|---|---|---|   
-|/Header_Info | Header |.  
-|/Joint_state | JointState | 4-Wheel 속도|.  
-|/Ioniq_info | Float32MultiArray | Header (rostime) 정보가 없음|.   
+|Topic name|Topic Type|comment|
+|---|---|---|
+|/Header_Info | Header |
+|/Joint_state | JointState | 4-Wheel 속도
+|/Ioniq_info | Float32MultiArray | Header (rostime) 정보가 없음.
 
 * Topic Sub 방법
   * JointState    
