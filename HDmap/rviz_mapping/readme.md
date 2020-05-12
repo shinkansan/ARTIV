@@ -15,3 +15,5 @@
 rosbag의 정보 중 원하는 토픽을 txt 파일로 받아오고, 해당 정보를 rviz에 plotting하는 노드를 구성하여 모든 점을 plotting하는 기능을 구현함.
 
 `rostopic echo -b file.bag -p /topic > data.txt` 사용하면 rostopic의 원하는 topic의 data를 txt파일에 적을 수 있음
+
+해당 폴더를 cakin make로 빌드하고, source devel/setup.py로 소싱한 뒤, rviz를 키고 example 안의 readfile.py를 실행하면 됩니다. 
