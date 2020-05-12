@@ -1,4 +1,7 @@
 ## PCL(PointCloud Library) 및 PCD(PointCloud Data) 사용법 공부
+Author : 양재승
+---
+
 Lidar에서 받아오는 점군을 시각화하기 위해 PCL을 사용함.
 
 Point cloud란 3차원 공간상에 퍼져 있는 여러 포인트(Point)의 집합(set cloud)을 의미. 점군은 3D 데이터이므로 x,y,z축 정보를 가지고 있기 때문에 기본적으로 N x 3 Numpy 배열로 표현된다. 
