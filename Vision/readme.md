@@ -27,6 +27,9 @@ Implementation시 언어 (Pyhton, CPP) Native로 지원되는거 말고, 다른 
 
 위로 갈수록 좋은 걸로
 
+폴더에는 각 Fork한 코드 및 돌리기 위해 작성한 유틸, 및 코드 수정한 부분이 있으면 작성
+성능평가 Markdown 파일
+
 ### 5월 계획
 ㅇ 2020/05/08(금)~ 05/12(화): 카메라 사용을 위한 코드 및 이미지 ROS publisher 작성
 
@@ -40,7 +43,3 @@ Implementation시 언어 (Pyhton, CPP) Native로 지원되는거 말고, 다른 
 
 ㅇ 2020/05/28(화) ~ 05/31(일) : ROS darknet build 하는 법 알아보기
 
-
-
-폴더에는 각 Fork한 코드 및 돌리기 위해 작성한 유틸, 및 코드 수정한 부분이 있으면 작성
-성능평가 Markdown 파일
