@@ -31,6 +31,8 @@ Implementation시 언어 (Pyhton, CPP) Native로 지원되는거 말고, 다른 
 성능평가 Markdown 파일
 
 ### 5월 계획
+ㅇ 원내 주간 / 야간 주행영상 수집 필요
+
 ㅇ 2020/05/08(금)~ 05/12(화): 카메라 사용을 위한 코드 및 이미지 ROS publisher 작성
 
 ㅇ 2020/05/13(수)~ 05/17(일): 객체 인식, 차선 인식 네트워크 실행 및 성능분석 (fps, GPU 사용량, 소비전력, 사용하는 메모리 기록) 
@@ -43,3 +45,9 @@ Implementation시 언어 (Pyhton, CPP) Native로 지원되는거 말고, 다른 
 
 ㅇ 2020/05/28(화) ~ 05/31(일) : ROS darknet build 하는 법 알아보기
 
+ㅇ Baseline 정한 후 ~ : Dataset 형식 및 labeling 방법 조사
+
+### 6월 계획(미정)
+ㅇ FCN을 이용한 steering 결정
+
+ㅇ stereo camera -> depth map을 이용한 객체 인식 및 물체 회피기능 
