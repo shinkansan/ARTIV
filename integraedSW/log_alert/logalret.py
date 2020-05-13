@@ -5,6 +5,7 @@ from PyQt5.QtCore import *
 from PyQt5 import uic
 import PyQt5
 from PyQt5 import *
+import PyQt5.QtCore as C
 import rclpy
 from rcl_interfaces.msg import Log
 from PyQt5.QtWidgets import * #PyQt import
@@ -12,6 +13,7 @@ from PyQt5.QtGui import *
 from PyQt5 import uic
 from PyQt5.QtMultimedia import QMediaPlaylist, QMediaContent, QMediaPlayer
 from PyQt5 import QtMultimedia
+from PyQt5.QtMultimediaWidgets import QVideoWidget
 from PyQt5.QtCore import Qt, QUrl
 import PyQt5
 from PyQt5.QtWidgets import *
@@ -22,6 +24,7 @@ import datetime
 import threading
 import time
 
+
 form_window = uic.loadUiType("logalert.ui")[0]
 alert_window = uic.loadUiType("alertScreen.ui")[0]
 
@@ -30,8 +33,8 @@ header_comment = 1
 header_time = 2
 header_loc = 3
 blank_toggle = 1
-fatalList = []
 aSshow = 1
+coppinShow = 1
 
 class Stack(list):
     push = list.append
@@ -45,6 +48,45 @@ class Stack(list):
     def peek(self):
         return self[-1]
 fatalList = Stack()
+'''TODO
+class alertSound(QThread):
+    def __init__(self):
+        super().__init__()
+
+    def run(self):
+'''
+
+class coppin(QWidget):
+    def __init__(self):
+        QWidget.__init__(self)
+        p =self.palette()
+        p.setColor(QPalette.Window, Qt.black)
+        self.setPalette(p)
+        self.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+        self.center()
+        self.init_ui()
+        self.play()
+
+    def center(self): #for load ui at center of screen
+        frameGm = self.frameGeometry()
+        screen = PyQt5.QtWidgets.QApplication.desktop().screenNumber(PyQt5.QtWidgets.QApplication.desktop().cursor().pos())
+        centerPoint = PyQt5.QtWidgets.QApplication.desktop().screenGeometry(screen).center()
+        frameGm.moveCenter(centerPoint)
+        self.move(frameGm.topLeft())
+
+    def init_ui(self):
+
+        #create media player object
+        self.mediaPlayer = QMediaPlayer(None, QMediaPlayer.VideoSurface)
+        videowidget = QVideoWidget()
+        self.mediaPlayer.setVideoOutput(videowidget)
+        vboxLayout = QVBoxLayout()
+        vboxLayout.addWidget(videowidget)
+
+    def play(self):
+        self.mediaPlayer.setMedia(QMediaContent(QUrl.fromLocalFile(os.path.join(os.getcwd(), "warning3.mp4"))))
+        self.mediaPlayer.play()
+
 
 class alertScreen(QMainWindow, alert_window):
 
@@ -62,10 +104,22 @@ class alertScreen(QMainWindow, alert_window):
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowStaysOnTopHint)
         self.pushButton.clicked.connect(self._exit)
 
+        self.playlist = QMediaPlaylist()
+        url = C.QUrl.fromLocalFile(os.path.join(os.getcwd(), "./warning2.mp3"))
+        self.playlist.addMedia(QMediaContent(url))
+
+
+
         self.setStyleSheet("background-color:  #efefef;"
                       "border-style: solid;"
                       "border-width: 9px;"
                       "border-color: #ff4444;"
+                      "border-radius: 3px")
+
+        self.label_2.setStyleSheet("color: black;"
+                      "border-style: None;"
+                      "border-width: 2px;"
+                      "border-color: #FA8072;"
                       "border-radius: 3px")
 
         self.label.setStyleSheet("color: black;"
@@ -75,7 +129,7 @@ class alertScreen(QMainWindow, alert_window):
                       "border-radius: 3px")
 
         self.listWidget.setStyleSheet("color: balck;"
-                      "border-style: solid;"
+                      "border-style: None;"
                       "border-width: 2px;"
                       "border-color: #000000;"
                       "border-radius: 3px")
@@ -88,8 +142,22 @@ class alertScreen(QMainWindow, alert_window):
         timer = QtCore.QTimer(self)
         timer.setInterval(500)
         timer.timeout.connect(self.blank)
-
         timer.start()
+
+        #print('fuck')
+
+        self.alertSound = QtCore.QTimer(self)
+        self.doAlert()
+        self.alertSound.timeout.connect(self.doAlert)
+        self.alertSound.start()
+        self.alertSound.setInterval(2000)
+
+
+    def openCoppin(self):
+
+        self.w = coppin()
+        self.w.setGeometry(QRect(100, 100, 400, 200))
+        self.w.show()
 
 
     def blank(self):
@@ -110,15 +178,28 @@ class alertScreen(QMainWindow, alert_window):
             blank_toggle = 1
         self.updateList()
 
+    def doAlert(self):
+        self.player = QMediaPlayer()
+        self.player.setPlaylist(self.playlist)
+        self.player.play()
+        print('hi')
+
+
     def updateList(self):
-        global fatalList
+        global fatalList, coppinShow
         if fatalList:
             item = fatalList.pop()
             self.listWidget.addItem(str(item[1]) + " : " + str(item[3]))
+        if self.listWidget.count() > 4 and coppinShow == 1:
+            self.openCoppin()
+            coppinShow = 0
+
 
     def _exit(self):
         global aSshow
         aSshow = 1
+        self.player.stop()
+        self.alertSound.stop()
         self.hide()
 
 
