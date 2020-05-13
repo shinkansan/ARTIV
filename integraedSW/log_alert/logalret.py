@@ -34,7 +34,7 @@ header_time = 2
 header_loc = 3
 blank_toggle = 1
 aSshow = 1
-coppinShow = 1
+coppinShow = 0
 
 class Stack(list):
     push = list.append
