@@ -57,7 +57,7 @@ roscore, rosbag(Artivmsg로 녹화된 파일) 실행 후에 ```rostopic list``` 
 ![사진](topic_list.png)    
 사진과 같이 '/Ioniq_Info'라는 이름의 topic이 출력되는 것을 볼 수 있다.    
 추가적으로 ```rostopic info /Ioniq_Info```를 통해 topic의 정보를 확인해보면   
-![사진](topic_info.png)
+![사진](topic_info.png)    
 다음과 같이 canDB라는 이름의 패키지 않의 Aritvmsg로 publish되고 있는 Topic이라고 나온다.
 
 마지막으로 어떻게 message가 publish되고 있는지 확인하기 위해 다음과 같이 패키지의 setup파일로 source를 해준다.
@@ -65,7 +65,7 @@ roscore, rosbag(Artivmsg로 녹화된 파일) 실행 후에 ```rostopic list``` 
 cd [ros1_workspace]
 source devel/setup.bash
 ```
-이후에 ```rostopic echo /Ioniq_Info``` 입력을  통해서 publish되고 있는 정보를 확인한다.
+이후에 ```rostopic echo /Ioniq_Info``` 입력을  통해서 publish되고 있는 정보를 확인한다.    
 ![사진](topic_echo.png)
 
 
