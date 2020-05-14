@@ -21,22 +21,22 @@ Custom message를 Publish 또는 Subscribe 할 수 있는데 우선 Publish에 �
 위에 제시된 Full Code에서 'rosPub'이라는 class를 보자.(주 내용)    
 
 ### 1. initialization
-```self.ArtPub = rospy.Publisher('Ioniq_Info', Artivmsg)```
-위 코드는 'Artivmsg'라는 타입의 메시지를 이용해서 'Ioniq_Info'라는 Topic을 만들어낸다는 의미이다.
-무슨 종류의 message를 publihsh 할 것인지 언급하는 것이다.
+```self.ArtPub = rospy.Publisher('Ioniq_Info', Artivmsg)```    
+위 코드는 'Artivmsg'라는 타입의 메시지를 이용해서 'Ioniq_Info'라는 Topic을 만들어낸다는 의미이다.    
+무슨 종류의 message를 publihsh 할 것인지 언급하는 것이다.    
 
 ### 2. data_parser
-함수 이름 그대로 data를 parsing하는 함수이다.
-각 요소들은 반복되므로 하나만 가지고 설명을 하겠다.
+함수 이름 그대로 data를 parsing하는 함수이다.    
+각 요소들은 반복되므로 하나만 가지고 설명을 하겠다.    
 ```
 self.AGMsw = data['AGMsw']
 ```
-위 예시가 의미하는 바는 다음과 같다.
-데이터베이스파일(.dbc)에서 'AGMsw'라는 이름으로 정의된 데이터는 class내에서 AGMsw라는 변수에 저장하겠다.
+위 예시가 의미하는 바는 다음과 같다.    
+데이터베이스파일(.dbc)에서 'AGMsw'라는 이름으로 정의된 데이터는 class내에서 AGMsw라는 변수에 저장하겠다.    
 
 ### 3. data_pub
-이 또한 함수 이름 그대로 data를 publish하는 함수이다.
-이 함수는 data_parser함수에 의해 parsing된 data를 어떤 msg의 요소로 publish될 것인지 정해준다.
+이 또한 함수 이름 그대로 data를 publish하는 함수이다.    
+이 함수는 data_parser함수에 의해 parsing된 data를 어떤 msg의 요소로 publish될 것인지 정해준다.    
 ```
 artmsg = Artivmsg()
 
@@ -45,24 +45,24 @@ artmsg.agm_switch = int(self.AGMsw)
 
 self.Artpub.publish(artmsg)
 ```
-'artmsg'는 Artivmsg를 load 하는 기능인 것 같다.
-그 후에 'artmsg' 내에 'agm_switch'라는 이름을 가진 요소에 이전에 정의했던 'self.AGMsw'의 변수를 입력해준다.
-마지막으로 'artmsg' 내의 모든 요소에 수치가 입력된 후에 'artmsg'를 Artpub에 따라 publish 한다.
+'artmsg'는 Artivmsg를 load 하는 기능인 것 같다.    
+그 후에 'artmsg' 내에 'agm_switch'라는 이름을 가진 요소에 이전에 정의했던 'self.AGMsw'의 변수를 입력해준다.    
+마지막으로 'artmsg' 내의 모든 요소에 수치가 입력된 후에 'artmsg'를 Artpub에 따라 publish 한다.    
 
 위의 설명 외에도 다른 함수들이 많이 정의되어 있는데, 이는 CAN 통신을 통해 직접 정보를 받아와서 pulbish하기 위함이다.    
-만약 정보가 기록된 rosbag을 이용한다면 굳이 다른 함수까지 고려할 필요는 없다.
+만약 정보가 기록된 rosbag을 이용한다면 굳이 다른 함수까지 고려할 필요는 없다.    
 
 ## 실행
-roscore, rosbag(Artivmsg로 녹화된 파일) 실행 후에 ```rostopic list``` 입력하면
+roscore, rosbag(Artivmsg로 녹화된 파일) 실행 후에 ```rostopic list``` 입력하면    
 ![사진](topic_list.png)
-사진과 같이 '/Ioniq_Info'라는 이름의 topic이 출력되는 것을 볼 수 있다.
-추가적으로 ```rostopic info /Ioniq_Info```를 통해 topic의 정보를 확인해보면
+사진과 같이 '/Ioniq_Info'라는 이름의 topic이 출력되는 것을 볼 수 있다.    
+추가적으로 ```rostopic info /Ioniq_Info```를 통해 topic의 정보를 확인해보면    
 
 
 
 ## Custom message를 사용할 때 유의할 점.
-- Custom message를 통해서 만들어진 Topic은 Ros1-Ros2 bridge를 통과하지 못한다.
-이유는 모르겠지만 Ros1, Ros2에 같은 이름의 패키지, 같은 내용의 msg파일을 만들어서 빌드해도 Ros2에서 인식하지 못한다.
-이는 Ros1을 아직까지 쓰는 가장 큰 이유이다... Rosbag은 Ros1에서 밖에 없기 때문에...
-시간이 지난다면 Ros2용 Rosbag이 나오거나 Bridge에 Custom message를 통과시킬 수 있는 솔루션이 나오겠지?
-Ros1 msg는 Ros1 내에서만!
+- Custom message를 통해서 만들어진 Topic은 Ros1-Ros2 bridge를 통과하지 못한다.    
+이유는 모르겠지만 Ros1, Ros2에 같은 이름의 패키지, 같은 내용의 msg파일을 만들어서 빌드해도 Ros2에서 인식하지 못한다.    
+이는 Ros1을 아직까지 쓰는 가장 큰 이유이다... Rosbag은 Ros1에서 밖에 없기 때문에...    
+시간이 지난다면 Ros2용 Rosbag이 나오거나 Bridge에 Custom message를 통과시킬 수 있는 솔루션이 나오겠지?    
+**Ros1 msg는 Ros1 내에서만!**    
