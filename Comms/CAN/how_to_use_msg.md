@@ -54,15 +54,29 @@ self.Artpub.publish(artmsg)
 
 ## 실행
 roscore, rosbag(Artivmsg로 녹화된 파일) 실행 후에 ```rostopic list``` 입력하면    
-![사진](topic_list.png)
+![사진](topic_list.png)    
 사진과 같이 '/Ioniq_Info'라는 이름의 topic이 출력되는 것을 볼 수 있다.    
-추가적으로 ```rostopic info /Ioniq_Info```를 통해 topic의 정보를 확인해보면    
+추가적으로 ```rostopic info /Ioniq_Info```를 통해 topic의 정보를 확인해보면   
+![사진](topic_info.png)
+다음과 같이 canDB라는 이름의 패키지 않의 Aritvmsg로 publish되고 있는 Topic이라고 나온다.
 
+마지막으로 어떻게 message가 publish되고 있는지 확인하기 위해 다음과 같이 패키지의 setup파일로 source를 해준다.
+```
+cd [ros1_workspace]
+source devel/setup.bash
+```
+이후에 ```rostopic echo /Ioniq_Info``` 입력을  통해서 publish되고 있는 정보를 확인한다.
+![사진](topic_echo.png)
 
 
 ## Custom message를 사용할 때 유의할 점.
-- Custom message를 통해서 만들어진 Topic은 Ros1-Ros2 bridge를 통과하지 못한다.    
+1. Custom message를 통해서 만들어진 Topic은 Ros1-Ros2 bridge를 통과하지 못한다.    
 이유는 모르겠지만 Ros1, Ros2에 같은 이름의 패키지, 같은 내용의 msg파일을 만들어서 빌드해도 Ros2에서 인식하지 못한다.    
 이는 Ros1을 아직까지 쓰는 가장 큰 이유이다... Rosbag은 Ros1에서 밖에 없기 때문에...    
 시간이 지난다면 Ros2용 Rosbag이 나오거나 Bridge에 Custom message를 통과시킬 수 있는 솔루션이 나오겠지?    
 **Ros1 msg는 Ros1 내에서만!**    
+
+2. Rosbag을 이용하는 경우, Rosbag를 만들어내는 데에 사용된 msg가 저장되어 있는 패키지 이름의 영향도 받는다.    
+무슨 말인고 하니 현재 Rosbag에는 여러 버전이 있는데 Rosbag의 정보에 관한 [페이지](https://github.com/shinkansan/ARTIV/blob/master/rosbag/rosbag_info.md)를 보면 알겠지만 패키지 이름이 바뀌는 순간이 있다.    
+이유는 패키지 이름에 대문자가 포함되면 생기는 오류 때문에 이름 변경이 불가피했기 때문이다.    
+하여튼 이러한 변화 때문에 canDB 내의 Artivmsg로 녹화된 Rosbag은 candb 내의 Artivmsg로는 받아들일 수 없다.    
