@@ -1,4 +1,4 @@
-# Artiv만의 Custom message를 사용해보자. for ROS1
+# Artiv만의 Custom message를 사용해보자. (for ROS1)
 여호영 / 2020.05.15
 
 현재 ARTIV만의 Custom message가 많이 작성되었는데 각 message를 어떻게 사용해야할까?    
