@@ -2,7 +2,7 @@
 현재 ARTIV만의 Rosbag이 많은데 버전별로 어떤 업데이트가 진행되었을까?    
 각 버전의 특징을 알고 용도에 맞게 사용하자!    
 버전이 의미하는 정보는 다음과 같다.
-- 맨 앞 숫자 : 차 종류 (1 : 아이오닉, 2 : 추후 추가 예정)
+- 맨 앞 숫자 : 차 종류 (1 : 아이오닉, 2 : ERP42)
 - 두 번째 숫자 : 대규모 업데이트
 - 세 번째 숫자 : 소규모 업데이트    
 예시 : 1.0.0 - 아이오닉 초기버전
@@ -134,5 +134,25 @@ test_bag_0502.bag
 2. Add '/Float_Info' topic
 3. Add '/Int_Info' topic
 4. Change msg type : 'Artivmsg' -> 'Float32MultiArray', 'Int16MultiArray' (for ros1-ros2 bridge)
+
+---
+
+## Rosbag ver2.0.0
+
+ERP42의 최초 Rosbag이다.
+
+### NAME
+erp42_raw_0512)ver.2.0.0.bag
+
+### DATE
+2020.05.12
+
+### INCLUDE TOPICS
+/ERP42_Info
+
+### MSG TYPE
+/ERP42_Info : candb/ERPmsg
+
+### UPDATE
 
 ---
