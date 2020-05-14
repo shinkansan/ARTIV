@@ -5,6 +5,7 @@
 ROS1, ROS2에 따라서 message를 어떻게 사용해야하는지 알아보자!(현재 페이지는 ROS1, Artivmsg.msg 기반으로 작성되었다.)    
 Custom message의 설명은 다음 링크에 있으니 용도에 맞는 message를 사용하자.    
 너무 기초적인 Ros python 코드 설명은 생략하겠다.(궁금하면 물어보도록)    
+혹시나 Custom Message는 어떻게 만들어요? 라는 질문을 한다면 다음 [링크](https://github.com/shinkansan/ARTIV/blob/master/ROS/make_custom_msg.md)로...
 
 ## Full Code
 실제 쓰이는 파이썬 코드는 너무 길기 때문에 따로 [링크](https://github.com/shinkansan/ARTIV/blob/master/Comms/Ioniq/dbw_ioniq/dbw_ioniq_node/dbw_ioniq_node.py)를 걸어둘 것이다.    
