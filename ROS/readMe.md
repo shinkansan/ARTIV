@@ -80,6 +80,10 @@ rclcpp, rclpy 등 디펜던시의 기초 설명 및 참고자료 링크를 담�
 쓰레드에서 깔끔하게 node를 생성 및 삭제할 수 있는 방법
 
 
+### 9. [나만의 Custom Message 만들기](./make_custom_msg.md)
+ROS에서 지정해준 msg가 아닌 내가 원하는 타입의 msg를 만드는 방법.
+
+
 ## 공부법
  1. pinkwink에 있는 블로그를 보면서 ROS 주요 용어를 익힌다.
  2. ROS1-melodic ROS2-dashing 를 설치한다. (설치법은 위에 있음)
