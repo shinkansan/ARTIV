@@ -83,3 +83,4 @@ delay가 있는지 확인하는 방법에 대한 매뉴얼입니다. __(abt imag
   
   
 ## [Shell Script Manual](./shell_script.md)
+쉘 스크립트로 다 실행해보기
