@@ -80,3 +80,6 @@ delay가 있는지 확인하는 방법에 대한 매뉴얼입니다. __(abt imag
 * ui 구축을 쉽게하는 방법 with ROS (ubuntu 18.04 환경)
 
   ##
+  
+  
+## [Shell Script Manual](./shell_script.md)
