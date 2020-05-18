@@ -12,4 +12,6 @@
 
 위 5개를 다운받고 설치
 > 안에 있는 readme.md 나 주로 `make` 치고 `sudo make install` 치면 다 설치됨.
+> install kvlibsdk at last
+
 
