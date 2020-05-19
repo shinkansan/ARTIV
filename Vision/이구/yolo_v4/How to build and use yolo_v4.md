@@ -1,5 +1,5 @@
 # how to use yolo_v4
-
+작성자: 이  구
 
 > reference: https://github.com/AlexeyAB/darknet
 
