@@ -3,10 +3,10 @@ Author : 이  구 <br/>
  > reference: https://github.com/YunYang1994/tensorflow-yolov3
  
 ## Setting
-Camera: FLIR Grasshopper3 USB3 (GS3-U3-32S4M-C)
-tensorflow-gpu:1.14.0
-CUDA: 10.0
-cudnn: 7.6.5
+Camera: FLIR Grasshopper3 USB3 (GS3-U3-32S4M-C)   
+tensorflow-gpu:1.14.0   
+CUDA: 10.0   
+cudnn: 7.6.5   
 
 ## Use
 ~~~bash
