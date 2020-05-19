@@ -22,4 +22,9 @@ $ python freeze_graph.py
 $ python3 tensorflow_YOLO_FLIR.py
 ~~~
 
-## Evaluation
+## Evaluation with original yolo(using darknet)
+|  | fps |Memory-Usage|Power(Usage/Cap)|Volatile GPU-Util|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+| tensorflow-yolov3 | 측정 필요 | 4683 MB | 177W/250W | 27% |
+| darknet-yolov3 | 43 fps | 약 1024 MB | 220W/250W | 50% |
+| darknet-yolov4 | 35 fps | 약 2048 MB | 262W/250W | 81% |
