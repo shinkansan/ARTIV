@@ -1,0 +1,29 @@
+<RCC>
+  <qresource prefix="pics">
+    <file>turnleft.png</file>
+    <file>turnright.png</file>
+    <file>trunkopen.png</file>
+    <file>turnsignals.png</file>
+    <file>closeddoors.png</file>
+    <file>beltNo.png</file>
+    <file>beltOK.png</file>
+    <file>headlight.png</file>
+    <file>hazard.png</file>
+    <file>steering_wheel_image.png</file>
+    <file>trunk.png</file>
+    <file>warning.png</file>
+    <file>doors.png</file>
+    <file>hiclipart.com (1).png</file>
+    <file>hiclipart.com.png</file>
+    <file>artiv_logo2.png</file>
+    <file>dgist_1.png</file>
+    <file>headlight.png</file>
+    <file>harzardlight.png</file>
+    <file>ldoor.png</file>
+    <file>rdoor.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>icon.png</file>
+    <file>steering_wheel_image.png</file>
+  </qresource>
+</RCC>
