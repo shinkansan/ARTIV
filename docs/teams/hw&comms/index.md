@@ -23,3 +23,5 @@
   7. [차량 내부 온도조절하기 part1](./thermal_control_part1.md)
   8. [차량 내부 온도조절하기 part2](./thermal_control_part2.md)
   9. [Autodesk CFD 설치](./CFD_install.md)
+  
+  000. [STL 파일](./stl/lidarPart.stl)
