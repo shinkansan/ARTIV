@@ -1,4 +1,4 @@
-#Capsule Maker 
+#Capsule Maker
 
 import numpy as np
 import hashlib
@@ -17,11 +17,11 @@ class capsule():
 
 
 	def security(self, param=None):
-	# Security Settings 
+	# Security Settings
 	# Params:
 	#	hashtype : 'sha256' etc. hashlib support part
 	#   compresstype : image compress type
-		if param : 
+		if param :
 			self._security.update(param)
 
 	def encode(self, passwords):
@@ -63,13 +63,23 @@ class capsule():
 				returnData.append(data[3])
 			if param == "policy":
 				returnData.append(data[4])
-			
+
 		return returnData
 
 	def passValidation(self, sid, cmp2):
 		cmp2_hash = self.encode(cmp2)
 		cmp1 = self.retrieve(sid, ["password"])[0]
 		return cmp2_hash == cmp1
+
+	def idValidation(self, sid):
+		for data in self.db:
+			cmp_sid = data[-3:]
+			#print(cmp_sid, sid)
+			if sid == cmp_sid:
+				return data
+			else:
+				return 0
+
 
 
 
@@ -82,7 +92,3 @@ if __name__ == '__main__':
 	test2db = capsule(db)
 	test2db.add('geonhee', 201811097, 'gunimon', [123,123,123])
 	pprint.pprint(test2db.getCapusle())
-
-
-
-

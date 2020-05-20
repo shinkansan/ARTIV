@@ -31,18 +31,34 @@ class loginWindow(QMainWindow, login_form):
 		frameGm.moveCenter(centerPoint)
 		self.move(frameGm.topLeft())
 
-	def __init__(self):    
+	def __init__(self):
 
-		super().__init__() 
+		super().__init__()
 		self.setupUi(self)
 		self.center()
 		self.setWindowFlags(Qt.WindowStaysOnTopHint)
 
+
+
 		self.commandLinkButton.clicked.connect(self.loginBtn)
 		self.lineEdit_2.returnPressed.connect(self.credentialCheck)
+		self.lineEdit_2.textChanged.connect(self.autoCheck)
 
 		self.update_auth.clicked.connect(self.updateAuth)
 		self.authManager = authentication_server()
+
+		self.pushButton_1.clicked.connect(self.btn_1)
+		self.pushButton_2.clicked.connect(self.btn_2)
+		self.pushButton_3.clicked.connect(self.btn_3)
+		self.pushButton_4.clicked.connect(self.btn_4)
+		self.pushButton_5.clicked.connect(self.btn_5)
+		self.pushButton_6.clicked.connect(self.btn_6)
+		self.pushButton_7.clicked.connect(self.btn_7)
+		self.pushButton_8.clicked.connect(self.btn_8)
+		self.pushButton_9.clicked.connect(self.btn_9)
+		self.pushButton_0.clicked.connect(self.btn_0)
+		self.pushButton_10.clicked.connect(self.btn_b)
+
 
 		try:
 
@@ -55,7 +71,35 @@ class loginWindow(QMainWindow, login_form):
 
 	def loginBtn(self):
 		self.credentialCheck()
-			
+
+	def btn_1(self):
+		self.lineEdit_2.setText(self.lineEdit_2.text() + '1')
+	def btn_2(self):
+		self.lineEdit_2.setText(self.lineEdit_2.text() + '2')
+	def btn_3(self):
+		self.lineEdit_2.setText(self.lineEdit_2.text() + '3')
+	def btn_4(self):
+		self.lineEdit_2.setText(self.lineEdit_2.text() + '4')
+	def btn_5(self):
+		self.lineEdit_2.setText(self.lineEdit_2.text() + '5')
+	def btn_6(self):
+		self.lineEdit_2.setText(self.lineEdit_2.text() + '6')
+	def btn_7(self):
+		self.lineEdit_2.setText(self.lineEdit_2.text() + '7')
+	def btn_8(self):
+		self.lineEdit_2.setText(self.lineEdit_2.text() + '8')
+	def btn_9(self):
+		self.lineEdit_2.setText(self.lineEdit_2.text() + '9')
+	def btn_0(self):
+		self.lineEdit_2.setText(self.lineEdit_2.text() + '0')
+	def btn_b(self):
+		self.lineEdit_2.setText(self.lineEdit_2.text()[:-1])
+
+	def autoCheck(self):
+		if len(self.lineEdit_2.text())>2:
+			self.credentialCheck()
+
+
 	#test 용 0Vyk090ARPaeXe20mRvv
 	def updateAuth(self):
 		buttonReply=QMessageBox.question(self, '인증 서버 DB 갱신', "이 작업은 되돌릴 수 없습니다. \n1. KeyPair를 제대로 확인해주세요\n2. 조회 후 업데이트된 DB 적용까지 시간이 걸릴 수 있습니다.", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
@@ -79,12 +123,14 @@ class loginWindow(QMainWindow, login_form):
 
 
 	def credentialCheck(self, id=None, pwd=None):
-		self.id = id if id else self.lineEdit.text()
+		#self.id = id if id else self.lineEdit.text()
 		self.pwd = pws if pwd else self.lineEdit_2.text()
 
 		try:
-			if self.userDB.passValidation(self.id, self.pwd):
-				self.mW = mainWidnow(self.userDB.retrieve(self.id, 'all'))
+			returnVal = self.userDB.idValidation(self.lineEdit_2.text())
+			print(returnVal)
+			if returnVal:
+				self.mW = mainWidnow(self.userDB.retrieve(returnVal, 'all'))
 				self.mW.show()
 				self.hide()
 				return 1
@@ -96,7 +142,7 @@ class loginWindow(QMainWindow, login_form):
 			self.label_7.setText(f"Invalid Input\n{ex}")
 			return 0
 
-	
+
 
 
 
@@ -109,8 +155,8 @@ class mainWidnow(QMainWindow, main_form):
 		frameGm.moveCenter(centerPoint)
 		self.move(frameGm.topLeft())
 
-	def __init__(self, userInfo):    
-		super().__init__() 
+	def __init__(self, userInfo):
+		super().__init__()
 		self.setupUi(self)
 		self.center()
 		self.saveDialog.clicked.connect(self.saveFileDialog)
@@ -141,7 +187,7 @@ class mainWidnow(QMainWindow, main_form):
 		self.logWin = loginWindow()
 		self.logWin.show()
 		self.adms_subscriber_class.quit()
-		
+
 		self.hide()
 
 	@pyqtSlot(list)
@@ -156,7 +202,7 @@ class mainWidnow(QMainWindow, main_form):
 
 
 
-	
+
 class adms_subscriber(QThread):
 	sig_wheel = pyqtSignal(list)
 
@@ -168,7 +214,7 @@ class adms_subscriber(QThread):
 			raise Exception("Init 실패, 다시시도 해주세요")
 
 		self.node = rclpy.create_node("ADMS")
-		
+
 
 	def __del__(self):
 		print("Command Job Done")
@@ -178,11 +224,11 @@ class adms_subscriber(QThread):
 		self.wait()
 		self.quit()
 
-    
+
 	def run(self):
 			sub2 = self.node.create_subscription(
-				JointState, 
-				'/vehicle/joint_states', 
+				JointState,
+				'/vehicle/joint_states',
 				self.joint_callback)
 
 			rclpy.spin(self.node)
