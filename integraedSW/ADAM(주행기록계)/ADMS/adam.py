@@ -20,7 +20,7 @@ from authManager import authentication_server
 login_form = uic.loadUiType("adam-login2.ui")[0]
 main_form = uic.loadUiType("adam-main.ui")[0]
 
-
+glNode = 0
 
 class loginWindow(QMainWindow, login_form):
 
@@ -123,6 +123,7 @@ class loginWindow(QMainWindow, login_form):
 
 
 	def credentialCheck(self, id=None, pwd=None):
+		global glNode
 		#self.id = id if id else self.lineEdit.text()
 		self.pwd = pws if pwd else self.lineEdit_2.text()
 
@@ -130,6 +131,7 @@ class loginWindow(QMainWindow, login_form):
 			returnVal = self.userDB.idValidation(self.lineEdit_2.text())
 			print(returnVal)
 			if returnVal:
+
 				self.mW = mainWidnow(self.userDB.retrieve(returnVal, 'all'))
 				self.mW.show()
 				self.hide()
@@ -139,6 +141,7 @@ class loginWindow(QMainWindow, login_form):
 				return 0
 			pass
 		except Exception as ex:
+			raise Exception(ex)
 			self.label_7.setText(f"Invalid Input\n{ex}")
 			return 0
 
@@ -214,6 +217,7 @@ class adms_subscriber(QThread):
 			raise Exception("Init 실패, 다시시도 해주세요")
 
 		self.node = rclpy.create_node("ADMS")
+		self.node.get_logger().info("ADMS : ADMS Initialize")
 
 
 	def __del__(self):
