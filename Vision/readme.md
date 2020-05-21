@@ -50,6 +50,7 @@ Implementation시 언어 (Pyhton, CPP) Native로 지원되는거 말고, 다른 
 #### 오늘의 할 일. 
 ##### 5/21(목)
 0. Simple Screen Recoder ppt랑 호환되는 포멧 찾기  > container mp4, audio codec AAC   
+0. 원내주행영상 정리   
 1. Key Points Estimation and Point Instance Segmentation Approach for Lane Detection 실행 영상 기록   
 2. 차선 인식 하나 더 돌려보기   
 3. 1번 메모리 사용량 줄이고, 성능 평가하기   
