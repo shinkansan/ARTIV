@@ -47,7 +47,20 @@ Implementation시 언어 (Pyhton, CPP) Native로 지원되는거 말고, 다른 
 
 ㅇ Baseline 정한 후 ~ : Dataset 형식 및 labeling 방법 조사
 
-### 6월 계획(미정)
-ㅇ FCN을 이용한 steering 결정
+#### 오늘의 할 일. 
+##### 5/21(목)
+0. Simple Screen Recoder ppt랑 호환되는 포멧 찾기   
+1. Key Points Estimation and Point Instance Segmentation Approach for Lane Detection 실행 영상 기록   
+2. 차선 인식 하나 더 돌려보기   
+3. 1번 메모리 사용량 줄이고, 성능 평가하기   
+4. yolo 메모리 줄이면 fps 얼마나 변하는지 확인하기  
+5. 베이스라인 정하기
 
+##### 5/22(목)
+0. 원내주행영상에서 인식해야할 객체 선정   
+1. 후처리   
+
+
+### 6월 계획(미정)
+ㅇ FCN을 이용한 steering 결정   
 ㅇ stereo camera -> depth map을 이용한 객체 인식 및 물체 회피기능 
