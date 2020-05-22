@@ -142,7 +142,7 @@ test_bag_0502.bag
 ERP42의 최초 Rosbag이다.
 
 ### NAME
-erp42_raw_0512)ver.2.0.0.bag
+erp42_raw_0512_ver.2.0.0.bag
 
 ### DATE
 2020.05.12
