@@ -49,18 +49,25 @@ Implementation시 언어 (Pyhton, CPP) Native로 지원되는거 말고, 다른 
 
 #### 오늘의 할 일. 
 ##### 5/21(목)
-0. Simple Screen Recoder ppt랑 호환되는 포멧 찾기  > container mp4, audio codec AAC   
-0. 원내주행영상 정리   
-1. Key Points Estimation and Point Instance Segmentation Approach for Lane Detection 실행 영상 기록   
-2. 차선 인식 하나 더 돌려보기   
-3. 1번 메모리 사용량 줄이고, 성능 평가하기   
-4. yolo 메모리 줄이면 fps 얼마나 변하는지 확인하기  
-5. 베이스라인 정하기
+0. ~~Simple Screen Recoder ppt랑 호환되는 포멧 찾기  > container mp4, audio codec AAC  
+0. ~~원내주행영상 정리   
+0. ~~Key Points Estimation and Point Instance Segmentation Approach for Lane Detection 실행 영상 기록   
+0. ~~차선 인식 하나 더 돌려보기~~  > 다른 버전의 CUDA 이용할 수 있는지 확인   
+0. Key Points Estimation and Point Instance Segmentation Approach for Lane Detection 메모리 사용량 줄이고, 성능 평가 
+0. yolo 메모리 변화에 따른 fps 변화 확인  
+0. 베이스라인 정하기
 
-##### 5/22(목)
-0. 원내주행영상에서 인식해야할 객체 선정   
-1. 후처리   
+##### 5/22(금)
+0. ~~원내주행영상에서 인식해야할 객체 선정   
+0. ~~다른 버전의 CUDA 사용 가능한지 확인, 사용법 정리~~ > Vision/이구/switch-cuda
+0. ~~노트북에 CUDA 9.0 설치~~ > cudnn 설치해야함
+0. 머신러닝용 pc에 CUDA 9.0, cudnn 설치 (설치파일 노트북에 있음)
+0. PolyLaneNet 실행
+0. Key Points Estimation and Point Instance Segmentation Approach for Lane Detection 메모리 사용량 줄이고, 성능 평가   
+0. ~~yolo 메모리 변화에 따른 fps 변화 확인  
+0. 베이스라인 정하기
 
+##### 5/23(토)
 
 ### 6월 계획(미정)
 ㅇ FCN을 이용한 steering 결정   
