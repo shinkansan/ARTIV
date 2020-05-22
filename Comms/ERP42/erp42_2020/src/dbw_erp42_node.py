@@ -1,5 +1,5 @@
-# CAN Listener : ROS Sub -> Processing -> Show data
-# DAta : 2020.05.11
+# CAN Listener : ERP42 -> Computer -> Ros Pub
+# Date : 2020.05.11
 
 import serial
 import rospy

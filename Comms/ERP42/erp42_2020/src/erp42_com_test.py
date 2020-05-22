@@ -1,5 +1,5 @@
-# CAN Listener : ROS Sub -> Processing -> Show data
-# DAta : 2020.05.20
+# CAN Listener : Send_data(Control) -> Computer -> ERP42
+# Date : 2020.05.20
 
 import serial
 import threading

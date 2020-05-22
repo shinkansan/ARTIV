@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-# CAN Listener : ROS Sub -> Processing -> Show data
-# DAta : 2020.05.12
+# CAN Listener : ROS Sub -> Processing -> Show data(easy data)
+# Date : 2020.05.12
 
 import rospy
 import os
