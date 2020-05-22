@@ -90,6 +90,8 @@ Implementation시 언어 (Pyhton, CPP) Native로 지원되는거 말고, 다른 
 0. Key Points Estimation and Point Instance Segmentation Approach for Lane Detection 메모리 사용량 줄이고, 성능 평가   
 0. ~~yolo 메모리 변화에 따른 fps 변화 확인~~
 0. 베이스라인 정하기
+0. ~~affine transform~~ > Vision/서은빈/affinetrans.py 에 올려둘 예정
+0. camera calibration
 
 #### 5/23(토)
 
