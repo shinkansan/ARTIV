@@ -1,3 +1,12 @@
+'''
+Cruise control with PID based on keyboardcontrol
+Author: Seunggi Lee 
+Date: 2020.05.23
+Version: 1.0
+'''
+
+
+
 import rclpy
 from rclpy.qos import qos_profile_default
 import os
@@ -35,18 +44,18 @@ WARNING! Must operate with driver and more than one assist!
 """
 
 moveBindings = {
-		        'a' : (-5), #deg
+	'a' : (-5), #deg
         'd' : (5), #deg
         'q' : (0)
 	            }
 
 speedBindings={
-		        'w' : (50), #APS_ACT Feedback
+		'w' : (50), #APS_ACT Feedback
         's' : (1500), #Brake_ACT Feedback ~20000
         'x' : (5000) #Brake_ACT Feedback ~20000 (HIGH)
 	           }
 cruiseControl={
-                'k' : (1), #mode
+        'k' : (1), #mode
         'l' : (0), #mode
         'i' : (1), #km/h
         'm' : (-1) #km/h
@@ -54,6 +63,7 @@ cruiseControl={
 velocity = 0
 cruise_mode = 0
 cruise_speed = 5
+
 def getKey():
 	tty.setraw(sys.stdin.fileno())
 	select.select([sys.stdin], [], [], 0)
@@ -117,10 +127,10 @@ def cruise(accelPub_, brakePub_):
                         accel_.data = 650 + 10*i
                         brake_.data = 0
             elif pid_out < 0:
-                for i in range(1851):
+                for i in range(2701):
                     if i <= abs(pid_out) < i+1:
                         accel_.data = 0
-                        brake_.data = 8500 + 10*i
+                        brake_.data = 10*i
 
             print("Current Pid Output : ", pid_out)
             #accel_ = accel_out
