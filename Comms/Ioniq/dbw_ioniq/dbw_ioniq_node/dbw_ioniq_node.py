@@ -99,7 +99,7 @@ class rosPub:
         floatmsg.data[23] = self.WheelRR/10
 
         jointmsg.name = ["Avg", "FL", "FR", "RL", "RR"]
-        jointmsg.velocity = [floatmsg.data[0], self.WheelFL/10, self.WheelFR/10, self.WheelRL/10, self.WheelRR/10]
+        jointmsg.velocity = [max([self.WheelRR, self.WheelFR, self.WheelRL, self.WheelFL])/10, self.WheelFL/10, self.WheelFR/10, self.WheelRL/10, self.WheelRR/10]
         # This for JointPub with JointState type
         self.JointPub.publish(jointmsg)
         self.FloatPub.publish(floatmsg)
