@@ -8,9 +8,11 @@
   3. Python Module.  
     ** 안에 있는 .whl 파일을 pip3 install <.whl 파일> 로 설치해야됨 **
   4. Linux SDK Library
-  5. Kvaser SocketCan Device Driver
+  5. Kvaser SocketCan Device Driver -> Kvaser Linux Driver SDK와 충돌하므로 설치할 필요 없음.  
+  
+  따라서 설치해야 할 것은 2번, 3번, 4번 입니다.
 
-위 5개를 다운받고 설치
+위 3개를 다운받고 설치
 > 안에 있는 readme.md 나 주로 `make` 치고 `sudo make install` 치면 다 설치됨.   
 > :warning: install kvlibsdk at last
 
