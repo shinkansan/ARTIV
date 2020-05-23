@@ -3,6 +3,15 @@ Cruise control with PID based on keyboardcontrol
 Author: Seunggi Lee 
 Date: 2020.05.23
 Version: 1.0
+
+# TODO
+오르막길에서 accel 값이 늦게 들어가고, 내리막길에서 브레이크가 늦게 들어감.
+오르막길에서 accel 값이 늦게 들어가는 건 Anti wind-up을 어느정도 늘리면 해결될 것으로 생각됨.
+내리막길에서 brake 값이 늦게 들어가는 건 brake의 데드존을 조정함으로써 해결 가능할 것으로 보임.??
+Settling time이 체감상 길었음.
+Version 1.0 에서는 계수를 각각 P = 1.25, I = 0.75, D = 0, windup_gaurd = 70으로 사용하였음.
+D제어기 사용을 안했었으므로 추후 D제어기 계수 조정 필요 -> overshoot이 해결될 것 같음.
+추후 동영상 촬영 및, rosbag으로 기록할 필요 있음.
 '''
 
 
@@ -44,7 +53,7 @@ WARNING! Must operate with driver and more than one assist!
 """
 
 moveBindings = {
-	'a' : (-5), #deg
+		'a' : (-5), #deg
         'd' : (5), #deg
         'q' : (0)
 	            }
@@ -100,16 +109,21 @@ def cruise(accelPub_, brakePub_):
         if cruise_mode == 1:
             #accel_ = Int16()
             #brake_ = Int16()
-            
+            os.system('cls' if os.name == 'nt' else 'clear')
+			
             cur_time = time.time() 
             del_time = cur_time - prev_time;
-            k_p = 0.2
-            k_i = 0
+			
+			# 
+            k_p = 1.25
+            k_i = 0.75
             k_d = 0
-            windup_guard = 20.0
+            windup_guard = 70.0
+			
             error_p = cruise_speed - velocity
-            error_i += error_p * del_time
-
+			error_i += error_p * del_time
+			
+			# Anti wind-up
             if (error_i < -windup_guard):
                 error_i = -windup_guard
             elif (error_i > windup_guard):
@@ -121,18 +135,31 @@ def cruise(accelPub_, brakePub_):
             prev_error = error_p # Feedback current error  
             prev_time = cur_time # Feedback current time 
 
+			# accel_max - accel_dead_zone = 3000 - 800 = 2200
+			# 2200/10 = 220, 220 + 1 = 221
             if pid_out > 0:
-                for i in range(236):
+                for i in range(221):
                     if i <= pid_out < i+1:
-                        accel_.data = 650 + 10*i
+                        accel_.data = 800 + 10*i
                         brake_.data = 0
+			
+			# brake_max - brake_dead_zone = 27000 - 3500 = 23500
+			# 23500/10 = 2350, 2350 + 1 = 2351
             elif pid_out < 0:
-                for i in range(2701):
+                for i in range(2351):
                     if i <= abs(pid_out) < i+1:
                         accel_.data = 0
-                        brake_.data = 10*i
+                        brake_.data = 3500+10*i
+			
+			# Change PID coefficient through this values
+            print("error_p: ", error_p)
+            print("error_i: ", error_i)
+			print("error_d: ", error_d)
+            print("pidout: ", pid_out)
+            print("desired_speed: ", cruise_speed)
+            print("current_speed: ", velocity)
+            print(accel_.data, brake_.data)
 
-            print("Current Pid Output : ", pid_out)
             #accel_ = accel_out
             brakePub_.publish(brake_)
             accelPub_.publish(accel_)
@@ -189,12 +216,12 @@ def main(args=None):
 
             propulsion_rate = ((accelACT/accelACT_MAX)-(brakeACT/brakeACT_MAX))/(1)*100
 
-            print('='*30,"\n")
+            #print('='*30,"\n")
 
 
             key = getKey()
-            os.system('cls' if os.name == 'nt' else 'clear')
-            print('\n\n\n\n\n','='*30, sep='')
+           
+            #print('\n\n\n\n\n','='*30, sep='')
 
             if key in cruiseControl.keys():
                 if key == "k" :
