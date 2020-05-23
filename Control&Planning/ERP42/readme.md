@@ -1,8 +1,8 @@
 ### Made by Seunggi Lee
 ### 항속주행 + PID control
 
-현재 문제점: 속도를 0.6km/h 단위로 받아오기 때문에 실질적인 제어에 어려움이 있음.
-참고로 본 코드에는 ERP42 통신과 PID control이 합쳐져 있음
+현재 문제점: 속도를 0.6km/h 단위로 받아오기 때문에 실질적인 제어에 어려움이 있음.  
+참고로 본 코드에는 ERP42 통신과 PID control이 합쳐져 있음  
 
 
 # TODO
