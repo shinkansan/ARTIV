@@ -63,3 +63,7 @@ first, check the version.
 ~~~ bash
 pip3 install torch===1.2.0 torchvision===0.4.0 -f https://download.pytorch.org/whl/torch_stable.html
 ~~~
+## Install OpenCV
+refer: [Link](https://webnautes.tistory.com/1186)
+
+## Install Ros, Ros2, ... and so on...
