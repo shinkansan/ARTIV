@@ -1,8 +1,9 @@
 ### Made by Seunggi Lee
 ### 항속주행 + PID control
 
-PID control이 정확히 작동하는지 확인해 볼 필요 있음.
-ROS2에서 작동하기 때문에 dbw_ioniq_node를 사용해 속도를 받아와도 되지만, 데이터의 양이 커서 그냥 JointState로 속도값을 받아옴.
+PID control이 정확히 작동하는지 확인해 볼 필요 있음.  
+ROS2에서 작동하기 때문에 dbw_ioniq_node를 사용해 속도를 받아와도 되지만, 데이터의 양이 커서 그냥 JointState로 속도값을 받아옴.  
+Angular speed control 하려면 아마 dbw_ioniq_node 사용해야 할듯?
 
 # TODO
 > - 오르막길에서 accel 값이 늦게 들어가고, 내리막길에서 브레이크가 늦게 들어감.
