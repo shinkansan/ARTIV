@@ -24,7 +24,7 @@ Dedicate Server address
 1. 고정밀 지도와 관련 툴킷, GPS IMU 사용 방법을 알고싶다면?   
   위치측위 파트 [./HDmap](./HDmap).  
 1. 제어기와 Path-Planning 알고리즘을 보고싶다면.  
-  주행제어 파트 [./Control&Plannign](./Control&Planning).  
+  주행제어 파트 [./Control&Planning](./Control&Planning).  
 1. 라이다를 이용한 객체 검출과 추적에 대해 보고싶다면.  
   라이다 파트 [./lidar&radar](/.lidar&radar).  
 1. 특정 상황을 녹화한 rosbag 을 다운받고 싶다면.  
