@@ -11,10 +11,10 @@ refer: [Link](https://codechacha.com/ko/install-nvidia-driver-ubuntu/)
 ~~~bash
 nvidia-smi
 ~~~
-2. Download Cuda 10.1 runfile 
-[Link](https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal)
+2. Download Cuda 10.0 runfile 
+[Link](https://developer.nvidia.com/cuda-10.0-download-archive-base?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal)
 
-3. Run the cuda 10.1 in cuda file. If not working, you make it executable.
+3. Run the cuda 10.0 in cuda file. If not working, you make it executable.
 [reference](http://blog.naver.com/PostView.nhn?blogId=angelkim88&logNo=221630554860&parentCategoryNo=&categoryNo=73&viewDate=&isShowPopularPosts=true&from=search)
 
 4. modify bashrc file
@@ -27,6 +27,9 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.0/lib64
 ~~~bash
 source ~/.bashrc
 ~~~
+
+6. cuda 9.0 download
+https://gist.github.com/andyweizhao/639e94b60c166f57964aafedeb465e90
 
 ## Install Cudnn
 1. GOTO [Link](https://developer.nvidia.com/rdp/cudnn-download), and download cuDNN Runtime Library for Ubuntu18.04 (Deb)
