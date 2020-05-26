@@ -15,6 +15,6 @@ visualization.py은 현재 속도를 matplotlib으로 시각화 해주는 파일
 > - Version 1.0 에서는 계수를 각각 P = 1.25, I = 0.75, D = 0, windup_gaurd = 70으로 사용하였음.
 > - D제어기 사용을 안했었으므로 추후 D제어기 계수 조정 필요 -> overshoot이 해결될 것 같음.
 > - 추후 동영상 촬영, 시각화, rosbag으로 기록할 필요 있음.
-
-> 0527) kp = 1.25, ki = 0.9, kd = 0.1로 했을 때 평지에서 desired speed가 15이면, overshoot이 25정도로 나오고 settling time이 상당히 길다.
-> - 가장 문제점: overshoot이 너무 크고, settling time이 너무 길다.
+>  
+> 0527) kp = 1.25, ki = 0.9, kd = 0.1로 했을 때 평지에서 desired speed가 15이면, overshoot이 25정도로 나오고 settling time이 상당히 길다.  
+> - 가장 문제점: overshoot이 너무 크고, settling time이 너무 길다.  
