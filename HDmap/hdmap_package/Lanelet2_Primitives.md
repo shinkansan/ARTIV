@@ -20,16 +20,19 @@ Tag는 항상 소문자와 underscore로 쓰여진다. 어떤 value는 특별한
 
 ## Points
 
-A point consists of an ID, a 3d coordinate and attributes. The Id must be unique to a point. Points are no meaningful objects in Lanelet2 per se. Points are only meaningful together with other objects in Lanelet2. The only situation where individual points are important is when tagging start and end points of a dashed line marking.
+Point는 ID, 3D 좌표, 속성으로 구성되어 있다. ID는 point마다 고유해야한다. Point는 Lanelet2 자체에서 의미가 있는 것은 아니다. Point는 Lanelet2에서 다른 object들과 함께할 때 의미가 있다. 유일하게 개별 point가 의미 있을 때는 dashed line marking에서의 시작점과 끝 점에 tagging할 때 이다.
+
 
 ### Coordinate System
-Lanelet2 assumes that maps layed out in the x-y plane. Since the road geometry tends to be flat, that gives the z-Coordinate a less important meaning than the other coordinates. Points can therefore simple be converted to a 2D point where the z-Coordinate is ignored. Still, 3D information is important when roads overlap so that it can be determined if two roads are actually intersecting or just crossing each other at a different height. When determining height information, is generally assumed that the heigt is metric and with respect to WGS84 (i.e. the distance to the earth ellipsoid). For more details on geometry calculation, see [here](GeometryPrimer.md).
+Lanelet2는 지도가 x-y 평면에 놓여있다고 가정한다. 따라서 도로 geometry는 보통 평평하다고 생각해도 어느정도 무방하기 때문에, 다른 좌표에 비해 z좌표는 덜 중요하다. 그러므로 point는 z좌표가 무시되는 2D point로 쉽게 변환될 수 있다. 그래도 두 도로가 실제로 교차하거나, 다른 높이에서 서로 교차하는지 판단할 수 있도록 하는 3D 정보는 중요하다. 높이 정보를 결정할 때, 일반적으로 높이는 미터법을 사용하고 WGS84 좌표계를 사용한다. Geometry 계산에 대한 더 많은 정보를얻고 싶다면 [여기](GeometryPrimer.md)를 봐라. (링크 x)
 
 It is still possible to follow a "2.5D"-Approach so that the height is generally 0 and only deviates to distinguish between bridges or tunnels. This approach might require configuring the routing graph differently, so that a height distance of 1 (meaning a new layer) is not wrongly interpreted as 1**m** (this would be interpreted as two conflicting lanes).
 
+
+
 ## Linestrings
 
-![Linestring](images/linestring.png)
+![Linestring](images/linestring.png) (사진 박살)
 
 Linestrings (also known as polylines or linestrips) are defined by an ordered list of points with linear interpolation in between. They are the basic building block of a lanelet map and used for any phisically observable part of the map.
 
@@ -46,7 +49,7 @@ Polygons, are rarely used to transport mapping information (except for e.g. traf
 
 ## Lanelet
 
-![Lanelet](images/lanelet.png)
+![Lanelet](images/lanelet.png) (사진 박살)
 
 A lanelet represents one *atomic* section of a lane. Atomic means that along a lanelet, traffic rules (including possible lane changes to other lanelts) do not change.
 
@@ -66,7 +69,7 @@ For more details on the exact tags of a Lanelet, please read [here](LaneletAndAr
 
 ## Area
 
-![Area](images/area.png)
+![Area](images/area.png) (사진 박살)
 
 An Area has similar properties like a Lanelet, but instead of representing *directed* traffic from entry to exit, an area represents *undirected* traffic within its surface. An Area can have multiple entry and exit points. A typical example of an area would be squares that are used by pedestrians or parking lots and emergency lanes for vehicles. Similar to lanelets, traffic rules must not change on the areas.
 
@@ -82,7 +85,7 @@ Similarly to lanelets, Areas can refer to regulatory elements. Also, it must be 
 
 ## Regulatory Elements
 
-![Regulatory element](images/regulatory_element.png)
+![Regulatory element](images/regulatory_element.png) (사진 박살)
 
 Regulatory elements are a generic way to express traffic rules. They are referenced by lanelets or Areas for which they apply.
 
