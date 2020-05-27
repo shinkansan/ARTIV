@@ -21,7 +21,8 @@ python3 tools/test_lanenet.py --weights_path ./model/tusimple_lanenet_vgg/tusimp
 ## Evaluation
 |  | fps |Memory-Usage|Power(Usage/Cap)|Volatile GPU-Util|
 |:--------:|:--------:|:--------:|:--------:|:--------:|
-| lanenet | 약 10 fps | 약 7511MB | 100W/250W | 20% |
+| PINet | 약 5~6 fps | 약 1400 MB | 64W/250W | 6% |
+| lanenet | 약 10 fps | 약 7511 MB | 100W/250W | 20% |
 
 inference time: 약 0.02s
 postprocessing time: 약 0.08s
