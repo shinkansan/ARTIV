@@ -53,13 +53,13 @@ WARNING! Must operate with driver and more than one assist!
 """
 
 moveBindings = {
-		'a' : (-5), #deg
+	'a' : (-5), #deg
         'd' : (5), #deg
         'q' : (0)
 	            }
 
 speedBindings={
-		'w' : (50), #APS_ACT Feedback
+	'w' : (50), #APS_ACT Feedback
         's' : (1500), #Brake_ACT Feedback ~20000
         'x' : (5000) #Brake_ACT Feedback ~20000 (HIGH)
 	           }
