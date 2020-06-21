@@ -20,7 +20,7 @@ CAN Interface를 구매한 National Instrument(NI)사에 기술 문의를 하였
 
 두 RS232 포트를 한 케이블로 연결하고
 ![사진](./media/loop_back2.jpg)    
-[사진2] Loop-back 테스트를 진행하는     
+[사진2] Loop-back 테스트를 진행하는 모습    
 
 Labview 내의 예제를 실행해본다. --> 정상적으로 결과값이 나오며 기기 자체에는 결함이 없는 것으로 확인됨!
 
