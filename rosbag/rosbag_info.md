@@ -137,6 +137,29 @@ test_bag_0502.bag
 
 ---
 
+## Rosbag ver1.3.0
+
+Linuxcan 도움 없이 Ioniq에서 얻은 CAN raw frame이다.
+모든 id의 frame이 들어있으므로 정제가 필요한 Rosbag이다.
+
+### NAME
+raw_can_ioniq_0622.bag
+
+### DATE
+2020.06.22
+
+### INCLUDE TOPICS
+/received_messages
+
+### MSG TYPE
+/received_messages : can_msgs/Frame
+
+### UPDATE
+1. All of CAN frame
+2. No parsed data
+
+---
+
 ## Rosbag ver2.0.0
 
 ERP42의 최초 Rosbag이다.
