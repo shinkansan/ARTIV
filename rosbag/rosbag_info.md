@@ -139,7 +139,7 @@ test_bag_0502.bag
 
 ## Rosbag ver1.3.0
 
-Linuxcan 도움 없이 Ioniq에서 얻은 CAN raw frame이다.
+Linuxcan 도움 없이 Ioniq에서 얻은 CAN raw frame이다.    
 모든 id의 frame이 들어있으므로 정제가 필요한 Rosbag이다.
 
 ### NAME
