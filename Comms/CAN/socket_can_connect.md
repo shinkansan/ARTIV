@@ -30,7 +30,7 @@ Kvaser사의 CAN 선을 컴퓨터에 연결하였다면 다음 명령어를 순�
 ```modprobe kvaser_usb```    
 ```ip link set can0 type can bitrate 500000```    
 ```ifconfig can0 up```    
-만약 위의 코드 입력 중에 Permission에 대한 오류가 발생하면 명령어 맨 앞에 sudo를 붙이자!    
+만약 위 과정 중에 Permission에 대한 오류가 발생하면 명령어 맨 앞에 sudo를 붙이자!    
 위 과정이 성공적이라면 CAN 연결은 끝났다.    
 아래의 마지막 명령어를 입력해 CAN 정보를 받아올 수 있다.
 ```candump can0```    
