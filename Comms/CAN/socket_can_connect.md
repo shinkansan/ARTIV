@@ -72,6 +72,7 @@ CAN 정보를 수신하기 위한 마지막 단계로, 이를 위해서 이때�
 
 위 명령어를 실행 후에 rostopic list 중에 /received messages가 있으면 성공이다!    
 topic의 정보를 보면 알겠지만 메시지 타입이 can_msgs/Frame이므로 주의하길 바란다.(source 등등...)    
+추가 기능에 대한 [정보](http://wiki.ros.org/socketcan_bridge)
 
 ## 추후 계획
 이제 kvaser 전용 툴 없이도 can raw data를 받아올 수 있다.    
