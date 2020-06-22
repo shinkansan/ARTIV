@@ -25,7 +25,7 @@ PDC는 헤더와 데이터 정보를 가진 파일이다. 아래 사진을 보�
 
 > `sudo apt-get update && sudo apt-get install -y software-properties-common git`
 
-> `sudo apt-get install -y libpcl-dev #ubuntu 18 (PCL 1.8)`
+> `sudo apt-get install -y libpcl-dev`
 
 > `sudo apt-get update -qq`
 
