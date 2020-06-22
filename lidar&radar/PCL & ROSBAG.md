@@ -22,6 +22,9 @@ rosbag을 rviz로 시각화한 사진
 4. Add -> By topic -> velodyne_points의 PointCloud2 추가.
 
 
+# sudo ln -s PCLConfig.cmake pclConfig.cmake
+
+
 ### 1. Input
 
 ![Screenshot from 2020-05-12 22-02-42](https://user-images.githubusercontent.com/59762212/81694592-7b243180-949c-11ea-8a47-c9c75907ef64.png)
