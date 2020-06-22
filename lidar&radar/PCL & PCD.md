@@ -22,15 +22,6 @@ PDC는 헤더와 데이터 정보를 가진 파일이다. 아래 사진을 보�
 
 ### PCL 설치 방법
 #### PCL-C++ 
-참고 사이트[한글]에 들어가서 
-> `sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl -y && sudo apt-get update`
-치지마라 sudo apt update 할 때 에러난다.
-만약 모르고 쳤다면 
-> `cd /etc/apt/sources.list.d`
-치고 들어가서 
-> `sudo rm -r v-launchpad-jochen-sprickerhof-de/pcl`
-해서 비슷하게 생긴 두 줄을 지운 후 아래 차례를 따라가면 된다.
-####
 
 > `sudo apt-get update && sudo apt-get install -y software-properties-common git`
 
@@ -57,6 +48,18 @@ PDC는 헤더와 데이터 정보를 가진 파일이다. 아래 사진을 보�
   ros 뒤의 melodic은 ros 버전을 맞춰서 적어주면 된다.
 
 설치 끝. 
+####
+
+참고 사이트[한글]에 들어가서 
+> `sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl -y && sudo apt-get update`
+치지마라 sudo apt update 할 때 에러난다.
+만약 모르고 쳤다면 
+> `cd /etc/apt/sources.list.d`
+치고 들어가서 
+> `sudo rm -r v-launchpad-jochen-sprickerhof-de/pcl`
+해서 비슷하게 생긴 두 줄을 지운 후 아래 차례를 따라가면 된다.
+####
+
 
 ##
 
