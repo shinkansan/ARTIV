@@ -14,7 +14,7 @@ Author : 여호영
 Kvaser사의 전용 툴이 아닌 ROS Package를 이용해 CAN 통신 연결 오류를 없애고자 한다.    
 그 해결책으로는 ROS 공식 Package인 ros_canopen을 사용하는 것이다.     
 
-### Download ros_canopen Package
+### 1. Download ros_canopen Package
 우선 다음 git 명령어로 ros_canpoen 패키지를 다운받자.    
 
 
@@ -31,7 +31,7 @@ Kvaser사의 전용 툴이 아닌 ROS Package를 이용해 CAN 통신 연결 오
 ```sudo apt-get update -y```    
 ```sudo apt-get install -y libmuparser-dev```     
 
-### 컴퓨터와 CAN 장치 연결
+### 2. 컴퓨터와 CAN 장치 연결
 *참고로 이 과정은 [Voyage](https://news.voyage.auto/an-introduction-to-the-can-bus-how-to-programmatically-control-a-car-f1b18be4f377) 사이트를 참고했다.*    
 Kvaser사의 CAN 선을 컴퓨터에 연결하였다면 다음 명령어를 순서대로 입력한다.    
 
@@ -52,7 +52,7 @@ Kvaser사의 CAN 선을 컴퓨터에 연결하였다면 다음 명령어를 순�
 
 참고로 위 명령어는 단지 CAN Bus를 Monitoring하는 명령어이며 필수는 아님.    
 
-### CAN raw data를 ros에 publish! (별 다섯개)
+### 3. CAN raw data를 ros에 publish! (별 다섯개)
 CAN 정보를 수신하기 위한 마지막 단계로, 이를 위해서 이때까지 고생했으니 조금만 더 힘내자.    
 우선 source 후에 roscore를 실행해야 한다.(ros1 기준)    
 다운받은 ros_canopen 패키지의 workspace로 이동하자.    
