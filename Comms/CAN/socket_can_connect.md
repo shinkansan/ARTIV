@@ -14,6 +14,12 @@ Author : 여호영
 Kvaser사의 전용 툴이 아닌 ROS Package를 이용해 CAN 통신 연결 오류를 없애고자 한다.    
 그 해결책으로는 ROS 공식 Package인 ros_canopen을 사용하는 것이다.     
 
+### 0. Install tools
+```
+sudo apt-get install can-utils
+sudo apt-get install net-tools
+```
+
 ### 1. Download ros_canopen Package
 우선 다음 git 명령어로 ros_canpoen 패키지를 다운받자.    
 
@@ -41,10 +47,10 @@ Kvaser사의 CAN 선을 컴퓨터에 연결하였다면 다음 명령어를 순�
 
 
 ```
-modprobe can    
-modprobe kvaser_usb    
-ip link set can0 type can bitrate 500000    
-ifconfig can0 up
+sudo modprobe can    
+sudo modprobe kvaser_usb    
+sudo ip link set can0 type can bitrate 500000    
+sudo ifconfig can0 up
 ```    
 
 
@@ -78,7 +84,7 @@ source devel/setup.bash
 
 
 ```
-rosrun socketcan_bridge socketcan_to_topic can0
+rosrun socketcan_bridge socketcan_to_topic_node can0
 ```    
 
 
