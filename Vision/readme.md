@@ -105,7 +105,8 @@ Implementation시 언어 (Pyhton, CPP) Native로 지원되는거 말고, 다른 
 
 ㅇ stereo camera -> depth map을 이용한 객체 인식 및 물체 회피기능 
 
-ㅇ 06/22 : Vision팀 컴퓨터 셋팅 끝내기* FLIR 카메라 인식 되는지 확인 - CUDA, cudnn 설치확인. 시험기간에 yolo 돌렸을 때 gpu 거의 사용 안하는 거 확인했음.   
+ㅇ 06/22 : Vision팀 컴퓨터 셋팅 끝내기
+   - FLIR 카메라 인식 되는지 확인 - CUDA, cudnn 설치확인. 시험기간에 yolo 돌렸을 때 gpu 거의 사용 안하는 거 확인했음.   
 
 ㅇ 06/23 ~ 06/28 : 베이스라인 결정   
    - 객체인식정확도 크게 신경쓰지 않고, 빠른 네트워크들 찾아보기
