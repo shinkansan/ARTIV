@@ -3,7 +3,7 @@
 artiv_can package는 can raw data의 parsing 과정을 거쳐 사람이 이해하기 쉬운 데이터로 변환해준다.    
 (ex. km/h, degree 등등)    
 이는 ros1-melodic을 위한 프로그램이다.    
-ros1 버전으로 개발한 이유는 rosbag을 당장 사용해야할 상황이기 때문이다.    
+ros1 버전으로 개발한 이유는 rosbag을 당장 사용해야 할 상황이기 때문이다.    
 아마 can_msgs는 ROS 표준 msg 규격이 아니기에 ros bridge로 통과되지 않을 것이다.(사실 확인 필요)    
 그래서 ros1에서 rosbag을 통해서 데이터를 받고 bridge로 넘겨줄 수 있도록 parsing하는 과정이 필요하다.    
 
