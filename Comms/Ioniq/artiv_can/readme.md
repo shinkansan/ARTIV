@@ -42,5 +42,5 @@ rostopic list 중에 /Ioniq_Info, /JointState가 있으면 완료된 것이다.
 
 ## 4. Complete
 차량으로부터 데이터 수신 및 parsing이 완료되었다.    
-이제는 원하는 데이터를 subscribe해서 이용하기만 하면 된다.
+이제는 원하는 데이터를 subscribe해서 이용하기만 하면 된다.    
 참고로 데이터의 순서와 단위를 알고 싶다면 [여기](https://docs.google.com/document/d/1Mvyvs1Tt20U99uA4o_h4c2-KB7s64NOQz6vd_-SGwh4/edit)로!    
