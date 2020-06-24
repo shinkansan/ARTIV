@@ -26,9 +26,7 @@ Point는 ID, 3D 좌표, 속성으로 구성되어 있다. ID는 point마다 고�
 ### Coordinate System
 Lanelet2는 지도가 x-y 평면에 놓여있다고 가정한다. 따라서 도로 geometry는 보통 평평하다고 생각해도 어느정도 무방하기 때문에, 다른 좌표에 비해 z좌표는 덜 중요하다. 그러므로 point는 z좌표가 무시되는 2D point로 쉽게 변환될 수 있다. 그래도 두 도로가 실제로 교차하거나, 다른 높이에서 서로 교차하는지 판단할 수 있도록 하는 3D 정보는 중요하다. 높이 정보를 결정할 때, 일반적으로 높이는 미터법을 사용하고 WGS84 좌표계를 사용한다. Geometry 계산에 대한 더 많은 정보를얻고 싶다면 [여기](GeometryPrimer.md)를 봐라. (링크 x)
 
-It is still possible to follow a "2.5D"-Approach so that the height is generally 0 and only deviates to distinguish between bridges or tunnels. This approach might require configuring the routing graph differently, so that a height distance of 1 (meaning a new layer) is not wrongly interpreted as 1**m** (this would be interpreted as two conflicting lanes).
-
-
+일반적으로 "2.5D"-Approach를 따를 수 있어서, 높이는 0이고 교량 혹은 터널을 구별할때만 0이 아니다. 이 방법을 사용하기 위해서는 routing graph를 다르게 구성해야한다. 따라서 높이 거리(height distance) 1(새 레이어를 뜻함)이 1**m**로 오해석되지 않는다. (이것은 두 개의 충돌되는 차선으로 해석됩니다.)
 
 ## Linestrings
 
