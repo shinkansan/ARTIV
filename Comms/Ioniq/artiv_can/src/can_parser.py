@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import rospy
 import os
-import pandas as pd
 
 from std_msgs.msg import Float32MultiArray
 from sensor_msgs.msg import JointState
