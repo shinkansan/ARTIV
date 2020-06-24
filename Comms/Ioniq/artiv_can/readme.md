@@ -1,4 +1,4 @@
-# artiv_can 사용 설명서
+# artiv_can 사용 설명서 for ros1-melodic
 
 artiv_can package는 can raw data의 parsing 과정을 거쳐 사람이 이해하기 쉬운 데이터로 변환해준다.    
 (ex. km/h, degree 등등)
