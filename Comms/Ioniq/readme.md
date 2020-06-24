@@ -23,6 +23,11 @@ Authors : Hoyeong Yeo, Gwanjun Shin
  5. TODO
     1. 통신 에러 핸들링 및 ros fatal 출력
     2. transmit buffer 에러 발생 해결
+    
+ 3. [./artiv_can](./artiv_can) Kvaser 전용 프로그램으로부터 독립.    
+    1. 기존 linuxcan에서의 연결 오류를 socketcan으로 대체하면서 해결.    
+    2. 현재 ROS1-melodic이 개발되었고 추후 ROS2-dashing 버전도 개발 예정.    
+    3. 사용 방법은 해당 폴더 내에 readme.md 파일을 참고 바람.
 
 ## rosbag
 
