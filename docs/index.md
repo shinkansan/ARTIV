@@ -3,7 +3,7 @@
 
 ### 파트별 글
   1. [라이다/레이다 파트](./teams/lidar/)
-  2. [통합SW 파트](./teams/integratedsw/)
+  2. [통합SW 파트](./teams/integratedsw/index.md)
   3. [차량HW/통신파트](./teams/hw&comms/)
   4. [차세대교통시스템 파트](./teams/transport_system/index.md)
   5. [Computer Vision part](/teams/vision/index.md)
