@@ -52,13 +52,13 @@ date: 2020.06.25
 ```(bash)
 ./darknet detector train data/obj.data yolo-obj.cfg yolov4.conv.137   
 ```
-(file yolo-obj_last.weights will be saved to the build\darknet\x64\backup\ for each 100 iterations)   
-(file yolo-obj_xxxx.weights will be saved to the build\darknet\x64\backup\ for each 1000 iterations)   
-(to see the mAP & Loss-chart during training on remote server without GUI, use command darknet.exe detector train data/obj.data yolo-obj.cfg yolov4.conv.137 -dont_show -mjpeg_port 8090 -map then open URL http://ip-address:8090 in Chrome/Firefox browser)   
+  (file yolo-obj_last.weights will be saved to the build\darknet\x64\backup\ for each 100 iterations)   
+  (file yolo-obj_xxxx.weights will be saved to the build\darknet\x64\backup\ for each 1000 iterations)   
+  (to see the mAP & Loss-chart during training on remote server without GUI, use command darknet.exe detector train data/obj.data yolo-obj.cfg yolov4.conv.137 -dont_show -mjpeg_port 8090 -map then open URL http://ip-address:8090 in Chrome/Firefox browser)   
 
 9. 학습이 끝나면, 결과 파일인  yolo-obj_final.weights 는 다음 경로에 있다. path build\darknet\x64\backup\   
 
-After each 100 iterations you can stop and later start training from this point. For example, after 2000 iterations you can stop training, and later just start training using:   
+   After each 100 iterations you can stop and later start training from this point. For example, after 2000 iterations you can stop training, and later just start training using:   
 ./darknet detector train data/obj.data yolo-obj.cfg backup\yolo-obj_2000.weights   
 
 
