@@ -62,11 +62,11 @@ After each 100 iterations you can stop and later start training from this point.
 ./darknet detector train data/obj.data yolo-obj.cfg backup\yolo-obj_2000.weights   
 
 
-**Note: If during training you see nan values for avg (loss) field - then training goes wrong, but if nan is in some other lines - then training goes well.   
+**Note: If during training you see nan values for avg (loss) field - then training goes wrong, but if nan is in some other lines - then training goes well.**   
 
-**Note: If you changed width= or height= in your cfg-file, then new width and height must be divisible by 32.   
+**Note: If you changed width= or height= in your cfg-file, then new width and height must be divisible by 32.**   
 
-**Note: After training use such command for detection: darknet.exe detector test data/obj.data yolo-obj.cfg yolo-obj_8000.weights   
+**Note: After training use such command for detection: darknet.exe detector test data/obj.data yolo-obj.cfg yolo-obj_8000.weights**   
 
-**Note: if error Out of memory occurs then in .cfg-file you should increase subdivisions=16, 32 or 64: link   
+**Note: if error Out of memory occurs then in .cfg-file you should increase subdivisions=16, 32 or 64: link**   
 
