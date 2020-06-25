@@ -1,0 +1,8 @@
+prefix=/home/vision/catkin_ws/install
+
+Name: yolov3_pytorch_ros
+Description: Description of yolov3_pytorch_ros
+Version: 0.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
