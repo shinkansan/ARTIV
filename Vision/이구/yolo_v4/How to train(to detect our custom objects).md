@@ -20,7 +20,7 @@ date: 2020.06.25
     
 2. build\darknet\x64\data\ 폴더에 obj.names 파일을 만든다. 각 line은 object의 이름   
 
-3. build\darknet\x64\data\ 폴더에 obj.data 파일을 만든다.
+3. build\darknet\x64\data\ 폴더에 obj.data 파일을 만든다.   
   (ex)
   classes= 2   
   train  = data/train.txt   
