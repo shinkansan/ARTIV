@@ -46,15 +46,15 @@ date: 2020.06.25
   data/obj/img3.jpg   
   
 7. convolutional layer를 위한 pre-trained weights를 다운받는다. [링크](https://pjreddie.com/media/files/darknet53.conv.74)   
-(0에서 받은거랑 뭐가 다르지?)
+(0. 에서 받은거랑 뭐가 다르지?)
 
 8. To train on Linux use command:   
 ```(bash)
 ./darknet detector train data/obj.data yolo-obj.cfg yolov4.conv.137   
 ```
-  (file yolo-obj_last.weights will be saved to the build\darknet\x64\backup\ for each 100 iterations)   
-  (file yolo-obj_xxxx.weights will be saved to the build\darknet\x64\backup\ for each 1000 iterations)   
-  (to see the mAP & Loss-chart during training on remote server without GUI, use command darknet.exe detector train data/obj.data yolo-obj.cfg yolov4.conv.137 -dont_show -mjpeg_port 8090 -map then open URL http://ip-address:8090 in Chrome/Firefox browser)   
+   (file yolo-obj_last.weights will be saved to the build\darknet\x64\backup\ for each 100 iterations)   
+   (file yolo-obj_xxxx.weights will be saved to the build\darknet\x64\backup\ for each 1000 iterations)   
+   (to see the mAP & Loss-chart during training on remote server without GUI, use command darknet.exe detector train data/obj.data yolo-obj.cfg yolov4.conv.137 -dont_show -mjpeg_port 8090 -map then open URL http://ip-address:8090 in Chrome/Firefox browser)   
 
 9. 학습이 끝나면, 결과 파일인  yolo-obj_final.weights 는 다음 경로에 있다. path build\darknet\x64\backup\   
 
