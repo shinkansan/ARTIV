@@ -78,7 +78,7 @@ rclcpp, rclpy 등 디펜던시의 기초 설명 및 참고자료 링크를 담�
 ### 8. Tips
 1. [Node Rebuilding while Threading](./rebuild_node_in_thread.md)   
 쓰레드에서 깔끔하게 node를 생성 및 삭제할 수 있는 방법  
-2. [How to make ROSlaunch file?](./make-roslaunch.md)
+2. [Making ROSlaunch file](./make-roslaunch.md)  
 여러 작업을 한 문장으로 스마트하게 수행하는 방법
 
 
