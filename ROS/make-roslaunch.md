@@ -10,4 +10,9 @@ launch 파일 원클릭으로 알아서 다 실행해준다.
 이제부터 ROSlaunch 파일을 사용하여 스마트하게 작업하자.  
 (일일이 터미널에 치고 있는 사람 옆에서 이걸 쓰면 간지나는 모습을 보여줄 수 있다.)  
 
+## How to make ROSlaunch file?  
+그렇다면 ROSlaunch file은 어떻게 만들 수 있을까?  
+launch file은 xml과 같은 레이아웃으로 이루어져있다.  
+따라서 우선 `<launch> </launch>` 를 각각 맨위, 맨아래에 써서 이것이 launch파일임을 표시하자.  
+
 To be continued...
