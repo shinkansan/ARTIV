@@ -1,0 +1,2 @@
+beginner_tutorials:usb_cam:yolov3_pytorch_ros
+-DCATKIN_DEVEL_PREFIX=/home/vision/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/vision/catkin_ws/install -G Unix Makefiles
