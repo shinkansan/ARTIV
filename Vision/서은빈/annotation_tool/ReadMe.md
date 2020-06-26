@@ -45,5 +45,3 @@ Culane
 &nbsp;&nbsp;  ->laneseg  
 &nbsp;&nbsp;&nbsp;&nbsp;    ->videopath  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ->0000.png  
-  
-![image](https://user-images.githubusercontent.com/53460541/85851905-8fbd4e80-b7ea-11ea-9842-0a7ade1c64e4.png)
