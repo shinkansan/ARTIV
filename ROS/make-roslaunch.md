@@ -114,7 +114,7 @@ launch 파일의 내부를 아래 나열된 태그 중 필요한 것으로 채�
  >   include한 파일에 argument를 전달한다.  
 
 
-이외에도 `<rosparam>, <group>, <param>` 등 사양할 수 있는 태그가 많다.
+이외에도 `<rosparam>, <group>, <param>` 등 사용할 수 있는 태그가 많다.
 다른 태그에 대한 설명은 [여기](https://enssionaut.com/board_robotics/974)나 [로스 위키 roslaunch/XML](wiki.ros.org/roslaunch/XML)의 4번 항목(Tag Reference)을 참고하라.  
 
 ## How to execute ROSlaunch file?  
@@ -133,7 +133,7 @@ roslaunch는 roslaunch.launch(XML format)를 뿐만이아니라그외 관련 기
 
 
 ## Reference lists 
-1. wiki.ros.org/roslaunch
+1. [wiki.ros.org/roslaunch](wiki.ros.org/roslaunch)
 2. https://enssionaut.com/board_robotics/974
 3. http://hrepository.blogspot.com/2017/03/roslaunchfile.html  
 
