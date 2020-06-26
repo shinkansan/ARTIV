@@ -123,7 +123,7 @@ def make_txt_file(image_path, clone):
 	make_binary_image(image_path)
 	## DO SAVE, txt format, mkdir, or something good!
 	ids = str(currentFrame)
-	path = image_path +"_annot"
+	path = "./culane/video/"+image_path +"_annot"
 	try:
 		if not os.path.exists(path):
 			os.makedirs(path)
