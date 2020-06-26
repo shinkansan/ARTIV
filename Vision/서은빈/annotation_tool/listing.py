@@ -9,7 +9,7 @@ args = ap.parse_args()
 
 path = args.file_path
 seg_path = args.seg_file_path
-seg_path = seg_path[seg_path.find('/')+1:]
+seg_path = seg_path[seg_path.find('/'):]
 
 none_lst = [10,6,7,12]
 
