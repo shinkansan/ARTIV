@@ -18,43 +18,43 @@ launch파일은 XML 포맷으로 작성하며, 내부엔 어떤 노드를 어떻
 우선 `<launch>`, `</launch>` 태그를 작성하여 launch 파일의 시작과 끝을 표시하자.(XML 포맷은 `<*>`, `</*>`으로 `*`의 시작과 끝을 알린다)  
 launch 파일의 내부를 아래 나열된 태그 중 필요한 것으로 채워 넣으면 된다.
 
-1. __`<node>`__  
+### 1. __`<node>`__  
  ###### More details at [wiki.ros.org/roslaunch/XML/node](wiki.ros.org/roslaunch/XML/node)  
  특정 노드를 bring up하거나 take down할 때 사용하는 태그다. 노드의 실행 순서는 __랜덤이다.__  
- 다음 attributes를 사용하여 node를 특정지을 수 있다.
+ 해당 태그에선 아래의 attributes 및 elements를 사용한다.
  * Attributes  
- > - pkg="mypackage"  
+ > - `pkg="mypackage"`  
  >   node의 package를 지정  
- > - type="nodetype"  
+ > - `type="nodetype"`  
  >   node 실행 파일 이름을 기입한다  
- > - name="nodename"  
+ > - `name="nodename"`  
  >   node 이름을 지정. 노드 내부에서 설정한 이름보다 우선순위가 높다.  
- > - args="arg1 arg2 ..." _(optional)_  
+ > - `args="arg1 arg2 ..."` _(optional)_  
  >   node에 argument를 전달한다.  
- > - machine="mahine-name" _(optional)_  
+ > - `machine="mahine-name"` _(optional)_  
  >   지정한 기기에서 노드를 실행한다.  
- > - respawn="true" _(optional)_  
+ > - `respawn="true"` _(optional)_  
  >   true : 노드가 종료될 때 자동으로 재시작  
- > - respawn_delay="seconds" _(optional)_  
+ > - `respawn_delay="seconds"` _(optional)_  
  >   노드에 failure가 발견되는 경우 재시작 전까지 지정된 시간 동안 대기  
- > - output="log|screen" _(optional)_  
+ > - `output="log|screen"` _(optional)_  
  >   값이 screen일 때 노드의 stdout/stderr를 화면에 출력. log인 경우 stderr를 화면에 출력하고 로그 파일을 $ROS_HOME/log 경로에 생성한다.  
+ > 그 외 attributes는 위의 위키 문서 참조
+  
+ * Elements  
+ > - `<env>`  
+ >   node의 environment variable을 세팅한다.  
+ > - `<remap>`  
+ >   node의 remapping argument를 세팅한다.  
+ > - `<rosparam>`  
+ >   node의 ~/local namespace에 rosparam 파일을 로드한다.  
+ > - `<param>`  
+ >   node의 ~/local namespace에 parameter을 세팅한다.  
  
  __Examples__
  ```
  <node name="listener1" pkg="rospy_tutorials" type="listener.py" args="--test" respawn="true" />
  ``` 
- `<node>` 태그 내부에 elements를 추가하여 
- * Elements
- > - `<env>`
- >   node의 environment variable을 세팅한다.
- > - `<remap>`
- >   node의 remapping argument를 세팅한다.
- > - `<rosparam>`
- >   node의 ~/local namespace에 rosparam 파일을 로드한다.
- > - `<param>`
- >   node의 ~/local namespace에 parameter을 세팅한다.
-  __Examples__
  ```
  <node pkg="nodelet" type="nodelet" name="$(arg manager)_driver" args="load velodyne_drvier/DriverNodelet $(arg manager)" >
    <param name="device_ip" value="$(arg device_ip)" />
@@ -64,11 +64,37 @@ launch 파일의 내부를 아래 나열된 태그 중 필요한 것으로 채�
  </node>
  ```
  
+### 2. __`<machine>`__  
+ ###### More details at [wiki.ros.org/roslaunch/XML/machine](wiki.ros.org/roslaunch/XML/machine)  
+ Ros node를 실행시킬 machine을 지정하는 태그다. _모든 노드를 local하게 실행할 경우 이 태그를 사용할 필요없다._  
+ 이 태그를 사용할 경우, machine 태그로 기기를 먼저 지정해준 다음 node 태그를 작성하여 원하는 기기에서 node를 실행한다.
+ 해당 태그에선 다음의 attributes 및 element를 사용한다.
+ * Attributes  
+ > - name="machine-name"  
+ >   machine에 이름을 할당한다.  
+ >   `<node>` 태그에 사용되는 machine attribute와 일치한다.  
+ > - address="blah.willowgarage.com"  
+ >   기기의 네트워크 주소/호스트이름 을 기재한다.  
+ > - env-loader="/opt/ros/fuerte/env.sh"  
+ >   원격 기기의 환경 파일을 지정. 환경 파일은 shell script여야 하며 필요한 모든 환경 변수가 설정되어 있어야 한다.  
+ > - default="true|false|never" _(optional)_  
+ >   해당 기기가 모든 노드들의 기본 실행 기기가 될 것인지 설정한다. 기본 기기가 없으면 로컬 기기가 기본 기기로 작동한다.  
+ > - timeout="10.0" _(optional)_  
+ >   설정한 시간동안(초단위) 해당 기기로부터 응답이 없으면 연결 실패로 간주한다.  
+   
+ * Element  
+ > `<env>`  
+ >   기기에서 실행되는 모든 프로세스의 환경 변수를 설정한다.  
  
+ __Examples__
+ ```
+ <machine name="foo" address="foo-address" ros-root="/u/user/ros/ros/" ros-package-path="/u/user/ros/ros-pkg" user="someone">
+   <env name="LUCKY_NUMBER" value="13" />
+ </machine>
+
+ <node machine="foo" name="footalker" pkg="test_ros" type="talker.py" />
+ ```
  
- 
- 
-2. __<machine>__
 3. __<include>__
 4. __<remap>__
 
@@ -83,4 +109,4 @@ To be continued...
 
 reference :  
 wiki.ros.org/roslaunch/XML/node  
-blog
+https://enssionaut.com/board_robotics/974  
