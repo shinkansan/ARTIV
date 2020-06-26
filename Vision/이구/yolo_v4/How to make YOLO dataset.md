@@ -38,6 +38,9 @@ make
   <annotation 하는 법>   
     마우스 왼쪽 버튼을 누른채 드래그 하면 mark 할 수 있다.   
     마우스 오른쪽 버튼을 누른채 이미 그려진 사각형의 위치를 이동할 수 있다.   
-    c 키를 누르면 mark한 모든 것들을 지울 수 있다.    
+    c 키를 누르면 mark한 모든 것들을 지울 수 있다. 
+    
+![Screenshot from 2020-06-26 16-47-20](https://user-images.githubusercontent.com/59161083/85833522-cd12e380-b7cc-11ea-8142-dcc6b41136ed.png)
+
 
 
