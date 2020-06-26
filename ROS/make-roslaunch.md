@@ -114,17 +114,30 @@ launch 파일의 내부를 아래 나열된 태그 중 필요한 것으로 채�
  >   include한 파일에 argument를 전달한다.  
 
 
-4. __<remap>__
+이외에도 `<rosparam>, <group>, <param>` 등 사양할 수 있는 태그가 많다.
+다른 태그에 대한 설명은 [여기](https://enssionaut.com/board_robotics/974)나 [로스 위키 roslaunch/XML](wiki.ros.org/roslaunch/XML)의 4번 항목(Tag Reference)을 참고하라.  
 
 ## How to execute ROSlaunch file?  
-A라는 패키지의 B라는 launch 파일을 실행시키는 코맨드는 다음과 같다.  
+이제 만든 roslaunch file을 실행시켜 보자.  
+launch 파일을 실행하는 구문 포맷은 패키지로 launch 파일을 특정짓는 방법과 파일의 절대경로로 특정짓는 방법, 이 두 가지로 볼 수 있다.
 ```
-$ roslaunch A B
+$ roslaunch <package-name> <launch-filename>
 ```
+or
+```
+$ roslaunch <launch-file-paths...>
+```
+단순히 실행하는 명령어에 몇가지 옵션을 추가하여 실행할 수도 있는데, 이에 관해선 [여기](http://wiki.ros.org/roslaunch/Commandline%20Tools)의 1항목을 참조하라. 
+roslaunch는 roslaunch.launch(XML format)를 뿐만이아니라그외 관련 기능들을 수행할 수 있는 명령어를 포함하고 있는 __ROS1__ 패키지이다.  
+다른 명령어대한 설명은 [여기](http://wiki.ros.org/roslaunch/Commandline%20Tools)를 참조하자.
 
-To be continued...  
+
+## 참고하면 좋을 링크들  
+1. wiki.ros.org/roslaunch
+2. https://enssionaut.com/board_robotics/974
+3. http://hrepository.blogspot.com/2017/03/roslaunchfile.html  
 
 
-reference :  
-wiki.ros.org/roslaunch/XML/node  
-https://enssionaut.com/board_robotics/974  
+
+ 
+
