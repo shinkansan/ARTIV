@@ -95,7 +95,25 @@ launch 파일의 내부를 아래 나열된 태그 중 필요한 것으로 채�
  <node machine="foo" name="footalker" pkg="test_ros" type="talker.py" />
  ```
  
-3. __<include>__
+### 3. __`<include>`__
+ ###### More details at [wiki.ros.org/roslaunch/XML/include](wiki.ros.org/roslaunch/XML/include)  
+ `<include>` 태그는 현재 launch 파일에서 다른 roslaunch XML 파일을 불러올 수 있게 한다.  
+ 해당 태그에선 다음의 attributes 및 element를 사용한다.
+ * Attributes  
+ > - `file="$(find pkg-name)/path/filename.xml"`  
+ >   불러올 file의 이름을 기재한다.  
+ > - `ns="foo"` _(optional)_
+ >   파일을 'foo' namespace에 대해 불러온다.  
+ > - `clear_params="true|false` _(optional)_
+ >   launch 수행 전에 <include>의 네임스페이스 파라미터를 전부 제거한다. true인 경우 반드시 ns attribute와 같이 사용해야하며 기본값은 false다.
+   
+ * Element  
+ > `<env>`  
+ >   include한 파일의 환경 변수를 설정한다.  
+ > `<arg>`  
+ >   include한 파일에 argument를 전달한다.  
+
+
 4. __<remap>__
 
 ## How to execute ROSlaunch file?  
