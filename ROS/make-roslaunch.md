@@ -132,7 +132,7 @@ roslaunch는 roslaunch.launch(XML format)를 뿐만이아니라그외 관련 기
 다른 명령어대한 설명은 [여기](http://wiki.ros.org/roslaunch/Commandline%20Tools)를 참조하자.
 
 
-## 참고하면 좋을 링크들  
+## Reference lists 
 1. wiki.ros.org/roslaunch
 2. https://enssionaut.com/board_robotics/974
 3. http://hrepository.blogspot.com/2017/03/roslaunchfile.html  
