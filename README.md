@@ -10,7 +10,7 @@ DGIST ARTIV Repos
 
 ### 고용량 데이터 공유용 지정 파일서버
 Dedicate Server address
-> [ktk1501.synology.me:5001](http://ktk1501.synology.me:5001)   
+> [ktk1501.synology.me:5001](https://ktk1501.synology.me:5001)   
 > Confidential ID : artiv, pw : dgist1234
 
 ### 팀별 폴더 안내
