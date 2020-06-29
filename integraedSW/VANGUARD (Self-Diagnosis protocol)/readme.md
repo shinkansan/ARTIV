@@ -15,9 +15,9 @@ date : 2020.06.29.
   ![dbw_ioniq_rosbag_rqt](https://user-images.githubusercontent.com/59792475/81559090-ca4d6200-93c9-11ea-8c90-9aa113fa7ce5.png) <br>
   Vehicle Control : __[dbw_cmd_node](https://github.com/shinkansan/ARTIV/tree/master/Comms/Ioniq/dbw_ioniq/dbw_cmd_node)__
  
-  ## ScreenShot
-  ![img](rostopic_viewer.png)   
+  ## Program Structure 
   
+  ![VANGUARD](https://files.slack.com/files-pri/TT453UM5M-F015SJ069AT/image.png)
 
 > 앞으로 추가해야 할 사항   
 > **1. 현재 Play->Stop->다시 Play를 누를 경우 에러 발생, 수정해야 함**   
