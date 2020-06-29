@@ -47,7 +47,7 @@
   
 ## Intended Structure
 
-* 개발 시작 단계에서 작성한 VANGUARD의 구조도 (version 1.)
+* __개발 시작 단계에서 작성한 VANGUARD의 구조도 (version 1.)__
 
 ![vanguard v1](https://user-images.githubusercontent.com/59792475/86013499-2d6a8500-ba5a-11ea-9c2e-06cdae431fd8.png)
 
@@ -55,41 +55,58 @@
 
 매개노드(Mediating Node)를 사용하여 일괄 publish하려고 하였다.
 
+<br>
+
 이 방법의 장점은, 매개노드에 있는 기능을 그대로 사용하기에 구현 방법이 훨씬 간단해지고, 명확해진다는 점이다. 
 
-하지만, 매개노드를 VANGUARD에 도입하면 의도한 자가진단 프로토콜의 정체성에 부합하지 않기에 version 2를 구상하였다.
+하지만, 매개노드를 VANGUARD에 도입하면 의도한 자가진단 프로토콜의 정체성에 부합하지 않기에 **version 2**를 구상하였다.
 
 ##
 
-* 매개노드를 제거한 VANGUARD의 구조도 (version 2.)
+* __매개노드를 제거한 VANGUARD의 구조도 (version 2.)__
 
 ![vanguard v2](https://user-images.githubusercontent.com/59792475/86013595-496e2680-ba5a-11ea-9659-7adb48d7a2ce.png)
 
-VANGUARD는 초깃값 세팅과 더불어 실시간 감시를 한다. 즉, 다른 프로세스가 오류나 접촉불량 등으로 꺼지더라도 VANGUARD는 항상 살아있어야한다. 
+VANGUARD는 실시간 감시를 한다. 즉, 다른 프로세스가 오류나 접촉불량 등으로 꺼지더라도 VANGUARD는 항상 살아있어야한다. 
 
-그렇기에, __최종적으로 VANGUARD는 매개노드보다 전위에 위치할 필요성이 있고, 최우선 순위에 위치한 독립적인 프로그램으로 설계하였다.__
+그렇기에, __최종적으로 VANGUARD는 매개노드보다 전위에 위치할 필요성이 있고, 최우선에 위치한 독립적인 프로그램으로 설계했다.__
   
 ## Development Process
 
-VANGUARD의 개발은 크게 아래의 3가지 영역으로 나뉜다. 상세 내용은 링크를 통해 각 repository를 참고하자.
+* __VANGUARD의 개발은 크게 아래의 3가지 영역으로 나뉜다. 상세 내용은 링크를 통해 각 repository를 참고하자.__
 
+##
  __1. Initializing Diagnosis__
  
- __[Test Case](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/TestCase)__ : 초깃값 진단의 기준이 될 신뢰성 높은 차량 정보 Dataset을 확보한다.
+ Test Case : 초깃값 진단의 기준이 될 신뢰성 높은 차량 정보 Dataset을 확보한다.
  
- __[Initializing Diagnosis](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Initializing%20Diagnosis)__ : Test Case를 기반으로 자율주행을 시작하기 전 1차 진단
+ __[Test Case](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/TestCase)__
  
+ Initializing Diagnosis : Test Case를 기반으로 자율주행을 시작하기 전 1차 진단
+ 
+ __[Initializing Diagnosis](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Initializing%20Diagnosis)__
+ 
+##
+
  __2. Real-Time Diagnosis__
  
- __[Real-Time Diagnosis](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Real-Time%20Diagnosis)__ : 1차 진단을 통과하고, 자율주행에 돌입했을 때 실시간으로 차량의 모든 주요 상태 진단
- 
+Real-Time Diagnosis : 1차 진단을 통과하고, 자율주행에 돌입했을 때 실시간으로 차량의 모든 주요 상태 진단
+
+__[Real-Time Diagnosis](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Real-Time%20Diagnosis)__
+
+##
+
  __3. Sensor State Diagnosis__
  
- __[Sensor State Diagnosis](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Sensor%20State%20Diagnosis)__ : 1과 2에서 vehicle info와 함께, sensor state에 대한 진단도 필요하다. 
+Sensor State Diagnosis : 1과 2에서 vehicle info와 함께, sensor state에 대한 진단도 필요하다. 
  
- 기존에 존재하는 ros_diagnotics 패키지를 참고하여 Vision팀의 Sensor state를 시작으로 모든 sensor의 state를 점검한다. (이구 담당)
+기존에 존재하는 ros_diagnotics 패키지를 참고하여 Vision팀의 Sensor state를 시작으로 모든 sensor의 state를 점검한다. (이구 담당)
 
-## Note (abt. Python3 Concurrency Programming)
+ __[Sensor State Diagnosis](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Sensor%20State%20Diagnosis)__
+
+##
+
+### Note (abt. Python3 Concurrency Programming)
   
   TestCase 확보 과정부터 시작해, cmd node를 통한 차량제어와 동시에 ioniq node를 통한 정보를 실시간으로 받기 위해서는 동시성 프로그램이 필수적이다.
   
