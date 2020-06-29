@@ -15,7 +15,7 @@
 
 4. sensor state에 대한 진단 [Sensor State Diagnosis](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Sensor%20State%20Diagnosis)
 
-5. VANGUARD 개발 과정에서 사용된 동시성 프로그래밍 [Note about Python3 Concurrency Programming](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Concurrency%20Programming%20(Thread%20VS%20Multiprocessing)
+5. VANGUARD 개발 과정에서 사용된 동시성 프로그래밍 [Note about Python3 Concurrency Programming](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Concurrency%20Programming%20(Thread%20VS%20Multiprocessing))
 
 ## Environment & Dependencies
 
