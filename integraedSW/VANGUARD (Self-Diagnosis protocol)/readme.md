@@ -22,9 +22,9 @@
 
 ![VANGUARD](https://user-images.githubusercontent.com/59792475/85997591-a5c64b80-ba44-11ea-8fa3-6a98d010f002.png)
 
-  ## VANGUARD 개발 배경 및 설계
+  ### VANGUARD 개발 배경 및 설계
   
-  ### 0. Starts from Fatal Break Issue    
+  #### 0. Starts from Fatal Break Issue    
   
   <br>
   
@@ -39,7 +39,7 @@
   `즉, 자율주행 모드를 시작하는 순간에 브레이크가 외부요인에 의해 눌려있었다면, 브레이크 제어가 제대로 되지 않는다.`
   
   ##
-  ### 1. Discussion for Solution 
+  #### 1. Discussion for Solution 
   
   초기논의 단계에서 해당 Issue에 대한 접근법으로 아래 3가지가 나왔다. 
   
