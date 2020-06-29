@@ -4,6 +4,8 @@
 
 ![image](https://user-images.githubusercontent.com/59792475/85977239-2e2df780-ba17-11ea-978d-e3a861349755.png)
 
+![vanguard logo](https://user-images.githubusercontent.com/59792475/85998620-01dd9f80-ba46-11ea-966c-e1af38672d25.png)
+
 Author : Juho Song<br>
 date : 2020.06.29.
 
