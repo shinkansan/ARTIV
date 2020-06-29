@@ -1,8 +1,7 @@
 # VANGUARD
 
 * 안전한 주행을 위한 초깃값 진단 및 주행 단계에서의 실시간 진단, 통합 프로그램 
-
-![vanguard logo](https://user-images.githubusercontent.com/59792475/85998620-01dd9f80-ba46-11ea-966c-e1af38672d25.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/59792475/85998620-01dd9f80-ba46-11ea-966c-e1af38672d25.png"></p>
 
 Author : Juho Song<br>
 date : 2020.06.29.
