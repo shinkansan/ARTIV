@@ -5,14 +5,6 @@
 <p align="center">Author : Juho Song</p>
 <p align="center">date : 2020.06.29.</p>
 
-## Environment & Dependencies
-
-  * Developed with ROS2, Python3
-
-  * Get Info : [dbw_ioniq_node](https://github.com/shinkansan/ARTIV/tree/master/Comms/Ioniq/dbw_ioniq/dbw_ioniq_node) <br>
-  ![dbw_ioniq_rosbag_rqt](https://user-images.githubusercontent.com/59792475/81559090-ca4d6200-93c9-11ea-8c90-9aa113fa7ce5.png) <br>
-  * Vehicle Control : [dbw_cmd_node](https://github.com/shinkansan/ARTIV/tree/master/Comms/Ioniq/dbw_ioniq/dbw_cmd_node)
-
 ### Contents
 
 1. 초깃값 진단의 기준이 될 신뢰성 높은 차량 정보 Dataset 확보 과정 [TestCase](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/TestCase)  
@@ -24,6 +16,14 @@
 4. sensor state에 대한 진단 [Sensor State Diagnosis](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Sensor%20State%20Diagnosis)
 
 5. VANGUARD 개발 과정에서 사용된 동시성 프로그래밍 [Note about Python3 Concurrency Programming](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Concurrency%20Programming%20(Thread%20VS%20Multiprocessing)
+
+## Environment & Dependencies
+
+  * Developed with ROS2, Python3
+
+  * Get Info : [dbw_ioniq_node](https://github.com/shinkansan/ARTIV/tree/master/Comms/Ioniq/dbw_ioniq/dbw_ioniq_node) <br>
+  ![dbw_ioniq_rosbag_rqt](https://user-images.githubusercontent.com/59792475/81559090-ca4d6200-93c9-11ea-8c90-9aa113fa7ce5.png) <br>
+  * Vehicle Control : [dbw_cmd_node](https://github.com/shinkansan/ARTIV/tree/master/Comms/Ioniq/dbw_ioniq/dbw_cmd_node)
 
 ## Motivation & Background
   
