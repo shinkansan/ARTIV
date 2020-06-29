@@ -14,19 +14,15 @@ date : 2020.06.29.
   Get Info : __[dbw_ioniq_node](https://github.com/shinkansan/ARTIV/tree/master/Comms/Ioniq/dbw_ioniq/dbw_ioniq_node)__, /Joint_state (topic) <br>
   ![dbw_ioniq_rosbag_rqt](https://user-images.githubusercontent.com/59792475/81559090-ca4d6200-93c9-11ea-8c90-9aa113fa7ce5.png) <br>
   Vehicle Control : __[dbw_cmd_node](https://github.com/shinkansan/ARTIV/tree/master/Comms/Ioniq/dbw_ioniq/dbw_cmd_node)__
- 
-  ## Structure 
-  
-  ![VANGUARD](https://user-images.githubusercontent.com/59792475/85997591-a5c64b80-ba44-11ea-8fa3-6a98d010f002.png)
 
 ## Structure
 
-![VANGUARD](https://user-images.githubusercontent.com/59792475/85997591-a5c64b80-ba44-11ea-8fa3-6a98d010f002.png)
-
 * 개발 시작 단계에서 작성한 VANGUARD의 구조도
 
+![VANGUARD](https://user-images.githubusercontent.com/59792475/85997591-a5c64b80-ba44-11ea-8fa3-6a98d010f002.png)
+
   ##
-  ### 1. 우분투 18.04 환경에서 한글 사용하기   
+  ### 기능   
   
   우분투가 기본적으로 영어밖에 안되기에, 저또한 검색이나 깃허브 작성 등에 큰 어려움이 있었습니다.
    
