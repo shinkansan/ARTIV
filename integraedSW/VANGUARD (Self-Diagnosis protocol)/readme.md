@@ -106,7 +106,7 @@ Sensor State Diagnosis : 1과 2에서 vehicle info와 함께, sensor state에 �
 
 ##
 
-### Note (abt. Python3 Concurrency Programming)
+### Note about Python3 Concurrency Programming
   
   cmd node를 통한 차량제어와 동시에 ioniq node를 통한 정보를 실시간으로 받기 위해서는 동시성 프로그램이 필수적이다.
   
