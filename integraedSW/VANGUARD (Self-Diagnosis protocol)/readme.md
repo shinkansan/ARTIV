@@ -2,8 +2,8 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/59792475/85998620-01dd9f80-ba46-11ea-966c-e1af38672d25.png"></p>
 
-Author : Juho Song<br>
-date : 2020.06.29.
+<p align="center">Author : Juho Song</p>
+<p align="center">date : 2020.06.29.</p>
 
 ## Environment
   Python3
