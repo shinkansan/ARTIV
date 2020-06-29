@@ -49,7 +49,9 @@
 
 * 개발 시작 단계에서 작성한 VANGUARD의 구조도
 
-![VANGUARD](https://user-images.githubusercontent.com/59792475/85997591-a5c64b80-ba44-11ea-8fa3-6a98d010f002.png)
+![vanguard v1](https://user-images.githubusercontent.com/59792475/86013499-2d6a8500-ba5a-11ea-9c2e-06cdae431fd8.png)
+
+![vanguard v2](https://user-images.githubusercontent.com/59792475/86013595-496e2680-ba5a-11ea-9659-7adb48d7a2ce.png)
   
   
   #### 일련의 과정을 끝냈다면, 아래 매뉴얼을 참고하여 프로그램이 시작될 때 커맨드가 자동으로 실행되도록 설정해줍시다.
