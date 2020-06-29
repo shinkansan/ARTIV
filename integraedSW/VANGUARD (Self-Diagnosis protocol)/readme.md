@@ -48,7 +48,7 @@
   
 초기값 진단 프로그램을 Base로 **초기값 진단 및 Sensor State 및 차량 정보 Topic 발행에 대한 진단을 하는 프로그램, VANGUARD**를 구상하였다. 
   
-## Structure
+## Intended Structure
 
 * 개발 시작 단계에서 작성한 VANGUARD의 구조도
 
