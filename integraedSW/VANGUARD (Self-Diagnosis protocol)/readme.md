@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/59792475/85977239-2e2df780-ba17-11ea-978d-e3a861349755.png)
 
 Author : Juho Song <br/>
-date : 2020.06.29. (first commit)
+date : 2020.06.29.
 
 
 
