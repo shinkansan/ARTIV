@@ -47,9 +47,11 @@
   
 ## Intended Structure
 
-* 개발 시작 단계에서 작성한 VANGUARD의 구조도
+* 개발 시작 단계에서 작성한 VANGUARD의 구조도 (version 1.)
 
 ![vanguard v1](https://user-images.githubusercontent.com/59792475/86013499-2d6a8500-ba5a-11ea-9c2e-06cdae431fd8.png)
+
+처음에는 dbw_cmd_node와 dbw_ioniq_node에서 publish되는 양방향의 topic들을 통합 SW에서 개발중인 매개노드를 사용하여 publish하려고 하였다.
 
 ![vanguard v2](https://user-images.githubusercontent.com/59792475/86013595-496e2680-ba5a-11ea-9659-7adb48d7a2ce.png)
   
