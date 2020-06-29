@@ -108,20 +108,18 @@ Sensor State Diagnosis : 1과 2에서 vehicle info와 함께, sensor state에 �
 
 ### Note (abt. Python3 Concurrency Programming)
   
-  TestCase 확보 과정부터 시작해, cmd node를 통한 차량제어와 동시에 ioniq node를 통한 정보를 실시간으로 받기 위해서는 동시성 프로그램이 필수적이다.
+  cmd node를 통한 차량제어와 동시에 ioniq node를 통한 정보를 실시간으로 받기 위해서는 동시성 프로그램이 필수적이다.
   
   현재까지 개발 과정에서는 thread를 사용하였는데, multiprocessing 모듈의 process로도 변경하여 동시성 프로그래밍을 할 수 있다.
   
-  아래 링크에서는 VANGUARD 개발 과정에서 사용된 동시성 프로그래밍을 다루었다.
+  아래 링크에서는 VANGUARD 개발 과정에서 사용된 동시성 프로그래밍 개념을 다루었다.
   
   __[Concurrency Programming (Thread VS Multiprocessing)](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Concurrency%20Programming%20(Thread%20VS%20Multiprocessing))__
  
 
-> 앞으로 추가해야 할 사항   
-> **1. 현재 Play->Stop->다시 Play를 누를 경우 에러 발생, 수정해야 함**   
-> 2. clear 버튼 추가하여 원할 경우에만 리스트 클리어 수행   
-> 3. 특정 상태 메세지('No topic is playing' 등)는 계속 띄울 경우 current row에 계속 쓰여지도록   
-> 4. ROS1 토픽도 띄우는거?   
-> 5. ARTIV 로고 추가~   
-> 6. 이쁜 디자인~   
+> __TODO__   
+> 1. Ioniq과 함께 ERP 42에도 자가진단 기능을 탑제해야함. 토픽만 ERP 42에 맞게 변경하는 기능 구현 필요.
+> 2. 통합 SW의 모체가 되는 ARTIV HUB와 통합하는 과정 논의 필요.
+> 3. 진단 과정에서 발견한 문제를 중요도 별로 분류하여 Info, Warning, Error, Fatal 등의 log값 할당 과정 필요.
+> 4. VANGUARD 관련 TODO 생각날 때마다 추가 할 것.
 
