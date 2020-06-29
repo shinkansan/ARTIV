@@ -121,5 +121,5 @@ Sensor State Diagnosis : 1과 2에서 vehicle info와 함께, sensor state에 �
 > 1. Ioniq과 함께 ERP 42에도 자가진단 기능을 탑제해야함. 토픽만 ERP 42에 맞게 변경하는 기능 구현 필요.
 > 2. 통합 SW의 모체가 되는 ARTIV HUB와 통합하는 과정 논의 필요.
 > 3. 진단 과정에서 발견한 문제를 중요도 별로 분류하여 Info, Warning, Error, Fatal 등의 log값 할당 과정 필요.
-**> 4. VANGUARD 관련 TODO 생각날 때마다 추가 할 것.**
+> 4. VANGUARD 관련 TODO 생각날 때마다 추가 할 것.
 
