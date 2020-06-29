@@ -1,6 +1,6 @@
 # VANGUARD
 Author : Juho Song
-
+1st commiting date : 2020.06.29
 ---
 
 ## Dependencies
