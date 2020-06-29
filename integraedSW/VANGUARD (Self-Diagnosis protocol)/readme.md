@@ -116,6 +116,7 @@ Sensor State Diagnosis : 1과 2에서 vehicle info와 함께, sensor state에 �
   
   __[Concurrency Programming (Thread VS Multiprocessing)](https://github.com/shinkansan/ARTIV/tree/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/Concurrency%20Programming%20(Thread%20VS%20Multiprocessing))__
  
+<br>
 
 > **TODO**   
 > 1. Ioniq과 함께 ERP 42에도 자가진단 기능을 탑제해야함. 토픽만 ERP 42에 맞게 변경하는 기능 구현 필요.
