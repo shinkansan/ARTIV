@@ -2,7 +2,7 @@
 
 <span style="color:red"> VANGUARD </span>
 
-<span style="color:blue">파란 색</span>
+<span style="color:blue"> 파란 색 
 
 * 안전한 주행을 위한 초깃값 진단 및 주행 단계에서의 실시간 진단, 통합 프로그램 
 
