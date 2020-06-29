@@ -51,11 +51,15 @@
 
 ![vanguard v1](https://user-images.githubusercontent.com/59792475/86013499-2d6a8500-ba5a-11ea-9c2e-06cdae431fd8.png)
 
-처음에는 dbw_cmd_node와 dbw_ioniq_node에서 publish되는 양방향의 topic들을 통합 SW에서 개발중인 매개노드를 사용하여 일괄 publish하려고 하였다.
+처음에는 dbw_cmd_node와 dbw_ioniq_node에서 publish되는 양방향의 topic들을 통합 SW에서 개발중인
 
-이 방법의 장점은, 매개노드가 완성되면 구현 방법이 훨씬 간단해지고, 명확해진다는 점이다. 
+매개노드를 사용하여 일괄 publish하려고 하였다.
+
+이 방법의 장점은, 매개노드에 있는 기능을 그대로 사용하기에 구현 방법이 훨씬 간단해지고, 명확해진다는 점이다. 
 
 하지만, 매개노드를 VANGUARD에 도입하면 의도한 자가진단 프로토콜의 정체성에 부합하지 않기에 version 2를 구상하였다.
+
+##
 
 * 매개노드를 제거한 VANGUARD의 구조도 (version 2.)
 
