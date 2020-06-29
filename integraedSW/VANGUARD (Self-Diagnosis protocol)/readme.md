@@ -4,18 +4,17 @@
 <br>Author : Juho Song<br>
 date : 2020.06.29.
 
+## Environment
+  Python3
+  
+  ROS2
+
 ## Dependencies
 
   Get Info : __[dbw_ioniq_node](https://github.com/shinkansan/ARTIV/tree/master/Comms/Ioniq/dbw_ioniq/dbw_ioniq_node)__, /Joint_state (topic) <br>
   ![dbw_ioniq_rosbag_rqt](https://user-images.githubusercontent.com/59792475/81559090-ca4d6200-93c9-11ea-8c90-9aa113fa7ce5.png) <br>
   Vehicle Control : __[dbw_cmd_node](https://github.com/shinkansan/ARTIV/tree/master/Comms/Ioniq/dbw_ioniq/dbw_cmd_node)__
-  
-## Environment
-  Python3
-  
-  ROS2
-  
-  
+ 
   ## ScreenShot
   ![img](rostopic_viewer.png)   
   
