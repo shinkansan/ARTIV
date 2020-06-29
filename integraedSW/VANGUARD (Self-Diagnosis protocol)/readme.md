@@ -17,7 +17,7 @@ date : 2020.06.29.
  
   ## Program Structure 
   
-  ![VANGUARD](https://files.slack.com/files-pri/TT453UM5M-F015SJ069AT/image.png)
+  ![VANGUARD](https://user-images.githubusercontent.com/59792475/85997591-a5c64b80-ba44-11ea-8fa3-6a98d010f002.png)
 
 > 앞으로 추가해야 할 사항   
 > **1. 현재 Play->Stop->다시 Play를 누를 경우 에러 발생, 수정해야 함**   
