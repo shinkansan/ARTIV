@@ -5,14 +5,13 @@
 <p align="center">Author : Juho Song</p>
 <p align="center">date : 2020.06.29.</p>
 
-## Dependencies
+## Environment & Dependencies
+
+  * Developed with ROS2, Python3
 
   Get Info : __[dbw_ioniq_node](https://github.com/shinkansan/ARTIV/tree/master/Comms/Ioniq/dbw_ioniq/dbw_ioniq_node)__, /Joint_state (topic) <br>
   ![dbw_ioniq_rosbag_rqt](https://user-images.githubusercontent.com/59792475/81559090-ca4d6200-93c9-11ea-8c90-9aa113fa7ce5.png) <br>
   Vehicle Control : __[dbw_cmd_node](https://github.com/shinkansan/ARTIV/tree/master/Comms/Ioniq/dbw_ioniq/dbw_cmd_node)__
-
-## Environment
-  ROS2, Python3
 
 ## VANGUARD 개발 배경 및 설계
   
