@@ -1,7 +1,7 @@
 # VANGUARD
 Author : Juho Song
 
-date : 2020.06.29 (lst)
+date : 2020.06.29 (1st)
 
 ## Dependencies
   
