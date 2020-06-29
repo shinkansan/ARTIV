@@ -24,8 +24,9 @@ date : 2020.06.29.
 
 ![VANGUARD](https://user-images.githubusercontent.com/59792475/85997591-a5c64b80-ba44-11ea-8fa3-6a98d010f002.png)
 
-  ##
-  ### VANGUARD 개발 배경 및 설계   
+  ## VANGUARD 개발 배경 및 설계
+  
+  ### Fatal Break Issue    
   
   <br>
   
