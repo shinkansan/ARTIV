@@ -1,7 +1,5 @@
 # TestCase
 
-##
-
 Author : Juho Song
 
 v1 : 2020.06.29. [/v1](https://github.com/shinkansan/ARTIV/blob/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/TestCase/TestCase(v1).py)
