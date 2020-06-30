@@ -85,7 +85,7 @@ source devel/setup.bash
 
 
 ```
-rosrun socketcan_bridge socketcan_to_topic_node can0
+rosrun socketcan_bridge socketcan_bridge_node
 ```    
 
 
