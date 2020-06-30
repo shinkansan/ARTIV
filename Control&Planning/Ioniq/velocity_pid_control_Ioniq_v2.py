@@ -103,7 +103,7 @@ def cruise(accelPub_, brakePub_):
             cur_time = time.time() 
             del_time = cur_time - prev_time;
 			
-			# 
+			# PID coefficient
             k_p = 1.25
             k_i = 0.85
             k_d = 0
@@ -112,7 +112,6 @@ def cruise(accelPub_, brakePub_):
             error_p = cruise_speed - velocity
             error_i += error_p * (del_time)
 			
-
 			# Anti wind-up
             if (error_i < -windup_guard):
                 error_i = -windup_guard
