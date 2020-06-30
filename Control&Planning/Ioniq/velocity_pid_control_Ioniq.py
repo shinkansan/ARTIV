@@ -33,16 +33,11 @@ Accel : 'w'
 brake : 's'
 fastBrake : 'x' More fast & Impact brake
 Steer : Left : 'a' | Right : 'd'
-
 Cruise Function Toggle : 'k'
 Set +0.1km/h () : 'i'
 Set -0.5km/h () : 'm'
-
-
 anything else : emergency Stop
-
 CTRL-C to quit
-
 WARNING! Must operate with driver and more than one assist!
 """
 
@@ -92,6 +87,7 @@ def cruise(accelPub_, brakePub_):
     global velocity
     global cruise_mode
     global cruise_speed
+	global error_i
     accel_ = Int16()
     brake_ = Int16()
 
