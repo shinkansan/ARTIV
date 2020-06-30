@@ -22,9 +22,10 @@ Accel : 'w'
 brake : 's'
 fastBrake : 'x' More fast & Impact brake
 Steer : Left : 'a' | Right : 'd'
-Cruise Function Toggle : 'k'
-Set +0.1km/h () : 'i'
-Set -0.5km/h () : 'm'
+Steer Function On Toggle : 'h'
+Steer Function Off Toggle : 'j'
+Set + 5 degree (In steer function) : 'u'
+Set - 5 degree (In steer function) : 'n'
 anything else : emergency Stop
 CTRL-C to quit
 WARNING! Must operate with driver and more than one assist!
@@ -79,7 +80,7 @@ def steerfunction(steerPub_):
 
     steer_ = Int16()
 
-    prev_time = 0
+    prev_time = time.time()
     prev_error = 0
     error_i = 0
 
@@ -91,7 +92,7 @@ def steerfunction(steerPub_):
             cur_time = time.time()
             del_time = cur_time - prev_time;
 
-            #
+            # PID coefficient
             k_p = 1.25
             k_i = 0.75
             k_d = 0
