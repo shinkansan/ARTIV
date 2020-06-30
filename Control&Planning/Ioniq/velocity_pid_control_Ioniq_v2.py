@@ -2,7 +2,7 @@
 Cruise control with PID based on keyboardcontrol
 Author: Seunggi Lee 
 Date: 2020.06.30
-Version: 21.0
+Version: 2.0
 # TODO
 '''
 
