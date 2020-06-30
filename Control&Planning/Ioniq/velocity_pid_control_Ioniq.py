@@ -5,13 +5,7 @@ Date: 2020.05.23
 Version: 1.0
 
 # TODO
-오르막길에서 accel 값이 늦게 들어가고, 내리막길에서 브레이크가 늦게 들어감.
-오르막길에서 accel 값이 늦게 들어가는 건 Anti wind-up을 어느정도 늘리면 해결될 것으로 생각됨.
-내리막길에서 brake 값이 늦게 들어가는 건 brake의 데드존을 조정함으로써 해결 가능할 것으로 보임.??
-Settling time이 체감상 길었음.
-Version 1.0 에서는 계수를 각각 P = 1.25, I = 0.75, D = 0, windup_gaurd = 70으로 사용하였음.
-D제어기 사용을 안했었으므로 추후 D제어기 계수 조정 필요 -> overshoot이 해결될 것 같음.
-추후 동영상 촬영 및, rosbag으로 기록할 필요 있음.
+
 '''
 
 
@@ -101,7 +95,7 @@ def cruise(accelPub_, brakePub_):
     accel_ = Int16()
     brake_ = Int16()
 
-    prev_time = 0
+    prev_time = time.time()
     prev_error = 0
     error_i = 0
 
@@ -114,7 +108,7 @@ def cruise(accelPub_, brakePub_):
             cur_time = time.time() 
             del_time = cur_time - prev_time;
 			
-			# 
+			# PID coefficient
             k_p = 1.25
             k_i = 0.75
             k_d = 0
