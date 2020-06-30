@@ -33,13 +33,13 @@ source ~/catkin_ws/devel/setup.bash
 그 후에 아래 명령어 중에 하나를 택해서 python 파일을 실행하기만 하면 된다!    
 Method 1.    
 ```
-cd ~/catkin_ws/src/artiv_can/src
-python can_parser.py
+cd ~/catkin_ws/src/dbw_ioniq_node/src
+python dbw_ioniq_node.py
 ```
 
 Method 2.    
 ```
-rosrun artiv_can can_parser
+rosrun dbw_ioniq_node dbw_ioniq_node
 ```
 
 rostopic list 중에 /Ioniq_Info, /JointState가 있으면 완료된 것이다.    
