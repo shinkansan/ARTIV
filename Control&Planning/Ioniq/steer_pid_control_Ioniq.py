@@ -1,3 +1,11 @@
+'''
+Steer control with PID based on keyboardcontrol
+Author: Seunggi Lee 
+Date: 2020.06.30
+Version: 2.0
+# TODO
+'''
+
 import rclpy
 from rclpy.qos import qos_profile_default
 import os
@@ -77,6 +85,7 @@ def steerfunction(steerPub_):
     global steer_mode
     global steering_angle
     global desire_angle
+	global error_i
 
     steer_ = Int16()
 
@@ -190,8 +199,10 @@ def main(args=None):
                     steer_mode = steerControl[key]                
                 if key == "u" :
                     desire_angle += steerControl[key]
+					if error_i < 0 : error_i = 0
                 if key == "n" :
                     desire_angle += steerControl[key]
+					if error_i > 0 : error_i = 0
 
             elif key in moveBindings.keys():
                 if key == "q" :
