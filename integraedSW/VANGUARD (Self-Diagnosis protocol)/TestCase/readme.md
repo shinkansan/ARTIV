@@ -4,7 +4,9 @@
 * VANGUARD의 기능 중 차량 정보에 해당하는 부분을 간접적으로 모두 담고 있어, VANGUARD의 모체가 된다.
 
 Author : Juho Song
+
 date : 2020.06.29.(v1)
+
 date : 2020.07.01.(v2)
 
 ##
