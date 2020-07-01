@@ -16,7 +16,7 @@ Since rosbag is large and hard to download (most of server is not good as dedica
 We collect ROSBAG from open dataset web or our Autonomous Car platform
 
 Dedicate Server address
-> [ktk1501.synology.me:5000](http://ktk1501.synology.me:5000)   
+> [ktk1501.synology.me:5001](http://ktk1501.synology.me:5001)   
 > Confidential ID : artiv, pw : dgist1234
 
 ### Server saving guideline
