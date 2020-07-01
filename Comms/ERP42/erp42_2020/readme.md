@@ -20,6 +20,8 @@ ERP42에는 RS232 to USB 케이블이 있는데 Not use가 적힌 포트 아래�
 처음에 컴퓨터에 연결하면 ERP42에 해당하는 포트는 '/dev/ttyUSB0'이다.    
 단지 연결만 하였을땐 이 포트에서 데이터를 받아올 수 없기에 권한을 얻고 연결을 해보자.    
 
+```sudo usermod -a-G dialout 유저 이름```   
+```sudo chmod a+rw /dev/ttyUSB0```   
 ```sudo chmod a+w /dev/ttyUSB0```    
 
 위 코드를 통해서 권한을 얻고 파이썬으로 작성한 코드를 통해서 ERP42 정보를 얻을 수 있다!    
