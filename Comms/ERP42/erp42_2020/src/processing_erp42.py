@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 from matplotlib.animation import FuncAnimation
 
-from candb.msg import ERPmsg
+from erp42.msg import ERPmsg
 
 old_rot = 0.0
 new_rot = 0.0
