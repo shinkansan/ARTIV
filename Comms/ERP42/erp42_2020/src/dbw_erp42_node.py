@@ -3,7 +3,7 @@
 
 import serial
 import rospy
-from candb.msg import ERPmsg
+from erp42.msg import ERPmsg
 
 
 class Car():
