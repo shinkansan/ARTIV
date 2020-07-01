@@ -1,0 +1,411 @@
+{
+    "name" : "OpenIMU300-EZ",
+    "type" : "imu",
+    "description" : "9-axis OpenIMU with triaxial rate, acceleration, and magnetic measurement",
+    "properties" : {
+        "orientation" : {
+            "type" : "setting",
+            "name" : "Device Orientation",
+            "field" : "7",
+            "options" : {
+                "0" : "+Ux,+Uy,+Uz",
+                "9" : "-Ux,-Uy,+Uz",
+                "35" : "-Uy,+Ux,+Uz"
+            }
+        },
+        "packetType" : {
+            "type" : "setting",
+            "name" : "Output Packet",
+            "description" : "Output Packet Type for Continuous Output",
+            "field" : "3",
+            "options" : {
+                "16689" : "A1",
+                "21296" : "S0",
+                "21297" : "S1",
+                "16690" : "A2"
+            }
+        } ,
+        "baudRate" : {
+            "type" : "setting",
+            "name" : "Baud Rate",
+            "description" : "Baud rate of the IMU", 
+            "field" : 2,
+            "options" : {
+                "2" : "38400",
+                "3" : "57600",
+                "5" : "115200",
+                "6" : "230400"
+            }
+        },
+        "packetRate" : {
+            "type" : "setting",
+            "name" : "Packet Rate",
+            "description" : "Output pakcet rate of the IMU in Hz",
+            "field" : "1",
+            "options" : {
+                "0" : "Quiet",
+                "1" : "100Hz",
+                "2" : "50Hz",
+                "4" : "25Hz"
+            }
+        },
+        "xAccel" : {
+            "type" : "number",
+            "name" : "Accel-X",
+            "unit" : "g",
+            "description" : "X-Axis Accelerometer (scaled, excludes KF correction)",
+            "scaling" : 0.00030517315,
+            "format" : "I2"
+        },
+        "yAccel" : {
+            "type" : "number",
+            "name" : "Accel-Y",
+            "unit" : "g",
+            "description" : "Y-Axis Accelerometer (scaled, excludes KF correction)",
+            "scaling" : 0.00030517315,
+            "format" : "I2"
+        }, 
+        "zAccel" : {
+            "type" : "number",
+            "name" : "Accel-Z",
+            "unit" : "g",
+            "description" : "Z-Axis Accelerometer (scaled, excludes KF correction)",
+            "scaling" : 0.00030517315,
+            "format" : "I2"
+        }, 
+        "xRate" : {
+            "type" : "number",
+            "name" : "Rate-X",
+            "unit" : "deg/s",
+            "description" : "X-Axis Angular Rate Sensor (scaled, excludes KF correction)",
+            "scaling" : 0.019226074219,
+            "format" : "I2"
+        },
+        "yRate" : {
+            "type" : "number",
+            "name" : "Rate-Y",
+            "unit" : "deg/S",
+            "description" : "Y-Axis Angular Rate Sensor (scaled, excludes KF correction)",
+            "scaling" : 0.019226074219,
+            "format" : "I2"
+        }, 
+        "zRate" : {
+            "type" : "number",
+            "name" : "Rate-Z",
+            "unit" : "deg/s",
+            "description" : "Z-Axis Angular Rate Sensor (scaled, excludes KF correction)",
+            "scaling" : 0.019226074219,
+            "format" : "I2"
+        }, 
+        "xMag" : {
+            "type" : "number",
+            "name" : "Mag-X",
+            "unit" : "G",
+            "description" : "X-Axis Magnetic Field (Gauss, includes hard/soft iron if enabled)",
+            "scaling" : 0.00030517315,
+            "format" : "I2"
+        },
+        "yMag" : {
+            "type" : "number",
+            "name" : "Mag-Y",
+            "unit" : "G",
+            "description" : "Y-Axis Magnetic Field (Gauss, includes hard/soft iron if enabled)",
+            "scaling" : 0.00030517315,
+            "format" : "I2"
+        }, 
+        "zMag" : {
+            "type" : "number",
+            "name" : "Mag-Z",
+            "unit" : "G",
+            "description" : "Z-Axis Magnetic Field (Gauss, includes hard/soft iron if enabled)",
+            "scaling" : 0.00030517315,
+            "format" : "I2"
+        }, 
+        "xRateTemp" : {
+            "type" : "number",
+            "name" : "Rate-X Temp",
+            "unit" : "celsius",
+            "description" : "X-Rate temperature",
+            "scaling" : 0.0030517315,
+            "format" : "I2"
+        },
+        "yRateTemp" : {
+            "type" : "number",
+            "name" : "Rate-Y Temp",
+            "unit" : "celsius",
+            "description" : "Y-Rate temperature",
+            "scaling" : 0.0030517315,
+            "format" : "I2"
+        },
+        "zRateTemp" : {
+            "type" : "number",
+            "name" : "Rate-Z Temp",
+            "unit" : "celsius",
+            "description" : "Z-Rate temperature",
+            "scaling" : 0.0030517315,
+            "format" : "I2"
+        },
+        "boardTemp" : {
+            "type" : "number",
+            "name" : "CPU Temp",
+            "unit" : "DegC",
+            "description" : "CPU Temperature",
+            "scaling" : 0.0030517315,
+            "format" : "I2"
+        },
+        "timeStamp" : {
+            "type" : "number",
+            "name" : "DeltaT",
+            "unit" : "sec",
+            "description" : "Delta Time between current measurement and previous",
+            "scaling" : 0.00001526,
+            "format" : "U2"
+        },
+        "bitStatus" : {
+            "type" : "enum",
+            "name" : "BIT",
+            "description" : "Master BIT and Status",
+            "format" : "U2",
+            "bits" : {
+                "0" : "Master BIT Error"  
+            }
+        },
+        "counter" : {
+            "type" : "number",
+            "name" : "Packet Count",
+            "description" : "Packet Count (rollover at 65535)",
+            "format" : "U2",
+            "scaling" : 1.0
+        },
+        "ID" : {
+            "type" : "interactivePacket",
+            "name" : "ID",
+            "command" : "ID",
+            "description" : "IMU ID and Serial Number String"
+        },
+        "S0" : {
+            "type" : "outputPacket",
+            "name" : "Scaled Sensor 0",
+            "format" : "binary",
+            "description" : "Scaled 9-Axis IMU Sensor Data",
+            "byteOffset" : {
+                "0" : "xAccel",
+                "2" : "yAccel",
+                "4" : "zAccel",
+                "6" : "xRate",
+                "8" : "yRate",
+                "10" : "zRate",
+                "12" : "xMag",
+                "14" : "yMag",
+                "16" : "zMag",
+                "18" : "xRateTemp",
+                "20" : "yRateTemp",
+                "22" : "zRateTemp",
+                "24" : "boardTemp",
+                "26" : "timeStamp",
+                "28" : "bitStatus"
+            },
+            "graphs" : [
+                { 
+                    "name" : "Acceleration",
+                    "units" : "m/s/s",
+                    "xAxis" : "Time (s)",
+                    "yAxes" : [ "xAccel", "yAccel", "zAccel"],
+                    "colors" : [ "#FF0000", "#00FF00", "#0000FF" ],
+                    "yMax" : 80
+                },
+                {
+                    "name" : "Angular Rate",
+                    "units" : "deg/s",
+                    "xAxis" : "Time (s)",
+                    "yAxes" : [ "xRate", "yRate", "zRate"],
+                    "colors" : [ "#FF0000", "#00FF00", "#0000FF" ],
+                    "yMax" : 400
+                }
+            ] 
+        },
+        "S1" : {
+            "type" : "outputPacket",
+            "name" : "Scaled Sensor 1",
+            "format" : "binary",
+            "description" : "Scaled 6-Axis IMU Sensor Data",
+            "byteOffset" : {
+                "0" : "xAccel",
+                "2" : "yAccel",
+                "4" : "zAccel",
+                "6" : "xRate",
+                "8" : "yRate",
+                "10" : "zRate",
+                "12" : "xRateTemp",
+                "14" : "yRateTemp",
+                "16" : "zRateTemp",
+                "18" : "boardTemp",
+                "20" : "counter",
+                "22" : "bitStatus"
+            },
+            "graphs" : [
+                { 
+                    "name" : "Acceleration",
+                    "units" : "m/s/s",
+                    "xAxis" : "Time (s)",
+                    "yAxes" : [ "xAccel", "yAccel", "zAccel"],
+                    "colors" : [ "#FF0000", "#00FF00", "#0000FF" ],
+                    "yMax" : 80
+                },
+                {
+                    "name" : "Angular Rate",
+                    "units" : "deg/s",
+                    "xAxis" : "Time (s)",
+                    "yAxes" : [ "xRate", "yRate", "zRate"],
+                    "colors" : [ "#FF0000", "#00FF00", "#0000FF" ],
+                    "yMax" : 400
+                }
+            ] 
+        },
+        "A1" : {
+            "type" : "outputPacket",
+            "name" : "Angular Packet 1",
+            "format" : "binary",
+            "description" : "Corrected 9-Axis AHRS Data",
+            "byteOffset" : {
+                "0" : "rollAngle",
+                "2" : "pitchAngle",
+                "4" : "yawAngle",
+                "6" : "xRateCorrected",
+                "8" : "yRateCorrected",
+                "10" : "zRateCorrected",
+                "12" : "xAccel",
+                "14" : "yAccel",
+                "16" : "zAccel",
+                "18" : "xMag",
+                "20" : "yMag",
+                "22" : "zMag",
+                "24" : "xRateTemp",
+                "26" : "timeITOW",
+                "30" : "bitStatus"
+            },
+            "graphs" : [
+                { 
+                    "name" : "Angle",
+                    "units" : "deg",
+                    "xAxis" : "Time (s)",
+                    "yAxes" : [ "rollAngle", "pitchAngle", "yawAngle"],
+                    "colors" : [ "#FF0000", "#00FF00", "#0000FF" ],
+                    "yMax" : 180
+                },
+                { 
+                    "name" : "Acceleration",
+                    "units" : "m/s/s",
+                    "xAxis" : "Time (s)",
+                    "yAxes" : [ "xAccel", "yAccel", "zAccel"],
+                    "colors" : [ "#FF0000", "#00FF00", "#0000FF" ],
+                    "yMax" : 80
+                },
+                {
+                    "name" : "Angular Rate",
+                    "units" : "deg/s",
+                    "xAxis" : "Time (s)",
+                    "yAxes" : [ "xRateCorrected", "yRateCorrected", "zRateCorrected"],
+                    "colors" : [ "#FF0000", "#00FF00", "#0000FF" ],
+                    "yMax" : 400
+                }
+            ] 
+        },
+        "A2" : {
+            "type" : "outputPacket",
+            "name" : "Angular Packet 2",
+            "format" : "binary",
+            "description" : "Corrected 9-Axis AHRS Data",
+            "byteOffset" : {
+                "0" : "rollAngle",
+                "2" : "pitchAngle",
+                "4" : "yawAngle",
+                "6" : "xRateCorrected",
+                "8" : "yRateCorrected",
+                "10" : "zRateCorrected",
+                "12" : "xAccel",
+                "14" : "yAccel",
+                "16" : "zAccel",
+                "18" : "xRateTemp",
+                "20" : "yRateTemp",
+                "22" : "zRateTemp",
+                "24" : "timeITOW",
+                "28" : "bitStatus"
+            },
+            "graphs" : [
+                { 
+                    "name" : "Angle",
+                    "units" : "deg",
+                    "xAxis" : "Time (s)",
+                    "yAxes" : [ "rollAngle", "pitchAngle", "yawAngle"],
+                    "colors" : [ "#FF0000", "#00FF00", "#0000FF" ],
+                    "yMax" : 180
+                },
+                { 
+                    "name" : "Acceleration",
+                    "units" : "m/s/s",
+                    "xAxis" : "Time (s)",
+                    "yAxes" : [ "xAccel", "yAccel", "zAccel"],
+                    "colors" : [ "#FF0000", "#00FF00", "#0000FF" ],
+                    "yMax" : 80
+                },
+                {
+                    "name" : "Angular Rate",
+                    "units" : "deg/s",
+                    "xAxis" : "Time (s)",
+                    "yAxes" : [ "xRateCorrected", "yRateCorrected", "zRateCorrected"],
+                    "colors" : [ "#FF0000", "#00FF00", "#0000FF" ],
+                    "yMax" : 400
+                }
+            ] 
+        }
+    },
+    "actions" : {
+        "setField" : {
+            "description" : "Temporarily change an IMU setting properties",
+            "command" : "SF", 
+            "input" : {
+                "fieldValueList" :{} 
+            }
+        },
+        "writeField" : {
+            "description" : "Permanently change an IMU setting properties (requires Reboot)",
+            "command" : "WF", 
+            "input" : {
+                "fieldValueList" :{} 
+            }
+        },
+        "getField" : {
+            "description" : "Reads current IMU setting properties",
+            "command" : "GF", 
+            "input" : {
+                "fieldValueList" : {} 
+            }
+        },
+        "readField" : {
+            "description" : "Reads power-on IMU setting properties",
+            "command" : "RF", 
+            "input" : { 
+                "fieldValueList" : {} 
+            } 
+        },
+        "reset" : {
+
+        },
+        "upgrade" : {
+        },
+        "getId" : {
+            "description" : "Reads the serial number of the device",
+            "command" : "ID" 
+        }
+    },
+    "events" : {
+        "newOutput"  : {
+            "type" : "outputPackets"
+        },
+        "statusMessage" : {
+            "type" : "polledPackets"
+        }
+    }
+
+}
