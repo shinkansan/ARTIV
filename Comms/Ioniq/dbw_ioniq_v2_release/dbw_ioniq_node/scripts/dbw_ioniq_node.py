@@ -11,8 +11,8 @@ class rosSub():
 	def __init__(self):
 		rospy.init_node("dbw_ioniq_node", anonymous=True)
 		self.frame_ok = 0.0
-		self.JointPub = rospy.Publisher('Joint_state', JointState)
-		self.FloatPub = rospy.Publisher('Ioniq_info', Float32MultiArray)
+		self.JointPub = rospy.Publisher('Joint_state', JointState, queue_size = 24)
+		self.FloatPub = rospy.Publisher('Ioniq_info', Float32MultiArray, queue_size = 24)
 		self.aps_feedback = 0.0
 		self.brake_act_feedback = 0.0 
 		self.gear_position = 0.0
