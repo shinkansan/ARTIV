@@ -5,6 +5,13 @@
 # Author: Seunggi Lee
 
 
+##############
+# PID CONTROLLER
+# GUI Version of PID Controller
+# Copyright ©  2020 DGIST ARTIV All rights reserved
+# Author: Seunggi Lee
+
+
 import sys
 import os
 from PyQt5 import uic
@@ -139,11 +146,6 @@ class ApplyThread(QThread):
 
         self.accel_data, self.brake_data = self.PID()
 
-        #print("error_p: ", self.error_p)
-        #print("error_i: ", self.error_i)
-        #print("error_d: ", self.error_d)
-        #print("pid_out: ", self.pid_out)
-
         myWindow.lineEdit_5.setText(str(self.error_p))
         myWindow.lineEdit_6.setText(str(self.error_i))
         myWindow.lineEdit_7.setText(str(self.error_d))
@@ -152,7 +154,12 @@ class ApplyThread(QThread):
         myWindow.lineEdit_11.setText(str(self.accel_data))
         myWindow.lineEdit_12.setText(str(self.brake_data))
 
-        # myWindow.lineEdit_13.setText(str(self.steer_data))
+        myWindow.lineEdit_14.setText(str(round(self.cur_time, 2)))
+        myWindow.lineEdit_15.setText(str(round(self.del_time, 4)))
+
+        print(self.cur_time)
+        print(self.del_time)
+
 
     def intCallback(self, data):
         self.steer = data.data[3]
@@ -194,7 +201,6 @@ class ApplyThread(QThread):
             self.floatCallback)
 
         rclpy.spin(self.node_)
-
 
 
 if __name__ == '__main__':
