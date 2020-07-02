@@ -6,6 +6,10 @@ v1 : 2020.06.29. [/v1](https://github.com/shinkansan/ARTIV/blob/master/integraed
 
 v2 : 2020.07.01. [/v2](https://github.com/shinkansan/ARTIV/blob/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/TestCase/TestCase(v2).py)
 
+v3 : 2020.07.02. [/v3](https://github.com/shinkansan/ARTIV/blob/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/TestCase/TestCase(v3).py)
+
+plotting : 2020.07.02. [/confidence_interval](https://github.com/shinkansan/ARTIV/blob/master/integraedSW/VANGUARD%20(Self-Diagnosis%20protocol)/TestCase/confidence_interval.py)
+
 ##
 
 * 초깃값 진단의 기준이 될 신뢰성 높은 차량 정보 Dataset을 확보한다.
