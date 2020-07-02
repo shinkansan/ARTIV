@@ -1,0 +1,11 @@
+<launch>
+    <node name="run_modprobe" pkg="dbw_ioniq_node" type="run_modprobe.sh" output="screen">
+    </node>
+    <node name="socketcan_bridge_node" pkg="socketcan_bridge" type="socketcan_bridge_node" output="screen">
+        <param name="can_device" value="can0" />
+    </node>
+    <node name="dbw_ioniq_node" pkg="dbw_ioniq_node" type="dbw_ioniq_node.py">
+    </node>
+    <node name="dbw_cmd_node" pkg="dbw_cmd_node" type="dbw_cmd_node.py">
+    </node>
+</launch>

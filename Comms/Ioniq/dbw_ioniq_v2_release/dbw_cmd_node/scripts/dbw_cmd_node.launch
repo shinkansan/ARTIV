@@ -1,0 +1,3 @@
+<launch>
+  <node name="dbw_cmd_node" pkg="dbw_cmd_node" type="dbw_cmd_node.py" output="screen"/>
+</launch>
