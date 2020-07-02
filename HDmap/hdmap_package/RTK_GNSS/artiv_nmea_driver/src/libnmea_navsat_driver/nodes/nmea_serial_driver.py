@@ -74,6 +74,10 @@ def main():
 
         except (rospy.ROSInterruptException, serial.serialutil.SerialException):
             GPS.close()  # Close GPS serial port
+            rospy.logfatal("RTK-GNSS connection is FAILED!")
+
     except serial.SerialException as ex:
         rospy.logfatal(
-            "Could not open serial port: I/O error({0}): {1}".format(ex.errno, ex.strerror))
+            "RTK-GNSS is NOT connected!")
+        #rospy.logfatal(
+        #    "Could not open serial port: I/O error({0}): {1}".format(ex.errno, ex.strerror))
