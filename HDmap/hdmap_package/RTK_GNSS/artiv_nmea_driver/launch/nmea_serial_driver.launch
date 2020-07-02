@@ -9,7 +9,7 @@
   <arg name="time_ref_source" default="gps" />
   <arg name="useRMC" default="False" />
 
-  <node name="nmea_serial_driver_node" pkg="nmea_navsat_driver" type="nmea_serial_driver" output="screen">
+  <node name="nmea_serial_driver_node" pkg="artiv_nmea_driver" type="nmea_serial_driver" output="screen">
     <param name="port" value="$(arg port)"/>
     <param name="baud" value="$(arg baud)" />
     <param name="frame_id" value="$(arg frame_id)" />
