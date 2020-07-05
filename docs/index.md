@@ -1,13 +1,13 @@
 # DGIST ARTIV Tech Blog
 이 블로그는 DGIST UGRP 메가프로젝트로 수행된 ARTIV 랩의 자율주행차 처음부터 끝까지 빌드업에 관련한 기술 블로그입니다.
 
- <img width=600 alt="Screen Shot 2020-07-06 at 0 27 12" src="https://user-images.githubusercontent.com/25432456/86535519-dfeb8d80-bf1b-11ea-92e1-6f214ff5af19.png">
+ <img width="600" alt="Screen Shot 2020-07-06 at 0 27 12" src="https://user-images.githubusercontent.com/25432456/86535519-dfeb8d80-bf1b-11ea-92e1-6f214ff5af19.png">
 
 
 
 ### 파트별 글<br>
 |  파트명  | 대표 사진  |        
-|--|--|   
+|-|-|   
 | 1. [라이다/레이다 파트](./teams/lidar/)| <img width="300" alt="Screen Shot 2020-07-06 at 0 27 12" src="https://user-images.githubusercontent.com/25432456/86536194-a23d3380-bf20-11ea-9376-3cc6ce634297.png"> |   
 |  2. [통합SW 파트](./teams/integratedsw/index.md) | Photo  |   
 |3. [차량HW/통신파트](./teams/hw&comms/)|<img width="300" alt="Screen Shot 2020-07-06 at 0 26 48" src="https://user-images.githubusercontent.com/25432456/86536061-a3219580-bf1f-11ea-8ebe-dedd29422c78.png"> |   
