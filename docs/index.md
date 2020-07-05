@@ -9,14 +9,14 @@
 
 <center>
 
-|  파트  |    
-| :---: |   
-| <img width="300" alt="Screen Shot 2020-07-06 at 0 27 12" src="https://user-images.githubusercontent.com/25432456/86536194-a23d3380-bf20-11ea-9376-3cc6ce634297.png">  <br>  1. [라이다/레이다 파트](./teams/lidar/)|   
+|  파트  |     
+| :---: |    
+| <img width="300" alt="Screen Shot 2020-07-06 at 0 27 12" src="https://user-images.githubusercontent.com/25432456/86536194-a23d3380-bf20-11ea-9376-3cc6ce634297.png">   <br></br>  1. [라이다/레이다 파트](./teams/lidar/)|   
 |  2. [통합SW 파트](./teams/integratedsw/index.md) |   
-|<img width="300" alt="Screen Shot 2020-07-06 at 0 26 48" src="https://user-images.githubusercontent.com/25432456/86536061-a3219580-bf1f-11ea-8ebe-dedd29422c78.png">  <br> 3. [차량HW/통신파트](./teams/hw&comms/)|   
-|  <img width="300" alt="Screen Shot 2020-07-06 at 0 27 54" src="https://user-images.githubusercontent.com/25432456/86536192-9ea9ac80-bf20-11ea-80fe-7887eddcbfd1.png">      <br>  4. [차세대교통시스템 파트](./teams/transport_system/index.md)  |   
+|<img width="300" alt="Screen Shot 2020-07-06 at 0 26 48" src="https://user-images.githubusercontent.com/25432456/86536061-a3219580-bf1f-11ea-8ebe-dedd29422c78.png">  <br></br> 3. [차량HW/통신파트](./teams/hw&comms/)|   
+|  <img width="300" alt="Screen Shot 2020-07-06 at 0 27 54" src="https://user-images.githubusercontent.com/25432456/86536192-9ea9ac80-bf20-11ea-80fe-7887eddcbfd1.png">      <br></br>  4. [차세대교통시스템 파트](./teams/transport_system/index.md)  |   
 |   5. [Computer Vision 파트](/teams/vision/index.md) |   
-|   <img width="300" alt="Screen Shot 2020-07-06 at 0 06 24" src="https://user-images.githubusercontent.com/25432456/86535622-90599180-bf1c-11ea-957a-e1b064909e63.png"> <br> 6. [위치측위센서/HDMap 파트](./teams/hdmap/) |   
+|   <img width="300" alt="Screen Shot 2020-07-06 at 0 06 24" src="https://user-images.githubusercontent.com/25432456/86535622-90599180-bf1c-11ea-957a-e1b064909e63.png"> <br></br> 6. [위치측위센서/HDMap 파트](./teams/hdmap/) |   
 |7. [주행제어 파트](./teams/Control&Planning/index.md) |   
 
 </center>
