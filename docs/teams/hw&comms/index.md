@@ -23,3 +23,15 @@
   7. [차량 내부 온도조절하기 part1](./thermal_control_part1.md)
   8. [차량 내부 온도조절하기 part2](./thermal_control_part2.md)
   9. [Autodesk CFD 설치](./CFD_install.md)
+
+
+## Devlog #2
+  1. [차량 하드웨어 설치기 : 차는 이미 구멍이 많다!]()
+  2. [차량 하드웨어 설치기 : 스키 캐리어가 제일 좋다]()
+  3. [차량 통신 삽질기 : I can't CAN]()
+  4. [차량 통신 삽질기 : I can't CAN part2]()
+  5. [차량 통신 삽질기 : I can CAN!!]()
+  6. [차량에 모니터를 달아보자]()
+  7. [3D 프린터를 너무 믿지 말자]()
+
+  
