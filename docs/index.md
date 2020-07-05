@@ -5,7 +5,7 @@
 
 
 ### 파트별 글<br>
-|  파트명  | 대표 사진  |
+|  파트명  | 대표 사진  |   
 |---|---|   
 | 1. [라이다/레이다 파트](./teams/lidar/)| <img width="300" alt="Screen Shot 2020-07-06 at 0 27 12" src="https://user-images.githubusercontent.com/25432456/86536194-a23d3380-bf20-11ea-9376-3cc6ce634297.png"> |   
 |  2. [통합SW 파트](./teams/integratedsw/index.md) | Photo  |   
