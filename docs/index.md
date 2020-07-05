@@ -1,7 +1,7 @@
 # DGIST ARTIV Tech Blog
 이 블로그는 DGIST UGRP 메가프로젝트로 수행된 ARTIV 랩의 자율주행차 처음부터 끝까지 빌드업에 관련한 기술 블로그입니다.
 
- <img width=auto alt="Screen Shot 2020-07-06 at 0 27 12" src="https://user-images.githubusercontent.com/25432456/86535519-dfeb8d80-bf1b-11ea-92e1-6f214ff5af19.png">
+ <img width=100% height=100% alt="Screen Shot 2020-07-06 at 0 27 12" src="https://user-images.githubusercontent.com/25432456/86535519-dfeb8d80-bf1b-11ea-92e1-6f214ff5af19.png">
 
 
 
