@@ -7,7 +7,7 @@
 
 ### 파트별 글<br>
 
-<center>
+
 
 |  파트  |     
 | :---: |    
@@ -24,7 +24,6 @@
 |7. [주행제어 파트](./teams/Control&Planning/index.md) |   
 
 
-</center>
 
 ## Introduction
 ### 1. DGIST 학부생 연구 프로그램 UGRP의 일환으로 수행되었습니다.
