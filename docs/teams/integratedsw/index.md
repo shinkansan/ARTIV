@@ -5,7 +5,7 @@
 ## 파트장 소개   
 ARTIV의 귀여움 담당인 송씨이다.
 
-|<img src="./media/Profile.jpeg" width="50%" height="50%">|      
+<img src="./media/Profile.jpeg" width="50%" height="50%">     
 
 가끔 폭력적인 모습이 나오기도 한다.     
 <img src="./media/vs_hw.png">    
