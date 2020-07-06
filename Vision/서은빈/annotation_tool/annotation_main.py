@@ -137,8 +137,22 @@ def make_txt_file(image_path, clone):
 				output.write(str(data[0])+" "+str(data[1])+" ")
 			output.write('\n')
 
-
-
+def draw_polynomial_regression_lane(line, seg, counter):
+	x_list = []
+	y_list = []
+	for idx, pts in enumerate(line):
+		x, y = int(pts[0]), int(pts[1])
+		x_list.append(x)
+		y_list.append(y)
+	try:
+		fp1 = np.polyfit(np.array(x_list), np.array(y_list) , 2)
+		f1 = np.poly1d(fp1)
+		y_list = np.polyval(f1, x_list)
+		draw_poly = np.array([list(zip(x_list, y_list))], np.int32)
+		seg=cv2.polylines(seg, np.asarray(draw_poly), False , counter+1, 16)
+	except:
+		pass
+	return seg
 
 def make_binary_image(image_path):
 	global points
@@ -151,6 +165,8 @@ def make_binary_image(image_path):
 		print('Error: Creating directory of data')
 	seg = np.zeros((288,800,1), np.uint8)
 	for i, lane in enumerate(points):
+		#seg = draw_polynomial_regression_lane(lane, seg, i)
+		
 		for idx in range(len(lane)-1):
 			seg = cv2.line(seg, tuple(lane[idx]), tuple(lane[idx+1]), (i+1), 16)
 			#seg = cv2.cvtColor(seg, cv2.COLOR_BGR2GRAY)
@@ -170,6 +186,7 @@ def main():
 	image_path = args.image
 	video_path = args.video
 	file_path = args.file
+	n = int(args.start_from_frame)
 	currentFrame = int(args.start_from_frame)
 
 	if image_path!="":
@@ -178,12 +195,14 @@ def main():
 		make_txt_file(image_path,clone)
 	if video_path!="":
 		cap = cv2.VideoCapture(video_path)
-		#cap = load_video(cap)
-		i = 0
+		i = 1
+		print(int(cap.get(cv2.CAP_PROP_FRAME_COUNT)))
 		while True:
 			ret, image = cap.read()
-			if (i<currentFrame):
+			if (i < currentFrame and ret == True):
+				ret, image = cap.read()
 				i = i+1
+				print(i)
 				continue
 			image = cv2.resize(image, dsize=(800,288))
 			clone = image.copy()
