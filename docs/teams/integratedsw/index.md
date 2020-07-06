@@ -7,7 +7,7 @@ ARTIV의 귀여움 담당인 송씨이다.
 <img src="./media/Profile.jpeg" width="50%" height="50%">    
 가끔 폭력적인 모습이 나오기도 한다.     
 <img src="./media/vs_hw.png">    
-해당 모습은 하드웨어 파트장을 괴롭히는 모습니다.
+해당 모습은 하드웨어 파트장을 괴롭히는 모습이다.
 
 
 ### Devlog #1 <br/>  
