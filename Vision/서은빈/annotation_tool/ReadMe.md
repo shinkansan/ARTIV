@@ -6,7 +6,7 @@
 -v : Path to the video  
 -f : Path to the file  
 -n : start the video's frame  
-image, video, file path 중 하나는 입력해 주어야한다. video path 를 입력했을 시, n도 추가적으로 입력가능하다. 만약 video를 라벨링 하다 끊었을 경우 n을 통하여 frame에 접근 가능하다.
+image, video, file path 중 하나는 입력해 주어야한다. video path 를 입력했을 시, n도 추가적으로 입력가능하다. 만약 video를 라벨링 하다 끊었을 경우 n을 통하여 frame에 접근 가능하다. (정확히 frame 수가 같지 않아서 이전 사진과 비교하며 n을 조절해주길 바란다.)
 >>
 3. annotation_main.py를 annotation 해야하는 video file을 가지고 실행시켜보자.
 ~~~ (bash)
@@ -44,4 +44,42 @@ Culane
  &nbsp;&nbsp;&nbsp;&nbsp;   ->train_gt.txt  
 &nbsp;&nbsp;  ->laneseg  
 &nbsp;&nbsp;&nbsp;&nbsp;    ->videopath  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ->0000.png  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ->0000.png
+
+## Scenario
+앞으로 우리 ARTIV 팀원 전체에게 차선 annotation을 맡길 예정인데요. 어떤 규칙을 따라야하는지, 어떤 경우에 어떻게 annotation해야 하는지 작성하고자 이 파트를 만들었어요. 
+#### 1. 규칙 
+1. video 이름을 **마음대로 바꾸면 안되요!** video가 날짜로 되어있는 것을 알 수 있는데, 이는 **고유번호**라고 생각할 수 있어요. video이름으로 directory가 생성되기 때문에 이름을 마음대로 막 바꾸었을 시 열심히 annotation한 파일들을 잃어버릴 수 있으니 유의해주세요.
+2. 중간에 열심히 하고 영상을 끄고 내일 와서 이어서 하고자 할 때는 n argument를 이용하면 됩니다. culane/video/비디오 파일에 들어가서 마지막으로 저장된 이미지가 몇 번으로 저장되어있는지 확인해보세요. 그 번호가 frame 숫자라고 생각할 수 있어요. 코드에 결함이 있어서 n이 정확한 frame 수를 가리키지 않는데, directory에 저장된 사진과 코드를 실행해 띄워져 있는 창의 사진을 비교하면서 저장된 사진보다 뒤의 시점부터 annotation하면 됩니다.
+3. 4개 라인에 대한 annotation을 다 했을 경우 directory를 생성해서 저장하게 만들었지만 혹시 모르니 4개의 라인에 대해 다 annotation을 마무리하고 자리에서 일어났으면 좋을 것 같네요ㅎㅎㅎ
+4. annotation은 사진 맨 밑 끝자락 부터 시작해주세요!
+5. 최대한 차선을 삐져나가지 않도록 점을 찍어주세요. 예쁜 annotation이 필요해요ㅎㅎ 만약 점을 잘못 찍었다면 가차없이 Reset key("R" button)를 이용해주세요
+
+#### 2. 이 상황 애매하네요.. 어떻게 annotation하면 좋을까요?
+
+0. 차선이 저 멀리서 보이네요! 언제부터 annotation을 하면 될까요?
+![Screenshot from 2020-07-07 01-15-02](https://user-images.githubusercontent.com/53460541/86615358-4f7e7d00-bfef-11ea-87e5-11b27550258f.png)  
+위의 사진처럼, 차선이 밑에서부터 사진의 절반쯤부터 보이기 시작하면 사진 끝자락부터 예측해서 그려주시면 됩니다.
+
+0. 횡단보도는 차선인가요?  
+아니요! 횡단보도는 차선이 아닙니다. 사진이 횡단보도로 꽉 차 있다면, 엔터 4번쳐서 넘겨주세요
+
+0. 물건에 가려서 차선이 안보이는데 어떻게 할까요?
+![Screenshot from 2020-07-07 01-20-49](https://user-images.githubusercontent.com/53460541/86615959-1eeb1300-bff0-11ea-9d54-8f65715bdd5f.png)  
+저희는 사람이기에 차선이 가려져도 차선이 어디쯤 위치에 있는지 알 수 있죠. 예측해서 그려주세요!
+
+0. 차선이 없는데 예측해서 그린다고 했는데 이런 것도 차선이 있다고 생각하고 그리면 되나요?
+![Screenshot from 2020-07-07 01-02-24](https://user-images.githubusercontent.com/53460541/86614191-966b7300-bfed-11ea-83ae-18338b8c4960.png)  
+이건 차선이 없다고 할 수 있죠! 로터리도 마찬가지입니다. 사진만 보았을 때 사람도 차선이 보이지 않아서 이 차가 어디로 갈지 모른다면 그곳은 annotation하면 안됩니다!
+
+0. 차선이 잘가다가 막 차선이 갈라지는데요??
+![Screenshot from 2020-07-07 01-24-29](https://user-images.githubusercontent.com/53460541/86616313-a0db3c00-bff0-11ea-8a43-69c8e9bc3424.png)  
+4개의 라인을 잘 annotation하다가 구간 점프를 해주세요. 
+![Screenshot from 2020-07-07 01-26-05](https://user-images.githubusercontent.com/53460541/86616476-d849e880-bff0-11ea-8afa-f86a50ffbabc.png)  
+이렇게요! 여기는 차선이 인식해야하는 구간인지 hd 맵이 인식해야하는 구간인건지.. 차선 4개만 이용하기 때문에 한 라인에서 두 라인으로 나눠지는 건 저희가 더 연구하고 이 구간을 어떻게 처리할건지 생각해봐야할 것 같네요.
+
+0. 차가 너무 빨리 달려서 차선인지 빛인지 구분이 안가요! 어떻게 해야해요?
+앞에서도 이야기했듯이 사람이 차선이라고 인식하지 못한다면 자동차도 차선이라고 인식하기 어려움이 있겠죠? 아무런 annotation 없이 pass하면 된답니다.
+
+0. 여기 예시에 없는 경우가 나왔어요! 어떻게 하면 좋을까요?
+저를 찾아주세요. 논의해봅시다ㅎㅎ
