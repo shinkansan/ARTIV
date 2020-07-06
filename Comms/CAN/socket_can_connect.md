@@ -18,6 +18,7 @@ Kvaser사의 전용 툴이 아닌 ROS Package를 이용해 CAN 통신 연결 오
 ```
 sudo apt-get install can-utils
 sudo apt-get install net-tools
+sudo apt-get install libmuparser-dev
 ```
 
 ### 1. Download ros_canopen Package
@@ -32,14 +33,6 @@ git clone https://github.com/ros-industrial/ros_canopen.git
 물론 그냥 [사이트](https://github.com/ros-industrial/ros_canopen)에서 zip 파일을 다운 받아서 압축을 풀어도 된다.     
 참고로 다운 받는 위치는 workspace내에 src 폴더이다.    
 다운로드가 완료되었다면 ~/(workspace) 폴더에서 catkin_make를 진행한다.    
-그럼 갑자기 muparser가 없다면서 오류가 뜰 수 있다!    
-그렇다면 당황하지 않고 다음 명령어를 순서대로 입력한다.    
-
-
-```
-sudo apt-get update -y    
-sudo apt-get install -y libmuparser-dev
-```     
 
 ### 2. 컴퓨터와 CAN 장치 연결
 *참고로 이 과정은 [Voyage](https://news.voyage.auto/an-introduction-to-the-can-bus-how-to-programmatically-control-a-car-f1b18be4f377) 사이트를 참고했다.*    
