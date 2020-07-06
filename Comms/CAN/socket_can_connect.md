@@ -83,7 +83,7 @@ rosrun socketcan_bridge socketcan_bridge_node
 
 
 위 명령어를 실행 후에 rostopic list 중에 /received messages가 있으면 성공이다!    
-topic의 정보를 보면 알겠지만 메시지 타입이 can_msgs/Frame이므로 주의하길 바란다.(source 등등...)    
+topic의 정보를 보면 알겠지만 메시지 타입이 can_msgs/Frame으로 Custom 형태이기 때문에 주의하길 바란다.(source 등등...)    
 추가 기능에 대한 [정보](http://wiki.ros.org/socketcan_bridge)
 
 ## 추후 계획
