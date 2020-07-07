@@ -1,6 +1,6 @@
 # 차량 HW / 통신 개발 파트
 
-![ㅇ](https://files.slack.com/files-pri/TT453UM5M-F016NTBP66N/image.png)
+![image (1)](https://user-images.githubusercontent.com/59792475/86795318-66cd7100-c0a8-11ea-96d2-7d56cd661053.png)
 
 차량 내외부 센서 장착과 전원 공급, 차량을 Drive By Wire로 조종하기 위해서 CAN, LIN등 In-Vehicle 통신을 연구하는 ~~명품~~ 파트   
 앉아서 공부만 했던 학생들이 3D 프린터도 모잘라서 쇠를 깍고 용접도 가능한 능력자들 집단으로 바뀌는   
