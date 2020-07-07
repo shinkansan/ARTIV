@@ -46,4 +46,3 @@ sess= tf.Session(config=config):
 | tensorflow-yolov3(after memory setting)| 약 15 fps | 약 4683 MB | 177W/250W | 29% |
 | darknet-yolov3 | 43 fps | 약 1024 MB | 220W/250W | 50% |
 | darknet-yolov4 | 35 fps | 약 2048 MB | 262W/250W | 81% |
-| pytorch-yolov3-ros | 약 100 fps | 약 2048 MB | 138W/250W | 36% |
