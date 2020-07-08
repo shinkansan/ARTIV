@@ -2,13 +2,17 @@
 
 #### Manual Calibration
 
+```
 rosrun image_view image_view image:=/sensors/camera/image_color
+```
 
 여기서 계속 에러남...
  
 그래서 그냥 bag_tools install 을 찾아서 다음 커맨드를 진행하였으나 에러...
 
+```
 python change_camera_info.py peperfect_0703.orig.bag peperfect_0703.cameracalibrator.bag /usb_cam/image_raw=ost.yaml
+```
 
 에러 내용..
 ```
