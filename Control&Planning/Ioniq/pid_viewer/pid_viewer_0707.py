@@ -3,6 +3,7 @@
 # GUI Version of PID Controller
 # Copyright ©  2020 DGIST ARTIV All rights reserved
 # Author: Seunggi Lee
+# Date: 2020.07.07
 
 
 import sys
