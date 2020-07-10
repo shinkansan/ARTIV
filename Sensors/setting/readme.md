@@ -37,6 +37,8 @@ PC에 USB 혹은 다른 포트들을 꽂을 때마다 어떻게 인식될지 몰
 우리가 봐야할 정보는 뭐냐! 당연히 바로 위에서 말한 ```SUBSYSTEM```, ```idVendor```, ```idProducts```, ```serial```입니다.
 
 같은게 너무 많이 떠서 힘들면 ```idVendor```, ```idProducts```, ```serial```이 있는 구간을 찾아서 거기에 있는 ```SUBSYSTEM```을 입력하면 됩니다 ㅎㅎ
+
+* 위에서 말한 idVendor, idProducts, serial이 ```udevadm info -a -n /dev/<device>``` 를 입력해도 보이지 않는 경우, ```udevadm info --query=all --attribute-walk --name=/dev/video0 | grep -E "idVendor|serial|idProduct"``` 를 입력하면 볼 수 있다.
 #
 **STEP 4. device_setting.sh 파일을 여세요.**
 
