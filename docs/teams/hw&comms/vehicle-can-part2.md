@@ -40,4 +40,14 @@ CAN 통신의 하드웨어는 언맨드 솔루션이 만들어준 장치를 기�
 하드웨어는 우리가 실제로 제작하지 않았기 때문에 딱히 제작에 대한 메뉴얼을 제공해줄 수가 없다.    
 그렇다면 소프트웨어는 과연 어떻게 구성되어 있을까?    
 CAN 통신을 하기 위해서 ROS의 기본 기능을 찾아보다가 Socketcan이라는 패키지를 찾았다.    
-자세한 코드 및 기능에 대한 설명은 [여기](http://wiki.ros.org/socketcan_interface)로...
+자세한 코드 및 기능에 대한 설명은 [여기](http://wiki.ros.org/socketcan_interface)로...  
+간단히 말하자면 ROS에서 제공하는 Socketcan이라는 패키지는 CAN 통신을 ROS 방식으로 쉽게 해결할 수 있게 도와주는 툴이다.  
+이 툴이 없다면 우리는 CAN의 근본적인 원리를 이해하면서 기능을 전체적으로 구현해야 할 것이다.  
+하지만 이 툴을 통해서 우리는 특정한 ros topic을 publish하면 socketcan이 알아서 subscribe한 이후에 CAN 데이터 형식으로 차에 명령을 준다.  
+그리고 차량으로부터 CAN 정보를 얻어온 다음에 특정한 topic으로 publish 해준다.  
+즉 우리는 CAN의 근본적인 원리 이해를 정확히 하지 않아도 ros topic을 알맞은 형식으로 publish 또는 subscribe하면 된다.  
+실제로 socketcan이 publish 해주는 topic은 /received_messages이며 이는 can_msg/Frame 형태로 구성되어 있다.  
+그리고 can_msg/Frame 형태로 /sent_messages라는 topic을 우리가 publish 해주면 socketcan 패키지가 알아서 subscribe 한 후에 CAN 정보를 차량에 입력한다.  
+결국 CAN 통신의 근본적인 원리에 대한 이해 없이 ros에 대한 지식만 있으면 충분히 진행할 수 있는 것이다!  
+자세한건 아래의 구조도를 확인해보자.  
+![사진](./media/CAN_construct)
