@@ -61,7 +61,7 @@ Labview 내의 예제를 실행해본다. --> 정상적으로 결과값이 나�
 
 케이블의 배(?)를 따서    
 
-<img src="./media/cable_mod3.jpg" width="50%" height="50%"></img> 
+<img src="./media/cable_mod3.jpg" width="50%" height="50%"></img>  
 [사진5] 과정 2    
 
 나만의 테스터기를 만들어 각각의 선이 케이블의 몇번에 해당하는지 파악한다.
