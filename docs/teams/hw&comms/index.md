@@ -33,9 +33,9 @@
 ## Devlog #2
   1. [차량 하드웨어 설치기 : 차는 이미 구멍이 많다!]()
   2. [차량 하드웨어 설치기 : 스키 캐리어가 제일 좋다]()
-  3. [차량 통신 삽질기 : I can't CAN]()
-  4. [차량 통신 삽질기 : I can't CAN part2]()
-  5. [차량 통신 삽질기 : I can CAN!!]()
+  3. [차량 통신 삽질기 : I can't CAN](./try_to_can1.md)
+  4. [차량 통신 삽질기 : I can't CAN part2](./try_to_can2.md)
+  5. [차량 통신 삽질기 : I can CAN!!](./vehicle-can-part1.md)
   6. [차량에 모니터를 달아보자]()
   7. [3D 프린터를 너무 믿지 말자]()
 
