@@ -15,11 +15,11 @@ CAN Interface를 구매한 National Instrument(NI)사에 기술 문의를 하였
 #### 기기결함    
 기기 자체에 결함이 있는지 확인하는 방법은 CAN Interface에 있는 2개의 포트를 한 선으로 연결한 후에 Labview 내의 예제를 통해서 Loop-back 테스트를 하는 것이다.    
 테스트 모습은 다음과 같다.    
-![사진](./media/loop_back1.jpg)    
+<img src="./media/loop_back1.jpg" width="50%" height="50%"></img>  
 [사진1] USB8502의 모습    
 
-두 RS232 포트를 한 케이블로 연결하고
-![사진](./media/loop_back2.jpg)    
+두 RS232 포트를 한 케이블로 연결하고  
+<img src="./media/loop_back2.jpg" width="50%" height="50%"></img>  
 [사진2] Loop-back 테스트를 진행하는 모습    
 
 Labview 내의 예제를 실행해본다. --> 정상적으로 결과값이 나오며 기기 자체에는 결함이 없는 것으로 확인됨!
@@ -51,32 +51,32 @@ Labview 내의 예제를 실행해본다. --> 정상적으로 결과값이 나�
 #### 배선 변경
 즉시 케이블 배선을 변경하는 작업을 진행했다.    
 
-![사진](./media/cable_mod1.jpg)    
+<img src="./media/cable_mod1.jpg" width="50%" height="50%"></img>  
 [사진3] OBD-RS232 케이블    
 
 먼저 OBD-RS232 케이블을 준비한다.    
 
-![사진](./media/cable_mod2.jpg)    
+<img src="./media/cable_mod2.jpg" width="50%" height="50%"></img>  
 [사진4] 과정 1    
 
 케이블의 배(?)를 따서    
 
-![사진](./media/cable_mod3.jpg)    
+<img src="./media/cable_mod3.jpg" width="50%" height="50%"></img> 
 [사진5] 과정 2    
 
 나만의 테스터기를 만들어 각각의 선이 케이블의 몇번에 해당하는지 파악한다.
 
-![사진](./media/cable_mod4.jpg)    
+<img src="./media/cable_mod4.jpg" width="50%" height="50%"></img>  
 [사진6] 과정 3
 
 CAN_H인 2번 핀과 CAN_L인 7번 핀을 교차해 연결한다.
 
-![사진](./media/cable_mod5.jpg)    
+<img src="./media/cable_mod6.jpg" width="50%" height="50%"></img>  
 [사진7] 과정 4
 
 나머지 선을 원래대로 연결한다.
 
-![사진](./media/cable_mod6.jpg)    
+<img src="./media/cable_mod6.jpg" width="50%" height="50%"></img>  
 [사진8] 과정 5    
 
 모든 선이 합선이 되지 않도록 마감한다.    
