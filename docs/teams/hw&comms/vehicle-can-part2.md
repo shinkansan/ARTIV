@@ -50,4 +50,4 @@ CAN 통신을 하기 위해서 ROS의 기본 기능을 찾아보다가 Socketcan
 그리고 can_msg/Frame 형태로 /sent_messages라는 topic을 우리가 publish 해주면 socketcan 패키지가 알아서 subscribe 한 후에 CAN 정보를 차량에 입력한다.  
 결국 CAN 통신의 근본적인 원리에 대한 이해 없이 ros에 대한 지식만 있으면 충분히 진행할 수 있는 것이다!  
 자세한건 아래의 구조도를 확인해보자.  
-![사진](./media/CAN_construct)
+![사진](./media/CAN_construct.jpg)
