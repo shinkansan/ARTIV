@@ -58,7 +58,7 @@ PC에 USB 혹은 다른 포트들을 꽂을 때마다 어떻게 인식될지 몰
 
 터미널을 열고 위에서 만든 sh파일이 있는 곳을 찾아간 뒤에, 아래의 코드를 입력해봅시다!
 
-```sh device_setting.sh```
+```sudo sh device_setting.sh```
 #
 **STEP 6. 재부팅을 합시다.**
 #
