@@ -33,7 +33,8 @@
   3. [차량 통신 삽질기 : I can't CAN part1](./try_to_can1.md)
   4. [차량 통신 삽질기 : I can't CAN part2](./try_to_can2.md)
   5. [차량 통신 삽질기 : I can't CAN part3](./try_to_can3.md)
-  6. [차량 통신 삽질기 : I can CAN!! part4](./try_to_can4.md)
+  6. [차량 통신 삽질기 : I can CAN!! part4](./vehicle-can-part1.md)
+  7. [차량 통신 삽질기 : I can CAN!! part5](./vehicle-can-part2.md)
   7. [차량에 모니터를 달아보자]()
   8. [3D 프린터를 너무 믿지 말자]()
 
