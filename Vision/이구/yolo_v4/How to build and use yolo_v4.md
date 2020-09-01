@@ -37,11 +37,7 @@ make install
 yolov4.weights파일은 아래 링크에서 다운받을 수 있다.
 https://drive.google.com/uc?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT&export=download
 
-![screenshot](/Vision/이구/img/screenshot.png)
-
 이용하는 사람이 너무 많아서 아직 weights 파일을 다운받을 수 없었다.
-
-![yolo_v4_test](/Vision/이구/img/yolo_v4_test.PNG)
 
 돌려본 결과, 4~6 fps 정도 나온다.
 
