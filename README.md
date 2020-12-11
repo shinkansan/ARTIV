@@ -1,3 +1,7 @@
+## IMPORTANT
+We moved repo to organiation repo "DGIST-ARTIV@github"
+https://github.com/DGIST-ARTIV
+
 # ![artiv](./img/artiv_logo2.png)
 DGIST ARTIV Repos
 
