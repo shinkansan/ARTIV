@@ -12,11 +12,6 @@ DGIST ARTIV Repos
 > ### Main IDE : qt creator
 > ### MiddleWare : ROS2-Dashing, ROS1-Melodic 
 
-### 고용량 데이터 공유용 지정 파일서버
-Dedicate Server address
-> [ktk1501.synology.me:5001](https://ktk1501.synology.me:5001)   
-> Confidential ID : artiv, pw : dgist1234
-
 ### 팀별 폴더 안내
 
 1. 차량 제어 및 통신 그리고 주행 관련 서류를 보고 싶다면?    
